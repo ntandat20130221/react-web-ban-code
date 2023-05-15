@@ -1,3 +1,5 @@
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 import logo from './logo.svg';
 import './App.css';
 
