@@ -1,3 +1,5 @@
+
+import './jquery-3.3.1.min';
 ;(function ($, document, window) {
     var
     // default settings object.
