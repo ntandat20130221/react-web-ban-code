@@ -1,7 +1,4 @@
-import '../App.css'
-import '../css/bootstrap.min.css'
-import '../css/font-awesome.min.css'
-import '../css/style.css'
+
 import logo from '../img/logo.png'
 import language from '../img/language.png'
 

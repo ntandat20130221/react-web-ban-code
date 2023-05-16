@@ -1,7 +1,3 @@
-import '../App.css'
-import '../css/bootstrap.min.css'
-import '../css/font-awesome.min.css'
-import '../css/style.css'
 
 function Footer() {
     return (
