@@ -14,7 +14,7 @@ function SectionHero() {
                     <div className="col-lg-9">
                         <div className="hero__search">
                             <SearchBar/>
-                            <Phone/>
+                            {/*<Phone/>*/}
                         </div>
                         <Banner/>
                     </div>
