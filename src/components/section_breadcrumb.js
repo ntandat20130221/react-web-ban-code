@@ -18,5 +18,4 @@ function SectionBreadcrumb() {
         </section>
     )
 }
-
 export default SectionBreadcrumb;

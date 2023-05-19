@@ -1,6 +1,6 @@
 import '../css/bootstrap.min.css'
 import '../css/font-awesome.min.css'
-import logo from '../img/logo.png'
+import logo from '../img/logo/logo.png'
 import '../css/style.css'
 
 function Footer() {
@@ -11,7 +11,7 @@ function Footer() {
                     <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="footer__about">
                             <div className="footer__about__logo">
-                                <a href="./index.html"><img src={logo} alt=""/></a>
+                                <a href=""><img src={logo} alt=""/></a>
                             </div>
                             <ul>
                                 <li>Địa chỉ: Khoa CNTT - ĐH Nông Lâm</li>

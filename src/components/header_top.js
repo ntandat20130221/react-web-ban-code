@@ -1,4 +1,4 @@
-import language from '../img/language.png'
+import language from '../img/language/language.png'
 
 function HeaderTop() {
     return (
