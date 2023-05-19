@@ -6,8 +6,11 @@ function Categories() {
                 <span>Danh mục</span>
             </div>
             <ul>
-                <li><a href="#">Android</a></li>
-                <li><a href="#">iOS</a></li>
+                <li><a href="">Android</a></li>
+                <li><a href="">iOS</a></li>
+                <li><a href="">PHP & MYSQL</a></li>
+                <li><a href="">JAVA/JSP</a></li>
+                <li><a href="">Xem tất cả</a></li>
             </ul>
         </div>
     )

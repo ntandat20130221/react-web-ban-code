@@ -1,4 +1,4 @@
-import language from '../img/language/language.png'
+import usa from '../img/language/language.png'
 
 function HeaderTop() {
     return (
@@ -22,7 +22,7 @@ function HeaderTop() {
                             {/*    <a href="#"><i className="fa fa-pinterest-p"></i></a>*/}
                             {/*</div>*/}
                             <div className="header__top__right__language">
-                                <img src={language} alt=""/>
+                                <img src={usa} alt=""/>
                                 <div>English</div>
                                 <span className="arrow_carrot-down"></span>
                                 <ul>
