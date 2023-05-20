@@ -1,5 +1,3 @@
-
-
 function Phone(){
     return(
         <div className="hero__search__phone">
