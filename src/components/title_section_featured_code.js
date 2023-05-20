@@ -16,34 +16,34 @@ function TitleSection(){
             <div className="section-title">
                 <h2>CODE NỔI BẬT</h2>
             </div>
-            <div className="featured__controls">
-                <ul>
-                    <li
-                        className={activeItem === ".android" ? "active" : ""}
-                        data-filter=".android"
-                        onClick={() => handleClick(".android")}>
-                        Android
-                    </li>
-                    <li
-                        className={activeItem === ".iOS" ? "active" : ""}
-                        data-filter=".iOS"
-                        onClick={() => handleClick(".iOS")}>
-                        iOS
-                    </li>
-                    <li
-                        className={activeItem === ".php" ? "active" : ""}
-                        data-filter=".php"
-                        onClick={() => handleClick(".php")}>
-                        PHP
-                    </li>
-                    <li
-                        className={activeItem === ".java" ? "active" : ""}
-                        data-filter=".java"
-                        onClick={() => handleClick(".java")}>
-                        Java
-                    </li>
-                </ul>
-            </div>
+            {/*<div className="featured__controls">*/}
+            {/*    <ul>*/}
+            {/*        <li*/}
+            {/*            className={activeItem === ".android" ? "active" : ""}*/}
+            {/*            data-filter=".android"*/}
+            {/*            onClick={() => handleClick(".android")}>*/}
+            {/*            Android*/}
+            {/*        </li>*/}
+            {/*        <li*/}
+            {/*            className={activeItem === ".iOS" ? "active" : ""}*/}
+            {/*            data-filter=".iOS"*/}
+            {/*            onClick={() => handleClick(".iOS")}>*/}
+            {/*            iOS*/}
+            {/*        </li>*/}
+            {/*        <li*/}
+            {/*            className={activeItem === ".php" ? "active" : ""}*/}
+            {/*            data-filter=".php"*/}
+            {/*            onClick={() => handleClick(".php")}>*/}
+            {/*            PHP*/}
+            {/*        </li>*/}
+            {/*        <li*/}
+            {/*            className={activeItem === ".java" ? "active" : ""}*/}
+            {/*            data-filter=".java"*/}
+            {/*            onClick={() => handleClick(".java")}>*/}
+            {/*            Java*/}
+            {/*        </li>*/}
+            {/*    </ul>*/}
+            {/*</div>*/}
         </div>
     )
 }
