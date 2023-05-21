@@ -1,5 +1,4 @@
 import React from "react";
-import img_category_android_1 from '../img/featured/android-1.jpg'
 
 import products_featured from '../data/ProductData.js'
 
