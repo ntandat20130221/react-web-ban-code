@@ -6,6 +6,18 @@ function ListProductsFeatured(data) {
 
     const [products, setProducts] = useState(products_featured)
 
+    /**
+     useState là một hook dùng để lưu trữ và quản lý state(trạng thái) của một component
+     => cú pháp :
+                 const[state,setState] = useState(initState)
+
+     - Component được re-render sau khi 'setState'
+     - Initial state chỉ dùng cho lần đầu
+     - Set state với callback ?
+     - Initial state với callback ?
+     - setState là thay thế state bằng giá trị mới
+     */
+
     return (
 
         <div className="row featured__filter">
@@ -22,7 +34,7 @@ function ListProductsFeatured(data) {
 
 function ItemProductFeatured(data) {
 
-    const [product,setProduct] = useState(data)
+    const [product, setProduct] = useState(data)
 
     return (
         <div className="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
