@@ -1,6 +1,7 @@
 import React, {useState} from "react";
+import ListProductFeatured from './ListProductsFeatured'
 
-function TitleSection(){
+function TitleSection() {
 
     // Tạo state địa phương activeItem và hàm setActiveItem để cập nhật giá trị của state
     const [activeItem, setActiveItem] = useState(null);
@@ -11,7 +12,7 @@ function TitleSection(){
         alert(`Clicked on ${filter}`);
     };
 
-    return(
+    return (
         <div className="col-lg-12">
             <div className="section-title">
                 <h2>CODE NỔI BẬT</h2>
@@ -48,4 +49,20 @@ function TitleSection(){
     )
 }
 
-export default TitleSection;
+function SectionFeaturedCode() {
+
+    return (
+        <section className="featured spad">
+            <div className="container">
+                <div className="row">
+                    <TitleSection/>
+                </div>
+                <ListProductFeatured/>
+            </div>
+        </section>
+    );
+}
+
+export {TitleSection};
+
+export default SectionFeaturedCode;

@@ -1,4 +1,4 @@
-function Categories() {
+function AllCategories() {
     return (
         <div className="hero__categories">
             <div className="hero__categories__all">
@@ -16,4 +16,4 @@ function Categories() {
     )
 }
 
-export default Categories;
+export default AllCategories;

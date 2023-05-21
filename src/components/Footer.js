@@ -1,7 +1,4 @@
-import '../css/bootstrap.min.css'
-import '../css/font-awesome.min.css'
 import logo from '../img/logo/logo.png'
-import '../css/style.css'
 
 function Footer() {
     return (
