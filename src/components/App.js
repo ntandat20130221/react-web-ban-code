@@ -20,3 +20,18 @@
 // }
 //
 // export default App;
+import Header from "./header";
+import Footer from "./footer";
+import SectionHero from "./section_hero"
+
+function App() {
+    return (
+        <div>
+            <Header/>
+            <SectionHero/>
+            <Footer/>
+        </div>
+    )
+}
+
+export default App;
