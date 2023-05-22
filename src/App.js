@@ -10,14 +10,19 @@ import './css/nice-select.css'
 import './css/slicknav.min.css'
 import './css/style.css'
 
+import {store} from './redux/Store'
+import {Provider} from 'react-redux'
+
 function App() {
     return (
-        <div>
-            <Header/>
-            <SectionHero/>
-            <SectionFeaturedCode/>
-            <Footer/>
-        </div>
+        <Provider store={store}>
+            <div>
+                <Header/>
+                <SectionHero/>
+                <SectionFeaturedCode/>
+                <Footer/>
+            </div>
+        </Provider>
     )
 }
 
