@@ -1,9 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import SectionHero from "./components/SectionHero"
-import SectionSubHero from "./components/SectionSubHero"
 import SectionFeaturedCode from './components/SectionFeaturedCode'
-import SectionBreadcrumb from './components/SectionBreadcrumb'
 
 import './css/bootstrap.min.css'
 import './css/elegant-icons.css'
@@ -16,9 +14,7 @@ function App() {
     return (
         <div>
             <Header/>
-            {/*<SectionBreadcrumb/>*/}
-            <SectionSubHero/>
-            {/*<SectionHero/>*/}
+            <SectionHero/>
             <SectionFeaturedCode/>
             <Footer/>
         </div>

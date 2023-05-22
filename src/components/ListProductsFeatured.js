@@ -7,7 +7,7 @@ function ListProductsFeatured(data) {
     const [products, setProducts] = useState(products_featured)
 
     /**
-     useState là một hook dùng để lưu trữ và quản lý state(trạng thái) của một component
+     useState là một hook dùng để lưu trữ và quản lýc state(trạng thái) của một omponent
      => cú pháp :
                  const[state,setState] = useState(initState)
 
