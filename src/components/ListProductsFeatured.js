@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from "react";
-import {useDispatch, useSelector} from "react-redux"
+import {useDispatch, useSelector} from "react-redux";
+import {Toast} from 'react-bootstrap';
 
+import {loadProduct, addCart} from '../redux/Action';
 import products_featured from '../data/ProductData.js'; //=> danh sách code nổi bật
-import {loadProduct, addCart} from '../redux/Action'
-
+import {formatCurrency} from '../javascript/utils';
 
 function ListProductsFeatured(data) {
 
@@ -57,6 +58,7 @@ function ListProductsFeatured(data) {
 function ItemProductFeatured(data) {
 
     const [product, setProduct] = useState(data)
+    const [showToast, setShowToast] = useState(false)
 
     /**
      useState là một hook dùng để lưu trữ và quản lý state(trạng thái) của một component
@@ -74,11 +76,22 @@ function ItemProductFeatured(data) {
 
     function clickAddCart() {
         dispatch(addCart(product))
-        alert('Sản phẩm đã được thêm vào giỏ hàng')
+        setShowToast(true)
     }
 
     return (
+
         <div className="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
+
+            {/*Thông báo Toast*/}
+            <div>
+                <Toast show={showToast} onClose={() => setShowToast(false)} delay={3000} autohide>
+                    <Toast.Body className="bg-success text-white">
+                        Mã nguồn đã được thêm vào giỏ hàng
+                    </Toast.Body>
+                </Toast>
+            </div>
+
             <div className="featured__item">
                 <div className="featured__item__pic set-bg"
                      style={{backgroundImage: `url(${product.img})`}}>
@@ -89,7 +102,7 @@ function ItemProductFeatured(data) {
                 </div>
                 <div className="featured__item__text">
                     <h6><a href="">{product.name}</a></h6>
-                    <h5>{product.price} VND</h5>
+                    <h5>{formatCurrency(product.price)}</h5>
                 </div>
             </div>
         </div>
