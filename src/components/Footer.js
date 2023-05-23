@@ -37,10 +37,10 @@ function Footer() {
                                 <button type="submit" className="site-btn">SEND</button>
                             </form>
                             <div className="footer__widget__social">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-instagram"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                                <a href="#"><i className="fa fa-pinterest"></i></a>
+                                <a href="#"><i className="fa-brands fa-facebook"></i></a>
+                                <a href="#"><i className="fa-brands fa-instagram"></i></a>
+                                <a href="#"><i className="fa-brands fa-twitter"></i></a>
+                                <a href="#"><i className="fa-brands fa-pinterest"></i></a>
                             </div>
                         </div>
                     </div>
