@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import reportWebVitals from './javascript/reportWebVitals';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import {RouterProvider} from "react-router-dom";
-import {router} from "./router/router";
+import {router} from "./router";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
