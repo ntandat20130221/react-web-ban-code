@@ -6,7 +6,7 @@ import '../css/products.css'
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {products} from "../data/Products";
-import {switchPage} from "../redux/Action";
+import {mostDownloaded, mostViewed, show, switchPage} from "../redux/Action";
 
 const categories = ['Android', 'iOS', 'Windows phone', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
     'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
@@ -144,11 +144,28 @@ function Products(props) {
 }
 
 function Filter(props) {
+    const dispatch = useDispatch()
     const [layout, setLayout] = useState('grid')
+    const [sort, setSort] = useState('most')
+    const page = useSelector(state => state.listProductsReducer.page)
 
     function onLayoutClick(isGrid) {
         props.onLayout(isGrid)
         setLayout(isGrid === true ? 'grid' : 'row')
+    }
+
+    function onSortClick(sort) {
+        setSort(sort)
+        switch (sort) {
+            case 'mostViewed':
+                dispatch(mostViewed())
+                break;
+            case 'mostDownloaded':
+                dispatch(mostDownloaded())
+                break;
+            default:
+                dispatch(switchPage(page))
+        }
     }
 
     return (
@@ -163,9 +180,15 @@ function Filter(props) {
                     <div className="filter-sort mr-5">
                         <span>SẮP XẾP</span>
                         <ul className="d-inline-block">
-                            <li className="filter-active">Mới nhất</li>
-                            <li>Xem nhiều</li>
-                            <li>Tải nhiều</li>
+                            <li className={sort === 'most' ? "filter-active" : ""}
+                                onClick={() => onSortClick('most')}>Mới nhất
+                            </li>
+                            <li className={sort === 'mostViewed' ? "filter-active" : ""}
+                                onClick={() => onSortClick('mostViewed')}>Xem nhiều
+                            </li>
+                            <li className={sort === 'mostDownloaded' ? "filter-active" : ""}
+                                onClick={() => onSortClick('mostDownloaded')}>Tải nhiều
+                            </li>
                         </ul>
                     </div>
                     <div className="filter-option d-flex align-items-center">
@@ -179,13 +202,29 @@ function Filter(props) {
 }
 
 function Pagination(props) {
+    const sort = useSelector(state => state.listProductsReducer.sort)
+    const page = useSelector(state => state.listProductsReducer.page)
     const dispatch = useDispatch()
+
+    function onSwitchPage(page) {
+        dispatch(switchPage(page))
+        switch (sort) {
+            case 'mostViewed':
+                dispatch(mostViewed())
+                break
+            case 'mostDownloaded':
+                dispatch(mostDownloaded())
+                break
+            default:
+                dispatch(switchPage(page))
+        }
+    }
 
     return (
         <div className="product__pagination">
             <a href="#"><i className="fa fa-chevron-left"></i></a>
             {props.numbers.map((value, index) => (
-                <a href="#" key={index} onClick={() => dispatch(switchPage(value))}>{value}</a>
+                <a href="#" key={index} onClick={() => onSwitchPage(value)}>{value}</a>
             ))}
             <a href="#"><i className="fa fa-chevron-right"></i></a>
         </div>
