@@ -12,6 +12,12 @@ export const switchPage = (page) => {
     }
 }
 
+export const most = () => {
+    return {
+        type: 'listProducts/most'
+    }
+}
+
 export const mostViewed = () => {
     return {
         type: 'listProducts/mostViewed'

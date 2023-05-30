@@ -6,9 +6,10 @@ import '../css/products.css'
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {products} from "../data/Products";
-import {mostDownloaded, mostViewed, show, switchPage} from "../redux/Action";
+import {most, mostDownloaded, mostViewed, switchPage} from "../redux/Action";
+import SectionBreadcrumb from "./SectionBreadcrumb";
 
-const categories = ['Android', 'iOS', 'Windows phone', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
+const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
     'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
 
 function SideBar() {
@@ -28,20 +29,15 @@ function SideBar() {
             <div className="sidebar-item mt-4">
                 <h6 className="list-group-item font-weight-bolder">Code phổ biến</h6>
                 <div className="list-group">
-                    {
-                        Array(9).fill(1).map((value, index) => (
-                            <a className="list-group-item d-flex align-items-center" key={index} href="#">
-                                <div className="align-self-start mt-2 mr-2">
-                                    <span className="popular-rank">{++index}</span>
-                                </div>
-                                <img className="mr-2" src={require("../img/products/lp-1.jpg")} alt=""/>
-                                <span className="popular-title">Bundle 5 Android Studio games</span>
-                                <div className="align-self-start ml-2 mt-1">
-                                    <span className="popular-price">$12</span>
-                                </div>
-                            </a>
-                        ))
-                    }
+                    {Array(9).fill(1).map((value, index) => (
+                        <a className="list-group-item d-flex align-items-center" key={index} href="#">
+                            <div className="align-self-start mt-2 mr-2">
+                                <span className="popular-rank">{++index}</span>
+                            </div>
+                            <img className="mr-2" src={require("../img/products/lp-1.jpg")} alt=""/>
+                            <span className="popular-title">Bundle 5 Android Studio games</span>
+                        </a>
+                    ))}
                 </div>
             </div>
         </div>
@@ -95,12 +91,16 @@ function ProductItemRow(props) {
                     <div className="product-item-stars">
                         {Array(5).fill(1).map((value, index) => (<i className="fa fa-star" key={index}></i>))}
                     </div>
+                    <div className="product-item-stats d-flex justify-content-start">
+                        <div><i className="fa fa-eye"></i> {p.viewed}</div>
+                        <div><i className="fa fa-download"></i> {p.downloaded}</div>
+                    </div>
                     <p className="product-item-row-description">{p.description}</p>
                 </div>
                 <div className="col-lg-2 d-flex flex-column justify-content-end align-items-end">
                     <div className="pr-3 pb-3">
                         <div className="product-item-row-price text-center">
-                            <a className="d-inline text-center">{p.price}</a>
+                            <a className="d-inline text-center">{p.price} VNĐ</a>
                         </div>
                         <div className="d-flex justify-content-end">
                             <a className="product-item-action mr-1"><i className="fa fa-thumbs-up"></i></a>
@@ -115,30 +115,22 @@ function ProductItemRow(props) {
 
 function Products(props) {
     const products = useSelector(state => state.listProductsReducer.data)
-
     const dispatch = useDispatch()
-
     useEffect(() => {
         dispatch(switchPage(1))
     }, [])
 
     return (
         <div className="row">
-            {
-                products.map((value, index) => {
-                    return props.isGrid ?
-                        (
-                            <div className="product-item-container col-lg-4 col-md-6 col-sm-6" key={index}>
-                                <ProductItem data={value}/>
-                            </div>
-                        ) :
-                        (
-                            <div className="product-item-container col-12" key={index}>
-                                <ProductItemRow data={value}/>
-                            </div>
-                        )
-                })
-            }
+            {products.map((value, index) => {
+                return props.isGrid ?
+                    (<div className="product-item-container col-lg-4 col-md-6 col-sm-6" key={index}>
+                        <ProductItem data={value}/>
+                    </div>) :
+                    (<div className="product-item-container col-12" key={index}>
+                        <ProductItemRow data={value}/>
+                    </div>)
+            })}
         </div>
     )
 }
@@ -146,8 +138,8 @@ function Products(props) {
 function Filter(props) {
     const dispatch = useDispatch()
     const [layout, setLayout] = useState('grid')
-    const [sort, setSort] = useState('most')
-    const page = useSelector(state => state.listProductsReducer.page)
+    const currentPage = useSelector(state => state.listProductsReducer.page)
+    const sort = useSelector(state => state.listProductsReducer.sort)
 
     function onLayoutClick(isGrid) {
         props.onLayout(isGrid)
@@ -155,7 +147,6 @@ function Filter(props) {
     }
 
     function onSortClick(sort) {
-        setSort(sort)
         switch (sort) {
             case 'mostViewed':
                 dispatch(mostViewed())
@@ -164,7 +155,8 @@ function Filter(props) {
                 dispatch(mostDownloaded())
                 break;
             default:
-                dispatch(switchPage(page))
+                dispatch(most())
+                dispatch(switchPage(currentPage))
         }
     }
 
@@ -191,7 +183,7 @@ function Filter(props) {
                             </li>
                         </ul>
                     </div>
-                    <div className="filter-option d-flex align-items-center">
+                    <div className="filter-layout d-flex align-items-center">
                         <span className={`icon_grid-2x2 ${layout === 'grid' ? "filter-active" : ""}`} onClick={() => onLayoutClick(true)}></span>
                         <span className={`icon_ul ${layout === 'row' ? "filter-active" : ""}`} onClick={() => onLayoutClick(false)}></span>
                     </div>
@@ -203,11 +195,13 @@ function Filter(props) {
 
 function Pagination(props) {
     const sort = useSelector(state => state.listProductsReducer.sort)
-    const page = useSelector(state => state.listProductsReducer.page)
+    const currentPage = useSelector(state => state.listProductsReducer.page)
     const dispatch = useDispatch()
 
     function onSwitchPage(page) {
-        dispatch(switchPage(page))
+        const pages = props.numbers.length
+        const pageNow = page < 1 || page > pages ? currentPage : page
+        dispatch(switchPage(pageNow))
         switch (sort) {
             case 'mostViewed':
                 dispatch(mostViewed())
@@ -216,18 +210,17 @@ function Pagination(props) {
                 dispatch(mostDownloaded())
                 break
             default:
-                dispatch(switchPage(page))
         }
     }
 
     return (
-        <div className="product__pagination">
-            <a href="#"><i className="fa fa-chevron-left"></i></a>
+        <ul className="product-pagination float-right mt-3">
+            <li onClick={() => onSwitchPage(currentPage - 1)}><i className="fa fa-chevron-left"></i></li>
             {props.numbers.map((value, index) => (
-                <a href="#" key={index} onClick={() => onSwitchPage(value)}>{value}</a>
+                <li className={value === currentPage ? "active" : ""} key={index} onClick={() => onSwitchPage(value)}>{value}</li>
             ))}
-            <a href="#"><i className="fa fa-chevron-right"></i></a>
-        </div>
+            <li onClick={() => onSwitchPage(currentPage + 1)}><i className="fa fa-chevron-right"></i></li>
+        </ul>
     )
 }
 
@@ -260,7 +253,8 @@ export function ListProducts() {
     return (
         <>
             <Header/>
-            <SectionSubHero/>
+            {/*<SectionSubHero/>*/}
+            <SectionBreadcrumb/>
             <ProductsContainer/>
             <Footer/>
         </>

@@ -1,27 +1,5 @@
-import Logo from './Logo'
-import NavBar from './NavBar'
 import Cart from './Cart'
 
-import usa from '../img/language/language.png'
-
-function Header() {
-    return (
-        <header className="header">
-            <HeaderTop/>
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-2">
-                        <Logo/>
-                    </div>
-                    <div className="col-lg-8">
-                        <NavBar/>
-                    </div>
-                    <div className="col-lg-2"><Cart/></div>
-                </div>
-            </div>
-        </header>
-    )
-}
 function HeaderTop() {
     return (
         <div className="header__top">
@@ -38,7 +16,7 @@ function HeaderTop() {
                     <div className="col-lg-9 col-md-9">
                         <div className="header__top__right">
                             <div className="header__top__right__language">
-                                <img src={usa} alt=""/>
+                                <img src={require('../img/language/language.png')} alt=""/>
                                 <div>English</div>
                                 <span className="arrow_carrot-down"></span>
                                 <ul>
@@ -57,7 +35,32 @@ function HeaderTop() {
     )
 }
 
+function Header() {
+    return (
+        <header className="header">
+            <HeaderTop/>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-2">
+                        <div className="header__logo">
+                            <a href=""><img src={require('../img/logo/logo.png')} alt=""/></a>
+                        </div>
+                    </div>
+                    <div className="col-lg-8">
+                        <nav className="header__menu">
+                            <ul>
+                                <li><a href="">Top code</a></li>
+                                <li><a href="">Code chất lượng</a></li>
+                                <li><a href="">Code tham khảo</a></li>
+                                <li><a href="">Code miễn phí</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div className="col-lg-2"><Cart/></div>
+                </div>
+            </div>
+        </header>
+    )
+}
+
 export default Header;
-
-export {HeaderTop};
-

@@ -47,11 +47,11 @@ const rootReducer = (state = initState, action) => {
 
 }
 
-const listProductsReducer = (state = {data: products, page: 1, sort: 'most', layout: 'grid'}, action) => {
+const listProductsReducer = (state = {data: products, page: 1, sort: 'most'}, action) => {
     switch (action.type) {
         case 'listProducts/page': {
             const page = Number(action.payload)
-            const itemsPerPage = 10
+            const itemsPerPage = 9
             const lastIndex = page * itemsPerPage
             const firstIndex = lastIndex - itemsPerPage
             const items = products.slice(firstIndex, lastIndex)
@@ -59,6 +59,13 @@ const listProductsReducer = (state = {data: products, page: 1, sort: 'most', lay
                 ...state,
                 data: [...items],
                 page: page
+            }
+        }
+        case 'listProducts/most': {
+            return {
+                ...state,
+                data: [...products],
+                sort: 'most'
             }
         }
         case 'listProducts/mostViewed': {
