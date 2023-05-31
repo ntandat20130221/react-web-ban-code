@@ -5,7 +5,7 @@ import {ListProducts} from "./components/ListProducts";
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>
+        element: <ListProducts/>
     },
     {
         path: '/list-products',

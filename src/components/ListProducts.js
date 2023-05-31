@@ -1,6 +1,5 @@
 import Header from "./Header";
 import Footer from "./Footer"
-import SectionSubHero from "./SectionSubHero";
 
 import '../css/products.css'
 import {useEffect, useState} from "react";
