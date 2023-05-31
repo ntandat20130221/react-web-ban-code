@@ -20,9 +20,9 @@
 // }
 //
 // export default App;
-import Header from "./header";
-import Footer from "./footer";
-import SectionHero from "./section_hero"
+import Header from "./Header";
+import Footer from "./Footer";
+import SectionHero from "./SectionHero";
 
 function App() {
     return (
