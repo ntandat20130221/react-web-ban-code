@@ -1,6 +1,6 @@
 import Header from './components/Commons/Header'
 import Footer from './components/Commons/Footer'
-import SectionHero from './components/HomePage/SectionHero'
+import Banner from './components/HomePage/Banner'
 import SectionFeaturedCode from './components/HomePage/SectionFeaturedCode'
 
 import './css/bootstrap.min.css'
@@ -18,7 +18,7 @@ function App() {
         <Provider store={store}>
             <div>
                 <Header/>
-                {/*<SectionHero/>*/}
+                <Banner/>
                 <SectionFeaturedCode/>
                 <Footer/>
             </div>

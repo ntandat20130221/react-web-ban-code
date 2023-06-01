@@ -14,7 +14,7 @@ function Cart() {
     return (
         <div className="header-cart">
             <a href="" className="position-relative mr-5"><i className="bi bi-hand-thumbs-up"></i><span>0</span></a>
-            <a href="" className="position-relative"><i className="bi bi-cart"></i> <span>${cart.length}</span></a>
+            <a href="" className="position-relative"><i className="bi bi-cart"></i> <span>{cart.length}</span></a>
         </div>
     )
 }
