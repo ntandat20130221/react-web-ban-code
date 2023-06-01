@@ -1,5 +1,5 @@
 import authenticationImage from '../img/authentication/authentication.png';
-function ForgotPass(){
+function SectionForgotPass(){
     return(
         <section className="form-input py-5">
             <div className="container">
@@ -25,4 +25,4 @@ function ForgotPass(){
         </section>
     )
 }
-export default ForgotPass;
+export default SectionForgotPass;

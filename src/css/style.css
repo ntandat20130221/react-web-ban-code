@@ -1669,6 +1669,13 @@ li {
 	width: auto;
 }
 
+.product__details__pic__slider .other_image {
+	margin-right: 10px;
+}
+.product__details__pic__slider .other_image:last-child {
+	margin-right: 0px;
+}
+
 .product__details__text h3 {
 	color: #252525;
 	font-weight: 700;
@@ -1849,6 +1856,7 @@ li {
 .product__details__tab .product__details__tab__desc p {
 	color: #666666;
 }
+
 
 /*---------------------
   Shop Details
