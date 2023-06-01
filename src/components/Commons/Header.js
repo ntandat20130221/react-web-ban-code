@@ -1,7 +1,8 @@
 import '../../css/header.css'
 import {useEffect, useState} from "react";
-
 import Cart from './Cart'
+import {useLocation} from "react-router-dom";
+import $ from 'jquery'
 
 const adsList = [
     {
@@ -43,24 +44,24 @@ function HeaderTop() {
                 <div className="row">
                     <div className="col-lg-6 col-md-6 py-2">
                         <div className="header-top-left d-flex justify-content-start align-items-center">
-                            <a href=""><i className="fa fa-phone-alt"></i> 0123.456.789</a>
-                            <a href=""><i className="fa fa-envelope"></i> k46-it-nlu@gmail.com</a>
+                            <a href="tel:0123.456.789"><i className="fa fa-phone-alt"></i> 0123.456.789</a>
+                            <a href="mailto:k46-it-nlu@gmail.com"><i className="fa fa-envelope"></i> k46-it-nlu@gmail.com</a>
                         </div>
                     </div>
                     <div className="col-lg-6 col-md-6 py-2">
                         <div className="header-top-right d-flex justify-content-end align-items-center">
                             <div className="header-top-right-social d-flex justify-content-start align-items-center">
-                                <a href="#"><i className="fa fa-facebook"></i></a>
-                                <a href="#"><i className="fa fa-twitter"></i></a>
-                                <a href="#"><i className="fa fa-linkedin"></i></a>
-                                <a href="#"><i className="fa fa-youtube-play"></i></a>
+                                <a target="_blank" rel="noreferrer" href="https://facebook.com"><i className="fa fa-facebook"></i></a>
+                                <a target="_blank" rel="noreferrer" href="https://twitter.com"><i className="fa fa-twitter"></i></a>
+                                <a target="_blank" rel="noreferrer" href="https://linkedin.com"><i className="fa fa-linkedin"></i></a>
+                                <a target="_blank" rel="noreferrer" href="https://youtube.com"><i className="fa fa-youtube-play"></i></a>
                             </div>
                             <div className="header-top-right-language">
                                 <img src={require('../../img/language/tieng_viet.png')} alt="" className="mr-2"/>
                                 <div>Tiếng Việt <i className="bi bi-chevron-down d-inline-block ml-2"></i></div>
                                 <ul>
-                                    <li><a href="#">Tiếng Việt</a></li>
-                                    <li><a href="#">English</a></li>
+                                    <li>Tiếng Việt</li>
+                                    <li>English</li>
                                 </ul>
                             </div>
                             <div className="header-top-right-auth d-flex justify-content-end align-items-center">
@@ -76,6 +77,7 @@ function HeaderTop() {
 }
 
 function HeaderMenu() {
+    const location = useLocation()
     return (
         <div className="container">
             <div className="row">
@@ -87,10 +89,12 @@ function HeaderMenu() {
                 <div className="col-lg-8 d-flex justify-content-center align-items-center">
                     <nav className="header-menu">
                         <ul>
-                            <li><a href="">Trang chủ</a></li>
-                            <li><a href="" className="active">Top code</a></li>
-                            <li><a href="">Code chất lượng</a><img src={require('../../img/ic_hot.gif')} alt=""/></li>
-                            <li><a href="">Code miễn phí</a></li>
+                            <li><a href="/" className={location.pathname === '/' && 'active'}>Trang chủ</a></li>
+                            <li><a href="/top-codes" className={location.pathname === '/top-codes' && 'active'}>Top code</a></li>
+                            <li><a href="/quality-codes" className={location.pathname === '/quality-codes' && 'active'}>Code chất lượng</a>
+                                <img src={require('../../img/ic_hot.gif')} alt=""/>
+                            </li>
+                            <li><a href="/free-codes" className={location.pathname === '/free-codes' && 'active'}>Code miễn phí</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -103,29 +107,23 @@ function HeaderMenu() {
 }
 
 function HeaderSearch() {
-    const [categoriesClose, setCategoriesClose] = useState(true)
+    const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
+        'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
     return (
         <div className="container mb-4">
             <div className="row">
                 <div className="col-lg-3">
-                    <div className="header-categories" onClick={() => setCategoriesClose(!categoriesClose)}>
+                    <div className="header-categories" onClick={() => {
+                        $('.header-categories ul').slideToggle(300)
+                        $('.header-categories-all .bi-chevron-down').toggleClass('rotate-down')
+                    }}>
                         <div className="header-categories-all">
                             <i className="bi bi-list mr-3"></i>
                             <span>Danh mục code</span>
                             <i className="bi bi-chevron-down"></i>
                         </div>
-                        <ul style={{opacity: `${categoriesClose ? 0 : 1}`, top: `${categoriesClose ? '80px' : '60px'}`}}>
-                            <li><a href="#">Fresh Meat</a></li>
-                            <li><a href="#">Vegetables</a></li>
-                            <li><a href="#">Fruit & Nut Gifts</a></li>
-                            <li><a href="#">Fresh Berries</a></li>
-                            <li><a href="#">Ocean Foods</a></li>
-                            <li><a href="#">Butter & Eggs</a></li>
-                            <li><a href="#">Fastfood</a></li>
-                            <li><a href="#">Fresh Onion</a></li>
-                            <li><a href="#">Papayaya & Crisps</a></li>
-                            <li><a href="#">Oatmeal</a></li>
-                            <li><a href="#">Fresh Bananas</a></li>
+                        <ul>
+                            {categories.map((value, index) => (<li className="list-group-item" key={index}><a href="/">{value}</a></li>))}
                         </ul>
                     </div>
                 </div>
@@ -150,7 +148,7 @@ function HeaderSearch() {
     )
 }
 
-function Header() {
+export default function Header() {
     return (
         <header className="header">
             <HeaderAds/>
@@ -160,5 +158,3 @@ function Header() {
         </header>
     )
 }
-
-export default Header;

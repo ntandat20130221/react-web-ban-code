@@ -1,39 +1,45 @@
+import Header from "../Commons/Header";
+import Footer from "../Commons/Footer";
+import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
+import '../../css/product-detail.css'
+
 function ImagesProductDetails() {
     return (
         <div className="col-lg-6 col-md-6">
             <div className="product__details__pic">
                 <div className="product__details__pic__item">
                     <img className="product__details__pic__item--large"
-                         src={require('../img/detailsProduct/product-details-1.jpg')}alt=""/>
+                         src={require('../../img/detailsProduct/product-details-1.jpg')} alt=""/>
                 </div>
                 <div className="product__details__pic__slider d-flex justify-content-between">
                     <div className="other_image">
-                        <img data-imgbigurl={require('../img/detailsProduct/product-details-2.jpg')}
-                             src={require('../img/detailsProduct/thumb-1.jpg')} alt=""/>
+                        <img data-imgbigurl={require('../../img/detailsProduct/product-details-2.jpg')}
+                             src={require('../../img/detailsProduct/thumb-1.jpg')} alt=""/>
                     </div>
                     <div className="other_image">
-                        <img data-imgbigurl={require('../img/detailsProduct/product-details-2.jpg')}
-                             src={require('../img/detailsProduct/thumb-1.jpg')} alt=""/>
+                        <img data-imgbigurl={require('../../img/detailsProduct/product-details-2.jpg')}
+                             src={require('../../img/detailsProduct/thumb-1.jpg')} alt=""/>
                     </div>
                     <div className="other_image">
-                        <img data-imgbigurl={require('../img/detailsProduct/product-details-2.jpg')}
-                             src={require('../img/detailsProduct/thumb-1.jpg')} alt=""/>
+                        <img data-imgbigurl={require('../../img/detailsProduct/product-details-2.jpg')}
+                             src={require('../../img/detailsProduct/thumb-1.jpg')} alt=""/>
                     </div>
                     <div className="other_image">
-                        <img data-imgbigurl={require('../img/detailsProduct/product-details-2.jpg')}
-                             src={require('../img/detailsProduct/thumb-1.jpg')} alt=""/>
+                        <img data-imgbigurl={require('../../img/detailsProduct/product-details-2.jpg')}
+                             src={require('../../img/detailsProduct/thumb-1.jpg')} alt=""/>
                     </div>
                     <div className="other_image">
-                        <img data-imgbigurl={require('../img/detailsProduct/product-details-2.jpg')}
-                             src={require('../img/detailsProduct/thumb-1.jpg')} alt=""/>
+                        <img data-imgbigurl={require('../../img/detailsProduct/product-details-2.jpg')}
+                             src={require('../../img/detailsProduct/thumb-1.jpg')} alt=""/>
                     </div>
                 </div>
             </div>
         </div>
     )
 }
-function InforProductDetails(){
-    return(
+
+function InforProductDetails() {
+    return (
         <div className="col-lg-6 col-md-6">
             <div className="product__details__text">
                 <h3>Vetgetable’s Package</h3>
@@ -75,16 +81,43 @@ function InforProductDetails(){
         </div>
     )
 }
-function ProductDetails(){
-    return(
-        <section className="product-details spad">
+
+function ProductDetailContainer() {
+    return (
+        <section className="product-details">
             <div className="container">
                 <div className="row">
-                    <ImagesProductDetails/>
-                    <InforProductDetails/>
+                    <div className="col-lg-3">
+                        <div>
+                            <img src={require('../../img/detailsProduct/product-details-1.jpg')} alt=""/>
+                        </div>
+                    </div>
+                    <div className="col-lg-6">
+                        <div>
+                            <h6>Source code quản lý cửa hàng cà phê C# [Mã code 36122]</h6>
+                        </div>
+                    </div>
+
+                    <div className="col-lg-3">
+                        <div>
+                            <img src={require('../../img/detailsProduct/product-details-1.jpg')} alt=""/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     )
 }
-export default ProductDetails;
+
+export default function ProductDetails() {
+    return (
+        <>
+            <Header/>
+            <SectionBreadcrumb/>
+            <ImagesProductDetails/>
+            <InforProductDetails/>
+            {/*<ProductDetailContainer/>*/}
+            <Footer/>
+        </>
+    )
+}
