@@ -3,9 +3,9 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import img_banner_1 from '../img/banner/banner-1.jpg';
-import img_banner_2 from '../img/banner/banner-2.jpg';
-import img_banner_3 from '../img/banner/banner-3.jpg';
+import img_banner_1 from '../../img/banner/banner-1.jpg';
+import img_banner_2 from '../../img/banner/banner-2.jpg';
+import img_banner_3 from '../../img/banner/banner-3.jpg';
 
 function Banner() {
 

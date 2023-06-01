@@ -2,10 +2,10 @@ import React, {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
 import {Toast} from 'react-bootstrap';
 
-import {addCart} from '../redux/Action';
-import {formatCurrency} from '../javascript/utils';
+import {addCart} from '../../redux/Action';
+import {formatCurrency} from '../../javascript/utils';
 
-import Pagination from '../components/Pagination/Pagination'
+import Pagination from './Pagination'
 
 function ListProductsFeatured(data) {
 

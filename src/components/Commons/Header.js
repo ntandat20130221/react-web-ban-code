@@ -1,4 +1,4 @@
-import '../css/header.css'
+import '../../css/header.css'
 import {useEffect, useState} from "react";
 
 const adsList = [
@@ -28,7 +28,7 @@ function HeaderAds() {
     return (
         <div className="header-ads" style={{backgroundColor: `${ads.color}`}}>
             <div className="container">
-                <img src={require(`../img/${ads.img}`)} alt=""/>
+                <img src={require(`../../img/${ads.img}`)} alt=""/>
             </div>
         </div>
     )
@@ -54,7 +54,7 @@ function HeaderTop() {
                                 <a href="#"><i className="fa fa-youtube-play"></i></a>
                             </div>
                             <div className="header-top-right-language">
-                                <img src={require('../img/language/tieng_viet.png')} alt="" className="mr-2"/>
+                                <img src={require('../../img/language/tieng_viet.png')} alt="" className="mr-2"/>
                                 <div>Tiếng Việt <i className="bi bi-chevron-down d-inline-block ml-2"></i></div>
                                 <ul>
                                     <li><a href="#">Tiếng Việt</a></li>
@@ -79,7 +79,7 @@ function HeaderMenu() {
             <div className="row">
                 <div className="col-lg-2 d-flex justify-content-center align-items-center">
                     <div className="py-4">
-                        <a href="/"><img src={require('../img/logo/logo.png')} alt=""/></a>
+                        <a href="/"><img src={require('../../img/logo/logo.png')} alt=""/></a>
                     </div>
                 </div>
                 <div className="col-lg-8 d-flex justify-content-center align-items-center">
@@ -87,7 +87,7 @@ function HeaderMenu() {
                         <ul>
                             <li><a href="">Trang chủ</a></li>
                             <li><a href="" className="active">Top code</a></li>
-                            <li><a href="">Code chất lượng</a><img src={require('../img/ic_hot.gif')} alt=""/></li>
+                            <li><a href="">Code chất lượng</a><img src={require('../../img/ic_hot.gif')} alt=""/></li>
                             <li><a href="">Code miễn phí</a></li>
                         </ul>
                     </nav>

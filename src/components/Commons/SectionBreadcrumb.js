@@ -1,4 +1,4 @@
-import breadcrumb_1 from '../img/breadcrumb/breadcrumb_1.png'
+import breadcrumb_1 from '../../img/breadcrumb/breadcrumb_1.png'
 
 function SectionBreadcrumb() {
     return (
