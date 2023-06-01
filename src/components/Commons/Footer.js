@@ -1,4 +1,4 @@
-import '../css/footer.css'
+import '../../css/footer.css'
 
 function Footer() {
     return (
@@ -8,7 +8,7 @@ function Footer() {
                     <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="footer-about">
                             <div className="mb-3">
-                                <a href=""><img src={require('../img/logo/logo.png')} alt=""/></a>
+                                <a href=""><img src={require('../../img/logo/logo.png')} alt=""/></a>
                             </div>
                             <div>
                                 <div className="footer-about-contact-item">
@@ -71,10 +71,10 @@ function Footer() {
                         <div className="footer-copyright">
                             <div className="float-left">
                                 <span>Copyright &copy; {new Date().getFullYear()} | Privacy Policy | Nội dung đã được bảo vệ bản quyền</span>
-                                <span className="ml-2"><img src={require('../img/dmca-badge.png')} alt=""/></span>
+                                <span className="ml-2"><img src={require('../../img/dmca-badge.png')} alt=""/></span>
                             </div>
                             <div className="float-right">
-                                <img src={require('../img/payment/payment-item.png')} alt=""/>
+                                <img src={require('../../img/payment/payment-item.png')} alt=""/>
                             </div>
                         </div>
                     </div>

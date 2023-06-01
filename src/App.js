@@ -1,7 +1,7 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import SectionHero from "./components/SectionHero"
-import SectionFeaturedCode from './components/SectionFeaturedCode'
+import Header from './components/Commons/Header'
+import Footer from './components/Commons/Footer'
+import SectionHero from './components/HomePage/SectionHero'
+import SectionFeaturedCode from './components/HomePage/SectionFeaturedCode'
 
 import './css/bootstrap.min.css'
 import './css/elegant-icons.css'

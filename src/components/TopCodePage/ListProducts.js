@@ -1,12 +1,12 @@
-import Header from "./Header";
-import Footer from "./Footer"
+import Header from '../Commons/Header';
+import Footer from '../Commons/Footer';
 
-import '../css/products.css'
+import '../../css/products.css'
 import {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {products} from "../data/Products";
-import {most, mostDownloaded, mostViewed, switchPage} from "../redux/Action";
-import SectionBreadcrumb from "./SectionBreadcrumb";
+import {products} from "../../data/Products";
+import {most, mostDownloaded, mostViewed, switchPage} from "../../redux/Action";
+import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
 
 const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
     'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
@@ -33,7 +33,7 @@ function SideBar() {
                             <div className="align-self-start mt-2 mr-2">
                                 <span className="popular-rank">{++index}</span>
                             </div>
-                            <img className="mr-2" src={require("../img/products/lp-1.jpg")} alt=""/>
+                            <img className="mr-2" src={require("../../img/products/lp-1.jpg")} alt=""/>
                             <span className="popular-title">Bundle 5 Android Studio games</span>
                         </a>
                     ))}
