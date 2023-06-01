@@ -1,5 +1,5 @@
 import authenticationImage from '../img/authentication/authentication.png';
-function Register(){
+function SectionRegister(){
     return(
         <section className="form-input py-5">
             <div className="container">
@@ -30,4 +30,4 @@ function Register(){
         </section>
     )
 }
-export default Register;
+export default SectionRegister;
