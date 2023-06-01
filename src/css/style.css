@@ -1,34 +1,16 @@
-/******************************************************************
-  Template Name: Ogani
-  Description:  Ogani eCommerce  HTML Template
-  Author: Colorlib
-  Author URI: https://colorlib.com
-  Version: 1.0
-  Created: Colorlib
-******************************************************************/
+@import url(https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css);
 
-/*------------------------------------------------------------------
-[Table of contents]
+:root {
+    --color-main: #7fad39;
+    --color-border: #dadada;
+    --color-text: #343434;
+}
 
-1.  Template default CSS
-	1.1	Variables
-	1.2	Mixins
-	1.3	Flexbox
-	1.4	Reset
-2.  Helper Css
-3.  Header Section
-4.  Hero Section
-5.  Service Section
-6.  Categories Section
-7.  Featured Section
-8.  Latest Product Section
-9.  Contact
-10.  Footer Style
--------------------------------------------------------------------*/
-
-/*----------------------------------------*/
-/* Template default CSS
-/*----------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 html,
 body {
@@ -96,15 +78,18 @@ textarea:focus {
 
 a:hover,
 a:focus {
-	text-decoration: none;
-	outline: none;
-	color: #ffffff;
+    text-decoration: none;
+    outline: none;
 }
 
 ul,
 ol {
 	padding: 0;
 	margin: 0;
+}
+
+li {
+    list-style: none;
 }
 
 /*---------------------
@@ -505,7 +490,7 @@ ol {
 .header__cart ul li {
 	list-style: none;
 	display: inline-block;
-	margin-right: 15px;
+	margin-right: 25px;
 }
 
 .header__cart ul li:last-child {
@@ -517,7 +502,7 @@ ol {
 }
 
 .header__cart ul li a i {
-	font-size: 18px;
+	font-size: 22px;
 	color: #1c1c1c;
 }
 
@@ -862,6 +847,8 @@ ol {
 	position: relative;
 	overflow: hidden;
 	background-position: center center;
+	border: 2px solid #d8e1d7;
+	border-radius: 10px;
 }
 
 .featured__item__pic__hover {
@@ -926,20 +913,23 @@ ol {
 }
 
 .featured__item__text {
-	text-align: center;
+	text-align: left;
 	padding-top: 15px;
 }
 
 .featured__item__text h6 {
 	margin-bottom: 10px;
+	line-height: 1.5em;
+	height: 85px;
 }
 
 .featured__item__text h6 a {
-	color: #252525;
+	color: #7e592a;
+	font-weight: bold;
 }
 
 .featured__item__text h5 {
-	color: #252525;
+	color: #84c52c;
 	font-weight: 700;
 }
 
@@ -2615,140 +2605,6 @@ ol {
 
 .blog__details__widget .blog__details__social a:last-child {
 	margin-right: 0;
-}
-
-/*---------------------
-  Footer
------------------------*/
-
-.footer {
-	background: #F3F6FA;
-	padding-top: 70px;
-	padding-bottom: 0;
-}
-
-.footer__about {
-	margin-bottom: 30px;
-}
-
-.footer__about ul li {
-	font-size: 16px;
-	color: #1c1c1c;
-	line-height: 36px;
-	list-style: none;
-}
-
-.footer__about__logo {
-	margin-bottom: 15px;
-}
-
-.footer__about__logo a {
-	display: inline-block;
-}
-
-.footer__widget {
-	margin-bottom: 30px;
-	overflow: hidden;
-}
-
-.footer__widget h6 {
-	color: #1c1c1c;
-	font-weight: 700;
-	margin-bottom: 10px;
-}
-
-.footer__widget ul {
-	width: 50%;
-	float: left;
-}
-
-.footer__widget ul li {
-	list-style: none;
-}
-
-.footer__widget ul li a {
-	color: #1c1c1c;
-	font-size: 14px;
-	line-height: 32px;
-}
-
-.footer__widget p {
-	font-size: 14px;
-	color: #1c1c1c;
-	margin-bottom: 30px;
-}
-
-.footer__widget form {
-	position: relative;
-	margin-bottom: 30px;
-}
-
-.footer__widget form input {
-	width: 100%;
-	font-size: 16px;
-	padding-left: 20px;
-	color: #1c1c1c;
-	height: 46px;
-	border: 1px solid #ededed;
-}
-
-.footer__widget form input::placeholder {
-	color: #1c1c1c;
-}
-
-.footer__widget form button {
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding: 0 26px;
-	height: 100%;
-}
-
-.footer__widget .footer__widget__social a {
-	display: inline-block;
-	height: 41px;
-	width: 41px;
-	font-size: 16px;
-	color: #404040;
-	border: 1px solid #ededed;
-	border-radius: 50%;
-	line-height: 38px;
-	text-align: center;
-	background: #ffffff;
-	-webkit-transition: all, 0.3s;
-	-moz-transition: all, 0.3s;
-	-ms-transition: all, 0.3s;
-	-o-transition: all, 0.3s;
-	transition: all, 0.3s;
-	margin-right: 10px;
-}
-
-.footer__widget .footer__widget__social a:last-child {
-	margin-right: 0;
-}
-
-.footer__widget .footer__widget__social a:hover {
-	background: #7fad39;
-	color: #ffffff;
-	border-color: #ffffff;
-}
-
-.footer__copyright {
-	border-top: 1px solid #ebebeb;
-	padding: 15px 0;
-	overflow: hidden;
-	margin-top: 20px;
-}
-
-.footer__copyright__text {
-	font-size: 14px;
-	color: #1c1c1c;
-	float: left;
-	line-height: 25px;
-}
-
-.footer__copyright__payment {
-	float: right;
 }
 
 /*---------------------
