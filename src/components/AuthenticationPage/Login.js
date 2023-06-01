@@ -1,7 +1,7 @@
 import authenticationImage from '../img/authentication/authentication.png';
 import logoGoogle from '../img/authentication/logo-google.png';
 import logoFacebook from '../img/authentication/logo-fb.png';
-function Login(){
+function SectionLogin(){
     return(
         <section className="form-input py-5">
             <div className="container">
@@ -37,4 +37,4 @@ function Login(){
         </section>
     )
 }
-export default Login;
+export default SectionLogin;

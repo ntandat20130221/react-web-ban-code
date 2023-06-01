@@ -1,5 +1,5 @@
 import authenticationImage from '../img/authentication/authentication.png';
-function ChangePass(){
+function SectionChangePass(){
     return(
         <section className="form-input py-5">
             <div className="container">
@@ -29,4 +29,4 @@ function ChangePass(){
         </section>
     )
 }
-export default ChangePass;
+export default SectionChangePass;
