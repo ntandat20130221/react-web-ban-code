@@ -1,7 +1,7 @@
 import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import {Carousel} from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import '../../css/slide.css'
 
 import img_banner_1 from '../../img/banner/banner-1.jpg';
 import img_banner_2 from '../../img/banner/banner-2.jpg';
@@ -9,33 +9,42 @@ import img_banner_3 from '../../img/banner/banner-3.jpg';
 
 function Banner() {
 
-    const settings = {
-        dots: true,// Hiển thị các chấm chỉ số
-        infinite: true, // Vô hạn cuộn
-        speed: 5, // Tốc độ chuyển đổi
-        slidesToShow: 1, // Số lượng hiển thị hình ảnh trên một slide
-        slidesToScroll: 1, // Số lượng hình ảnh được cuộn khi chuyển đổi
+    // Định nghĩa thuộc tính của hình ảnh slide
+    const styleImage = {
+        width: '80%',
+        height: '30%'
+    }
+
+    // Định nghĩa các thiết lập của carousel
+    const carouselSettings = {
+        autoPlay: true, // Tự động phát carousel
+        interval: 8000,  // Thời gian giữa các lần chuyển đổi ảnh là 8 giây (8000 mili giây)
+        infiniteLoop: true, // Cho phép lặp vô hạn carousel
+        stopOnHover: true  // Dừng carousel khi con trỏ chuột nằm trên nó
     };
 
     return (
-        <Slider {...settings}>
-            <div className="hero__item">
-                <div className="hero__text">
-                    <img src={img_banner_1} alt="Banner 1"/>
+        <>
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-2"></div>
+                    <div className="col-sm-10">
+                        <Carousel className="main-slide" {...carouselSettings}>
+                            <div>
+                                <img style={styleImage} src={img_banner_1} alt=""/>
+                            </div>
+                            <div>
+                                <img style={styleImage} src={img_banner_2} alt=""/>
+                            </div>
+                            <div>
+                                <img style={styleImage} src={img_banner_3} alt=""/>
+                            </div>
+                        </Carousel></div>
                 </div>
             </div>
-            <div className="hero__item">
-                <div className="hero__text">
-                    <img src={img_banner_2} alt="Banner 2"/>
-                </div>
-            </div>
-            <div className="hero__item">
-                <div className="hero__text">
-                    <img src={img_banner_3} alt="Banner 3"/>
-                </div>
-            </div>
-        </Slider>
-    )
+        </>
+    );
+
 }
 
 export default Banner;
