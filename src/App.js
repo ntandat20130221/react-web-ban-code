@@ -18,7 +18,7 @@ function App() {
         <Provider store={store}>
             <div>
                 <Header/>
-                <SectionHero/>
+                {/*<SectionHero/>*/}
                 <SectionFeaturedCode/>
                 <Footer/>
             </div>

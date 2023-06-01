@@ -1,6 +1,8 @@
 import '../../css/header.css'
 import {useEffect, useState} from "react";
 
+import Cart from './Cart'
+
 const adsList = [
     {
         img: 'ads/code-hay-upload-kiem-tien.jpg',
@@ -93,10 +95,7 @@ function HeaderMenu() {
                     </nav>
                 </div>
                 <div className="col-lg-2 d-flex justify-content-center align-items-center">
-                    <div className="header-cart">
-                        <a href="" className="position-relative mr-5"><i className="bi bi-hand-thumbs-up"></i><span>0</span></a>
-                        <a href="" className="position-relative"><i className="bi bi-cart"></i> <span>12</span></a>
-                    </div>
+                    <Cart/>
                 </div>
             </div>
         </div>
