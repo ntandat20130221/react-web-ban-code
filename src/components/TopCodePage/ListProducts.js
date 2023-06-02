@@ -11,6 +11,25 @@ import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
 const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
     'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
 
+export function PopularCode() {
+    return (
+        <div className="sidebar-item mt-4">
+            <h6 className="list-group-item font-weight-bolder">Code phổ biến</h6>
+            <div className="list-group">
+                {Array(9).fill(1).map((value, index) => (
+                    <a className="list-group-item d-flex align-items-center" key={index} href="#">
+                        <div className="align-self-start mt-2 mr-2">
+                            <span className="popular-rank">{++index}</span>
+                        </div>
+                        <img className="mr-2" src={require("../../img/products/lp-1.jpg")} alt=""/>
+                        <span className="popular-title">Bundle 5 Android Studio games</span>
+                    </a>
+                ))}
+            </div>
+        </div>
+    )
+}
+
 function SideBar() {
     return (
         <div className="sidebar">
@@ -25,20 +44,7 @@ function SideBar() {
                     ))}
                 </div>
             </div>
-            <div className="sidebar-item mt-4">
-                <h6 className="list-group-item font-weight-bolder">Code phổ biến</h6>
-                <div className="list-group">
-                    {Array(9).fill(1).map((value, index) => (
-                        <a className="list-group-item d-flex align-items-center" key={index} href="#">
-                            <div className="align-self-start mt-2 mr-2">
-                                <span className="popular-rank">{++index}</span>
-                            </div>
-                            <img className="mr-2" src={require("../../img/products/lp-1.jpg")} alt=""/>
-                            <span className="popular-title">Bundle 5 Android Studio games</span>
-                        </a>
-                    ))}
-                </div>
-            </div>
+            <PopularCode/>
         </div>
     )
 }
