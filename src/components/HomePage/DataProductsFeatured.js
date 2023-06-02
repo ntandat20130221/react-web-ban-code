@@ -7,7 +7,7 @@ import {formatCurrency} from '../../javascript/utils';
 
 import Pagination from './Pagination'
 
-function ListProductsFeatured(data) {
+function DataProductsFeatured() {
 
     const [products, setProducts] = useState([]) // => trạng thái (state) ban đầu của component ListProductFeatured là []
 
@@ -153,4 +153,4 @@ function ItemProductFeatured(data) {
 
 }
 
-export default ListProductsFeatured;
+export default DataProductsFeatured;
