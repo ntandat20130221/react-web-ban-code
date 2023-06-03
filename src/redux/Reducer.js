@@ -6,7 +6,7 @@ const initState = {
     cart: []
 }
 
-const rootReducer = (state = initState, action) => {
+const cartReducer = (state = initState, action) => {
 
     /* Đây là Reducer, một hàm xử lý các hành động (actions) để cập nhật trạng thái của ứng dụng */
     switch (action.type) {
@@ -90,6 +90,6 @@ const listProductsReducer = (state = {data: products, page: 1, sort: 'most'}, ac
 }
 
 export const reducers = combineReducers({
-    rootReducer: rootReducer,
+    cartReducer: cartReducer,
     listProductsReducer: listProductsReducer,
 })
