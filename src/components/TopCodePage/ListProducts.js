@@ -13,14 +13,11 @@ const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', '
 
 export function PopularCode() {
     return (
-        <div className="sidebar-item mt-4">
+        <div className="sidebar-item mt-5">
             <h6 className="list-group-item font-weight-bolder">Code phổ biến</h6>
             <div className="list-group">
                 {Array(9).fill(1).map((value, index) => (
                     <a className="list-group-item d-flex align-items-center" key={index} href="#">
-                        <div className="align-self-start mt-2 mr-2">
-                            <span className="popular-rank">{++index}</span>
-                        </div>
                         <img className="mr-2" src={require("../../img/products/lp-1.jpg")} alt=""/>
                         <span className="popular-title">Bundle 5 Android Studio games</span>
                     </a>
@@ -75,8 +72,8 @@ function ProductItem(props) {
                 </div>
             </div>
             <div className="product-item-bottom d-flex justify-content-between align-items-center">
-                <a className="product-item-brand"><i className="fa fa-android"></i> {p.type}</a>
-                <a className="product-item-price">{p.price} VNĐ</a>
+                <a className="product-item-brand"><i className="bi bi-android2"></i> {p.type}</a>
+                <a className="product-item-price">{p.price}đ</a>
             </div>
         </div>
     )
@@ -92,7 +89,7 @@ function ProductItemRow(props) {
                 </a>
                 <div className="product-item-row-content col-lg-6">
                     <a className="product-item-row-title">{p.name}</a>
-                    <a className="product-item-brand"><i className="fa fa-android"></i> {p.type}</a>
+                    <a className="product-item-brand"><i className="bi bi-android2"></i> {p.type}</a>
                     <div className="product-item-stars">
                         {Array(5).fill(1).map((value, index) => (<i className="fa fa-star" key={index}></i>))}
                     </div>
@@ -105,7 +102,7 @@ function ProductItemRow(props) {
                 <div className="col-lg-2 d-flex flex-column justify-content-end align-items-end">
                     <div className="pr-3 pb-3">
                         <div className="product-item-row-price text-center">
-                            <a className="d-inline text-center">{p.price} VNĐ</a>
+                            <a className="d-inline text-center">{p.price}đ</a>
                         </div>
                         <div className="d-flex justify-content-end">
                             <a className="product-item-action mr-1"><i className="fa fa-thumbs-up"></i></a>
@@ -189,8 +186,8 @@ function Filter(props) {
                         </ul>
                     </div>
                     <div className="filter-layout d-flex align-items-center">
-                        <span className={`icon_grid-2x2 ${layout === 'grid' ? "filter-active" : ""}`} onClick={() => onLayoutClick(true)}></span>
-                        <span className={`icon_ul ${layout === 'row' ? "filter-active" : ""}`} onClick={() => onLayoutClick(false)}></span>
+                        <span className={`bx bx-grid-alt ${layout === 'grid' ? "filter-active" : ""}`} onClick={() => onLayoutClick(true)}></span>
+                        <span className={`bx bx-list-ul ${layout === 'row' ? "filter-active" : ""}`} onClick={() => onLayoutClick(false)}></span>
                     </div>
                 </div>
             </div>
