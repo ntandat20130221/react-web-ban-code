@@ -250,5 +250,12 @@
       "dowloaded": 100,
       "price": 400000
     }
+  ],
+  "account": [
+    {
+      "id": 1,
+      "email": "nguyenphutai840@gmail.com",
+      "password": "123"
+    }
   ]
 }
