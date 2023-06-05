@@ -2,11 +2,13 @@ import React from "react";
 import {useSelector} from "react-redux";
 import {Link, useLocation} from "react-router-dom";
 
+import {formatCurrency} from "../../javascript/utils";
+
 function SectionCart() {
 
     const cart = useSelector(state => state.cartReducer.cart);
 
-    console.log("Đây là Cart:", cart);
+    // console.log("Đây là Cart:", cart);
 
 
     /**
@@ -26,7 +28,7 @@ function SectionCart() {
                                 <thead>
                                 <tr>
                                     <th></th>
-                                    <th className="shoping__product">Code</th>
+                                    <th className="shoping__product">Mã nguồn</th>
                                     <th>Giá</th>
                                     <th></th>
                                 </tr>
@@ -69,14 +71,20 @@ function SectionCart() {
 }
 
 function ItemCart({img, name, price}) {
+
+    const styleImage = {
+        width: '60%',
+        height: '60%'
+    }
+
     return (
         <tr>
-            <td><img src={`${img}`} alt=""/></td>
+            <td><img src={`${img}`} style={styleImage} alt=""/></td>
             <td className="shoping__cart__item">
                 <h5>{`${name}`}</h5>
             </td>
             <td className="shoping__cart__price">
-                {`${price}`} VND
+                {formatCurrency(price)}
             </td>
             <td className="shoping__cart__item__close">
                 <span>Xóa</span>
