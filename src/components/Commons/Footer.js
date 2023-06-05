@@ -1,4 +1,5 @@
 import '../../css/footer.css'
+import {Link} from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -8,7 +9,7 @@ export default function Footer() {
                     <div className="col-lg-3 col-md-6 col-sm-6">
                         <div className="footer-about">
                             <div className="mb-3">
-                                <a href="/"><img src={require('../../img/logo/logo.png')} alt=""/></a>
+                                <Link to="/"><img src={require('../../img/logo/logo.png')} alt=""/></Link>
                             </div>
                             <div>
                                 <div className="footer-about-contact-item">
@@ -31,21 +32,21 @@ export default function Footer() {
                             <div className="footer-links col-lg-6">
                                 <h6>VỀ CHÚNG TÔI</h6>
                                 <ul>
-                                    <li><a href="/">Giới thiệu</a></li>
-                                    <li><a href="/">Quy định chung</a></li>
-                                    <li><a href="/">Chính sách bán code</a></li>
-                                    <li><a href="/">Câu hỏi thường gặp</a></li>
-                                    <li><a href="/">Sự kiện</a></li>
+                                    <li><Link to="/">Giới thiệu</Link></li>
+                                    <li><Link to="/">Quy định chung</Link></li>
+                                    <li><Link to="/">Chính sách bán code</Link></li>
+                                    <li><Link to="/">Câu hỏi thường gặp</Link></li>
+                                    <li><Link to="/">Sự kiện</Link></li>
                                 </ul>
                             </div>
                             <div className="footer-links col-lg-6">
                                 <h6>HƯỚNG DẪN</h6>
                                 <ul>
-                                    <li><a href="/">Tải code miễn phí</a></li>
-                                    <li><a href="/">Tải code có phí</a></li>
-                                    <li><a href="/">Hướng dẫn thanh toán</a></li>
-                                    <li><a href="/">Hướng dẫn cài đặt</a></li>
-                                    <li><a href="/">Hỗ trợ kĩ thuật</a></li>
+                                    <li><Link to="/">Tải code miễn phí</Link></li>
+                                    <li><Link to="/">Tải code có phí</Link></li>
+                                    <li><Link to="/">Hướng dẫn thanh toán</Link></li>
+                                    <li><Link to="/">Hướng dẫn cài đặt</Link></li>
+                                    <li><Link to="/">Hỗ trợ kĩ thuật</Link></li>
                                 </ul>
                             </div>
                         </div>
