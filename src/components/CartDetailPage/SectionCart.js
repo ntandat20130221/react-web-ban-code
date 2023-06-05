@@ -1,7 +1,20 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import {useSelector} from "react-redux";
+import {Link, useLocation} from "react-router-dom";
 
 function SectionCart() {
+
+    const cart = useSelector(state => state.cartReducer.cart);
+
+    console.log("Đây là Cart:", cart);
+
+
+    /**
+     useSelector là một hook của React Redux,
+     cho phép bạn lấy ra các giá trị từ Redux store.
+     Bằng cách truyền một hàm selector,
+     bạn có thể lựa chọn các phần của state mà bạn muốn truy xuất từ store.
+     */
 
     return (
         <section className="shoping-cart spad">
@@ -12,13 +25,17 @@ function SectionCart() {
                             <table>
                                 <thead>
                                 <tr>
+                                    <th></th>
                                     <th className="shoping__product">Code</th>
                                     <th>Giá</th>
                                     <th></th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <ItemCart/>
+                                {cart.map(cart_item => (
+                                    <ItemCart key={cart_item.id} img={cart_item.img} name={cart_item.name}
+                                              price={cart_item.price}/>
+                                ))}
                                 </tbody>
                             </table>
                         </div>
@@ -51,15 +68,15 @@ function SectionCart() {
     )
 }
 
-function ItemCart(data) {
+function ItemCart({img, name, price}) {
     return (
         <tr>
+            <td><img src={`${img}`} alt=""/></td>
             <td className="shoping__cart__item">
-                <img src="" alt=""/>
-                <h5>Android Hot App bài tập lớn</h5>
+                <h5>{`${name}`}</h5>
             </td>
             <td className="shoping__cart__price">
-                55.00 VND
+                {`${price}`} VND
             </td>
             <td className="shoping__cart__item__close">
                 <span>Xóa</span>
