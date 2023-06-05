@@ -1,4 +1,7 @@
-import authenticationImage from '../img/authentication/authentication.png';
+import authenticationImage from '../../img/authentication/authentication.png';
+import Header from '../Commons/Header';
+import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
+import Footer from '../Commons/Footer';
 function SectionChangePass(){
     return(
         <section className="form-input py-5">
@@ -29,4 +32,13 @@ function SectionChangePass(){
         </section>
     )
 }
-export default SectionChangePass;
+export default function ChangePassPage(){
+    return(
+        <>
+            <Header/>
+            <SectionBreadcrumb/>
+            <SectionChangePass/>
+            <Footer/>
+        </>
+    )
+};

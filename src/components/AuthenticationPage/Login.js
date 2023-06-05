@@ -1,6 +1,10 @@
-import authenticationImage from '../img/authentication/authentication.png';
-import logoGoogle from '../img/authentication/logo-google.png';
-import logoFacebook from '../img/authentication/logo-fb.png';
+import authenticationImage from '../../img/authentication/authentication.png';
+import logoGoogle from '../../img/authentication/logo-google.png';
+import logoFacebook from '../../img/authentication/logo-fb.png';
+
+import Header from '../Commons/Header';
+import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
+import Footer from '../Commons/Footer';
 function SectionLogin(){
     return(
         <section className="form-input py-5">
@@ -37,4 +41,13 @@ function SectionLogin(){
         </section>
     )
 }
-export default SectionLogin;
+export default function LoginPage(){
+    return(
+        <>
+            <Header/>
+            <SectionBreadcrumb/>
+            <SectionLogin/>
+            <Footer/>
+        </>
+    )
+}

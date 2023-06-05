@@ -3417,11 +3417,10 @@ li {
 	color: #9ecb59;
 }
 
+
 .contact-us {
 	margin: 100px 0;
 }
-
-
 .contact-us .form-main {
 	box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0, rgba(27, 31, 35, 0.15) 0 0 0 1px;
 	padding: 50px;
@@ -3444,7 +3443,7 @@ li {
 .contact-us .form .form-group textarea {
 	height: 180px;
 	width: 100%;
-	border: 1px solid #7fad39;
+	border: 1px solid #333;
 	padding: 15px 20px;
 	color: #333;
 	border-radius: 3px;
@@ -3458,7 +3457,7 @@ li {
 	outline: unset;
 	line-height: 48px;
 	width: 100%;
-	border: 1px solid #7fad39;
+	border: 1px solid #333;
 	padding: 0 20px;
 	color: #333;
 	border-radius: 3px;
