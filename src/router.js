@@ -2,7 +2,6 @@ import {createBrowserRouter} from "react-router-dom";
 import App from "./App";
 import ListProducts from "./components/TopCodePage/ListProducts";
 import ProductDetails from "./components/ProductDetailPage/ProductDetails";
-import CartDetailPage from "./components/CartDetailPage/CartDetailPage"
 
 const listProducts = [
     {
