@@ -1,6 +1,8 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 function SectionCart() {
+
     return (
         <section className="shoping-cart spad">
             <div className="container">
@@ -17,10 +19,6 @@ function SectionCart() {
                                 </thead>
                                 <tbody>
                                 <ItemCart/>
-                                <ItemCart/>
-                                <ItemCart/>
-                                <ItemCart/>
-                                <ItemCart/>
                                 </tbody>
                             </table>
                         </div>
@@ -29,8 +27,8 @@ function SectionCart() {
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="shoping__cart__btns">
-                            <a href="#" className="primary-btn cart-btn">Tiếp tục mua code</a>
-                            <a href="#" className="primary-btn cart-btn cart-btn-right">Tiếp tục mua code</a>
+                            <Link to="/" className="primary-btn cart-btn">Tiếp tục mua code</Link>
+                            <Link to="/" className="primary-btn cart-btn cart-btn-right">Tiếp tục mua code</Link>
                         </div>
                     </div>
                     <div className="col-lg-6">

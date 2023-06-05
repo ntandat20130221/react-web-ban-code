@@ -98,7 +98,7 @@ function DataProductsFeatured() {
         <>
             <div className="row featured__filter">
                 {products.map(product => (
-                        <ItemProductFeatured key={product.id} name={product.name} img={product.img}
+                        <ItemProductFeatured key={product.id} id={product.id} name={product.name} img={product.img}
                                              price={product.price}></ItemProductFeatured>
                     )
                 )}
