@@ -1,31 +1,15 @@
 import {createBrowserRouter} from "react-router-dom";
-import App from "./App";
 import ListProducts from "./components/TopCodePage/ListProducts";
 import ProductDetails from "./components/ProductDetailPage/ProductDetails";
+import App from "./App";
 
 const listProducts = [
     {
-        path: '/top-codes',
+        path: 'top-codes',
         element: <ListProducts/>
     },
     {
-        path: '/top-codes/product/:productId',
-        element: <ProductDetails/>
-    },
-    {
-        path: '/quality-codes',
-        element: <ListProducts/>
-    },
-    {
-        path: '/quality-codes/product/:productId',
-        element: <ProductDetails/>
-    },
-    {
-        path: '/free-codes',
-        element: <ListProducts/>
-    },
-    {
-        path: '/free-codes/product/:productId',
+        path: 'top-codes/product/:productId',
         element: <ProductDetails/>
     }
 ]
@@ -33,7 +17,7 @@ const listProducts = [
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>
+        element: <App/>,
     },
     ...listProducts
 ])

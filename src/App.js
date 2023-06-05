@@ -9,14 +9,9 @@ import './css/style.css'
 
 import HomePage from './components/HomePage/HomePage'
 
-import {store} from './redux/Store'
-import {Provider} from 'react-redux'
-
 function App() {
     return (
-        <Provider store={store}>
-            <HomePage/>
-        </Provider>
+        <HomePage/>
     )
 }
 
