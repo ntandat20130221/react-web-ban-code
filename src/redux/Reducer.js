@@ -3,7 +3,8 @@ import {products} from "../data/Products";
 
 const initState = {
     /* đây là trạng thái ban đầu của ứng dụng */
-    cart: []
+    cart: [],
+    totalPrice: 0
 }
 
 const cartReducer = (state = initState, action) => {
@@ -17,11 +18,13 @@ const cartReducer = (state = initState, action) => {
                 cart: [
                     ...state.cart,
                     action.payload
-                ]
+                ],
                 /*
                   Cập nhật thuộc tính cart với một mảng mới.
                   Mảng mới này bao gồm toàn bộ phần tử từ state.cart và phần tử mới được thêm vào từ action.payload
                  */
+                totalPrice: state.totalPrice + action.payload.price // => tổng giá trị mới của đơn hàng
+
             }
 
             /**
@@ -38,11 +41,12 @@ const cartReducer = (state = initState, action) => {
 
             const updatedCart = state.cart.filter(item => item.id !== action.payload.id);
 
-            console.log("Object cart",updatedCart);
+            console.log("Object cart", updatedCart);
 
             return {
                 ...state,
-                cart: updatedCart
+                cart: updatedCart,
+                totalPrice: state.totalPrice - action.payload.price // => tổng giá trị mới của đơn hàng
             }
         }
 

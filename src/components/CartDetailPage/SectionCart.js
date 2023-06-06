@@ -102,14 +102,20 @@ function ItemCart(data) {
     )
 }
 
-function TotalCart(data) {
+function TotalCart() {
+
+    const totalPrice = useSelector(state => state.cartReducer.totalPrice);
+
     return (
         <div className="shoping__checkout">
             <h5>Đơn hàng</h5>
+            {/*<ul>*/}
+            {/*    <li>Tổng <span> 500.000 VND</span></li>*/}
+            {/*    <li>Giảm giá <span> 100.000 VND</span></li>*/}
+            {/*    <li>Còn lại <span> 400.000 VND</span></li>*/}
+            {/*</ul>*/}
             <ul>
-                <li>Tổng <span> 500.000 VND</span></li>
-                <li>Giảm giá <span> 100.000 VND</span></li>
-                <li>Còn lại <span> 400.000 VND</span></li>
+                <li>Tổng <span>{formatCurrency(totalPrice)}</span></li>
             </ul>
             <a href="" className="primary-btn">Tiến hành thanh toán</a>
         </div>
