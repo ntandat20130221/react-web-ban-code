@@ -1,15 +1,13 @@
-import React from "react";
-import {useSelector} from "react-redux";
+import React, {useEffect, useState} from "react";
+import {useSelector, useDispatch} from "react-redux";
 import {Link, useLocation} from "react-router-dom";
 
 import {formatCurrency} from "../../javascript/utils";
+import {removeItemFromCart} from "../../redux/Action";
 
 function SectionCart() {
 
     const cart = useSelector(state => state.cartReducer.cart);
-
-    // console.log("Đây là Cart:", cart);
-
 
     /**
      useSelector là một hook của React Redux,
@@ -35,7 +33,8 @@ function SectionCart() {
                                 </thead>
                                 <tbody>
                                 {cart.map(cart_item => (
-                                    <ItemCart key={cart_item.id} img={cart_item.img} name={cart_item.name}
+                                    <ItemCart key={cart_item.id} id={cart_item.id} img={cart_item.img}
+                                              name={cart_item.name}
                                               price={cart_item.price}/>
                                 ))}
                                 </tbody>
@@ -70,24 +69,34 @@ function SectionCart() {
     )
 }
 
-function ItemCart({img, name, price}) {
+function ItemCart(data) {
+
+    const [product, setProduct] = useState(data);
 
     const styleImage = {
         width: '60%',
         height: '60%'
     }
 
+    const dispatch = useDispatch();
+
+    function clickRemoveItemFromCart() {
+        console.log("Product remove: ", product);
+        dispatch(removeItemFromCart(product));
+        alert('Removed product');
+    }
+
     return (
         <tr>
-            <td><img src={`${img}`} style={styleImage} alt=""/></td>
+            <td><img src={`${product.img}`} style={styleImage} alt=""/></td>
             <td className="shoping__cart__item">
-                <h5>{`${name}`}</h5>
+                <h5>{`${product.name}`}</h5>
             </td>
             <td className="shoping__cart__price">
-                {formatCurrency(price)}
+                {formatCurrency(product.price)}
             </td>
             <td className="shoping__cart__item__close">
-                <span>Xóa</span>
+                <span onClick={clickRemoveItemFromCart}>Xóa</span>
             </td>
         </tr>
     )
