@@ -16,7 +16,7 @@
 html,
 body {
 	height: 100%;
-	font-family: "Cairo", sans-serif;
+	font-family: Helvetica, Arial, sans;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 }
@@ -158,14 +158,14 @@ li {
 }
 
 .site-btn {
-	font-size: 14px;
+	font-size: 20px;
 	color: #ffffff;
-	font-weight: 800;
+	font-weight: bolder;
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 13px 30px 12px;
 	background: #7fad39;
-	border: none;
+	border-radius: 50px;
 }
 
 /* Preloder */
@@ -1923,9 +1923,9 @@ li {
 
 .shoping__cart__table table tbody tr td.shoping__cart__price {
 	font-size: 18px;
-	color: #1c1c1c;
+	color: #84c52c;
 	font-weight: 700;
-	width: 100px;
+	width: 150px;
 }
 
 .shoping__cart__table table tbody tr td.shoping__cart__total {
@@ -2010,7 +2010,6 @@ li {
 	padding: 15px 30px 11px;
 	font-size: 12px;
 	letter-spacing: 4px;
-	background: #6f6f6f;
 }
 
 .shoping__checkout {
