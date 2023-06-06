@@ -13,11 +13,15 @@ const cartReducer = (state = initState, action) => {
 
         case 'cart/add-item': {
             return {
-                ...state,
+                ...state, // sao chép trạng thái hiện tại
                 cart: [
                     ...state.cart,
                     action.payload
                 ]
+                /*
+                  Cập nhật thuộc tính cart với một mảng mới.
+                  Mảng mới này bao gồm toàn bộ phần tử từ state.cart và phần tử mới được thêm vào từ action.payload
+                 */
             }
 
             /**
@@ -29,7 +33,17 @@ const cartReducer = (state = initState, action) => {
         }
 
         case 'cart/remove-item': {
-            return {}
+
+            console.log("Day la Action cart/remove-item");
+
+            const updatedCart = state.cart.filter(item => item.id !== action.payload.id);
+
+            console.log("Object cart",updatedCart);
+
+            return {
+                ...state,
+                cart: updatedCart
+            }
         }
 
         default :
