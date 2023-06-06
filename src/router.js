@@ -30,27 +30,11 @@ const listAuthentication = [
 
 const listProducts = [
     {
-        path: '/top-codes',
+        path: 'top-codes',
         element: <ListProducts/>
     },
     {
-        path: '/top-codes/product/:productId',
-        element: <ProductDetails/>
-    },
-    {
-        path: '/quality-codes',
-        element: <ListProducts/>
-    },
-    {
-        path: '/quality-codes/product/:productId',
-        element: <ProductDetails/>
-    },
-    {
-        path: '/free-codes',
-        element: <ListProducts/>
-    },
-    {
-        path: '/free-codes/product/:productId',
+        path: 'top-codes/product/:productId',
         element: <ProductDetails/>
     }
 ]
@@ -58,7 +42,7 @@ const listProducts = [
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>
+        element: <App/>,
     },
     profile,
     ...listProducts,

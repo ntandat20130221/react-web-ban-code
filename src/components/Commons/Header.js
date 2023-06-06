@@ -22,7 +22,7 @@ const adsList = [
 function HeaderAds() {
     const [adsIndex, setAdsIndex] = useState(0)
     const ads = adsList[adsIndex]
-    console.log(adsIndex)
+
     useEffect(() => {
         const id = setInterval(() => setAdsIndex((adsIndex + 1) % adsList.length), 5000)
         return () => clearInterval(id)
@@ -83,18 +83,18 @@ function HeaderMenu() {
             <div className="row">
                 <div className="col-lg-2 d-flex justify-content-center align-items-center">
                     <div className="py-4">
-                        <a href="/"><img src={require('../../img/logo/logo.png')} alt=""/></a>
+                        <Link to={'/'}><img src={require('../../img/logo/logo.png')} alt=""/></Link>
                     </div>
                 </div>
                 <div className="col-lg-8 d-flex justify-content-center align-items-center">
                     <nav className="header-menu">
                         <ul>
-                            <li><a href="/" className={location.pathname === '/' && 'active'}>Trang chủ</a></li>
-                            <li><a href="/top-codes" className={location.pathname === '/top-codes' && 'active'}>Top code</a></li>
-                            <li><a href="/quality-codes" className={location.pathname === '/quality-codes' && 'active'}>Code chất lượng</a>
+                            <li><Link to="/" className={location.pathname === '/' && 'active'}>Trang chủ</Link></li>
+                            <li><Link to="/top-codes" className={location.pathname === '/top-codes' && 'active'}>Top code</Link></li>
+                            <li><Link to="/quality-codes" className={location.pathname === '/quality-codes' && 'active'}>Code chất lượng</Link>
                                 <img src={require('../../img/ic_hot.gif')} alt=""/>
                             </li>
-                            <li><a href="/free-codes" className={location.pathname === '/free-codes' && 'active'}>Code miễn phí</a></li>
+                            <li><Link to="/free-codes" className={location.pathname === '/free-codes' && 'active'}>Code miễn phí</Link></li>
                         </ul>
                     </nav>
                 </div>
