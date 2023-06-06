@@ -4,11 +4,8 @@ import Footer from '../Commons/Footer';
 import '../../css/products.css'
 import {useEffect, useRef, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {most, mostDownloaded, mostViewed, switchPage} from "../../redux/Action";
+import {categorize, most, mostDownloaded, mostViewed, switchPage} from "../../redux/Action";
 import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
-
-const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
-    'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
 
 export function PopularCode() {
     return (
@@ -27,16 +24,37 @@ export function PopularCode() {
 }
 
 function SideBar() {
+    const relTypes = useRef([])
+    useEffect(() => {
+        fetch(`http://localhost:9810/products`)
+            .then(res => res.json())
+            .then(json => {
+                const types = []
+                json.data.forEach(product => {
+                    const type = types.find(value => value.name === product.type.name)
+                    if (type) {
+                        type.quantity = type.quantity + 1
+                    } else {
+                        types.push({name: product.type.name, icon: product.type.icon, quantity: 1})
+                    }
+                })
+                relTypes.current = types.sort((a, b) => a.name < b.name ? -1 : 1)
+            })
+    }, [])
+
+    const dispatch = useDispatch()
+
     return (
         <div className="sidebar">
             <div className="sidebar-item">
                 <h6 className="list-group-item font-weight-bolder">Phân loại code</h6>
                 <div className="list-group">
-                    {categories.map((value, index) => (
-                        <a className="list-group-item d-flex justify-content-between align-items-center" key={index} href="#">
-                            <span>{value}</span>
-                            <span className="badge badge-light font-weight-normal">12</span>
-                        </a>
+                    {relTypes.current.map((value, index) => (
+                        <div className="list-group-item d-flex justify-content-between align-items-center" key={index}
+                             onClick={() => dispatch(categorize(value.name))}>
+                            <span>{value.name}</span>
+                            <span className="badge badge-light font-weight-normal">{value.quantity}</span>
+                        </div>
                     ))}
                 </div>
             </div>
@@ -70,7 +88,7 @@ function ProductItem({p}) {
                 </div>
             </div>
             <div className="product-item-bottom d-flex justify-content-between align-items-center">
-                <a className="product-item-brand"><i className="bi bi-android2"></i> {p.type}</a>
+                <a className="product-item-brand"><i className={p.type.icon}></i> {p.type.name}</a>
                 <a className="product-item-price">{p.price}đ</a>
             </div>
         </div>
@@ -86,7 +104,7 @@ function ProductItemRow({p}) {
                 </a>
                 <div className="product-item-row-content col-lg-6">
                     <a className="product-item-row-title">{p.name}</a>
-                    <a className="product-item-brand"><i className="bi bi-android2"></i> {p.type}</a>
+                    <a className="product-item-brand"><i className={p.type.icon}></i> {p.type.name}</a>
                     <div className="product-item-stars">
                         {Array(5).fill(1).map((value, index) => (<i className="fa fa-star" key={index}></i>))}
                     </div>
@@ -128,14 +146,14 @@ function Products(props) {
     )
 }
 
-function Filter(props) {
+function Filter({total, onLayout}) {
     const dispatch = useDispatch()
     const [layout, setLayout] = useState('grid')
     const currentPage = useSelector(state => state.listProductsReducer.page)
     const sort = useSelector(state => state.listProductsReducer.sort)
 
     function onLayoutClick(isGrid) {
-        props.onLayout(isGrid)
+        onLayout(isGrid)
         setLayout(isGrid === true ? 'grid' : 'row')
     }
 
@@ -158,7 +176,7 @@ function Filter(props) {
             <div className="row">
                 <div className="col-lg-4 d-flex justify-content-start align-items-center">
                     <div className="filter-found">
-                        <h6>Tìm thấy <b>17</b> sản phẩm</h6>
+                        <h6>Tìm thấy <b>{total}</b> sản phẩm</h6>
                     </div>
                 </div>
                 <div className="col-lg-8 d-flex justify-content-end align-items-center">
@@ -218,19 +236,27 @@ function Pagination(props) {
 }
 
 function ProductsContainer() {
-    const [products, setProducts] = useState([])
     const currentPage = useSelector(state => state.listProductsReducer.page)
-    const rel = useRef(0)
+    const type = useSelector(state => state.listProductsReducer.type)
+
+    const [products, setProducts] = useState([])
+    const relTotal = useRef(0)
     useEffect(() => {
-        fetch(`http://localhost:9810/products?_page=${currentPage}&_limit=12`)
+        let url = ''
+        if (type) {
+            url = `http://localhost:9810/products?type.name=${type}&_page=${currentPage}&_limit=12`
+        } else {
+            url = `http://localhost:9810/products?_page=${currentPage}&_limit=12`
+        }
+        fetch(url)
             .then(res => res.json())
             .then(json => {
                 setProducts(json.data)
-                rel.current = json.total
+                relTotal.current = json.total
             })
-    }, [currentPage])
+    }, [currentPage, type])
 
-    const numbers = [...Array(Math.ceil(rel.current / 12) + 1).keys()].slice(1)
+    const numbers = [...Array(Math.ceil(relTotal.current / 12) + 1).keys()].slice(1)
     const [grid, setGrid] = useState(true)
 
     return (
@@ -241,7 +267,7 @@ function ProductsContainer() {
                         <SideBar/>
                     </div>
                     <div className="col-lg-9 col-md-7 pl-4">
-                        <Filter onLayout={(idGrid) => setGrid(idGrid)}/>
+                        <Filter total={relTotal.current} onLayout={(idGrid) => setGrid(idGrid)}/>
                         <Products isGrid={grid} data={products}/>
                         <Pagination numbers={numbers}/>
                     </div>

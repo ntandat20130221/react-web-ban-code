@@ -28,26 +28,24 @@ const cartReducer = (state = initState, action) => {
              */
         }
 
-        case 'cart/remove-item':{
-            return {
-
-            }
+        case 'cart/remove-item': {
+            return {}
         }
 
         default :
             return state;
 
-            /**
-                Đây là trường hợp mặc định của switch case.
-                Nếu hành động không khớp với bất kỳ trường hợp nào đã được xác định,
-                reducer sẽ trả về trạng thái hiện tại mà không có sự thay đổi.
-             */
+        /**
+         Đây là trường hợp mặc định của switch case.
+         Nếu hành động không khớp với bất kỳ trường hợp nào đã được xác định,
+         reducer sẽ trả về trạng thái hiện tại mà không có sự thay đổi.
+         */
 
     }
 
 }
 
-const listProductsReducer = (state = {data: products, page: 1, sort: 'most'}, action) => {
+const listProductsReducer = (state = {data: products, page: 1, sort: 'most', type: null}, action) => {
     switch (action.type) {
         case 'listProducts/page': {
             const page = Number(action.payload)
@@ -82,6 +80,12 @@ const listProductsReducer = (state = {data: products, page: 1, sort: 'most'}, ac
                 ...state,
                 data: [...item],
                 sort: 'mostDownloaded'
+            }
+        }
+        case 'listProducts/type': {
+            return {
+                ...state,
+                type: action.payload
             }
         }
         default:

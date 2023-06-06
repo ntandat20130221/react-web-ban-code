@@ -5,6 +5,13 @@ export const addCart = (product) => {
     }
 }
 
+export const categorize = (type) => {
+    return {
+        type: 'listProducts/type',
+        payload: type
+    }
+}
+
 export const switchPage = (page) => {
     return {
         type: 'listProducts/page',
