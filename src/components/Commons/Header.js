@@ -65,8 +65,8 @@ function HeaderTop() {
                                 </ul>
                             </div>
                             <div className="header-top-right-auth d-flex justify-content-end align-items-center">
-                                <a href=""><i className="fa fa-user"></i> Đăng ký</a>
-                                <a href="" className="mr-0"><i className="fa fa-sign-in"></i> Đăng nhập</a>
+                                <Link to="/register"><i className="fa fa-user"></i> Đăng ký</Link>
+                                <Link to="/login" className="mr-0"><i className="fa fa-sign-in"></i> Đăng nhập</Link>
                             </div>
                         </div>
                     </div>
