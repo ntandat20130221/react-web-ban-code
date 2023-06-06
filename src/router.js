@@ -7,6 +7,7 @@ import RegisterPage from "./components/AuthenticationPage/Register";
 import ForgotPassPage from "./components/AuthenticationPage/ForgotPass";
 import ProfilePage from "./components/ProfilePage/Profile";
 import ChangePassPage from "./components/AuthenticationPage/ChangePass";
+import CartDetailPage from "./components/CartDetailPage/CartDetailPage";
 
 const profile = {path: '/profile', element: <ProfilePage/>}
 const listAuthentication = [
@@ -27,7 +28,6 @@ const listAuthentication = [
         element: <ChangePassPage/>
     }
 ]
-import CartDetailPage from "./components/CartDetailPage/CartDetailPage";
 
 const listProducts = [
     {
@@ -67,7 +67,7 @@ export const router = createBrowserRouter([
     },
     profile,
     ...listProducts,
-    ...listAuthentication
+    ...listAuthentication,
     ...listProducts,
     ...cart
 ])
