@@ -1,5 +1,6 @@
 import {combineReducers} from "redux";
 import {products} from "../data/Products";
+import registerReducer from "../components/AuthenticationPage/RegisterSlice"
 
 const initState = {
     /* đây là trạng thái ban đầu của ứng dụng */
@@ -92,4 +93,5 @@ const listProductsReducer = (state = {data: products, page: 1, sort: 'most'}, ac
 export const reducers = combineReducers({
     cartReducer: cartReducer,
     listProductsReducer: listProductsReducer,
+    registerReducer: registerReducer,
 })
