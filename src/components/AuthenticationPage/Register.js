@@ -1,4 +1,26 @@
-import authenticationImage from '../img/authentication/authentication.png';
+import authenticationImage from '../../img/authentication/authentication.png';
+import Header from '../Commons/Header';
+import Footer from '../Commons/Footer';
+import breadcrumb_1 from "../../img/breadcrumb/breadcrumb_1.png";
+import {Link} from "react-router-dom";
+function Breadcrumb(){
+    return(
+        <section className="breadcrumb-section set-bg" style={{ backgroundImage: `url(${breadcrumb_1})` }}>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-12 text-center">
+                        <div className="breadcrumb__text">
+                            <div className="breadcrumb__option">
+                                <Link to="/">Trang chủ</Link>
+                                <Link to="/register">Đăng ký</Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
 function SectionRegister(){
     return(
         <section className="form-input py-5">
@@ -20,8 +42,8 @@ function SectionRegister(){
                                 <input id="confirm-pass" className="w-100 mb-4" type="password"
                                        placeholder="Nhập lại mật khẩu" name="confirm-pass"/>
                                 <button className="btn next w-100 mb-3">Tiếp theo</button>
-                                <span className="shotcut">Bạn đã có tài khoản? <a
-                                    href="#">Đăng nhập</a></span>
+                                <span className="shotcut">Bạn đã có tài khoản? <Link
+                                    to="/login">Đăng nhập</Link></span>
                             </form>
                         </div>
                     </div>
@@ -30,4 +52,13 @@ function SectionRegister(){
         </section>
     )
 }
-export default SectionRegister;
+export default function RegisterPage(){
+    return(
+        <>
+            <Header/>
+            <Breadcrumb/>
+            <SectionRegister/>
+            <Footer/>
+        </>
+    )
+};
