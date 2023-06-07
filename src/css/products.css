@@ -321,10 +321,6 @@
     color: #50595d;
 }
 
-.product-item-row-content .product-item-stars i {
-    font-size: 16px;
-}
-
 .product-item-row-price {
     color: #27c24c;
     border-radius: 2px;
@@ -343,12 +339,6 @@
 
 .product-item-row-price:hover {
     color: #1f9a3d;
-}
-
-.product-item-row-description {
-    font-size: 15px;
-    margin-bottom: 0;
-    line-height: 1.4em;
 }
 
 .product-item-row-content .product-item-brand {
