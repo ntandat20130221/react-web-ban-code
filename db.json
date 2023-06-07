@@ -252,6 +252,16 @@
     }
   ],
 
+
+
+
+
+
+
+
+
+
+
   "products": [
     {
       "id": 1,
@@ -565,13 +575,345 @@
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-ung-dung-cua-hang-tap-hoa-111243.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-ung-dung-cua-hang-tap-hoa-111244.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Source code ứng dụng cửa hàng tạp hóa",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1000,
       "downloaded": 100,
       "liked": false,
       "price": 300000
+    },
+    {
+      "id": 21,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/full-source-code-app-ios-shopping-day-du-cac-chuc-nang-thanh-toan-chat-...-92725.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/full-source-code-app-ios-shopping-day-du-cac-chuc-nang-thanh-toan-chat-...-8337.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/full-source-code-app-ios-shopping-day-du-cac-chuc-nang-thanh-toan-chat-...-8338.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/full-source-code-app-ios-shopping-day-du-cac-chuc-nang-thanh-toan-chat-...-8339.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Full source code app iOS Shopping(CHẤT LƯỢNG CAO) đầy đủ các chức năng",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 22,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/source-code-ung-dung-movie-trailer-da-thuc-tap-163237.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/%20163253%2026944_ung-dung-movie-trailer-154539891468251.png",
+        "https://topcode.vn/FilesUpload/CodeUpload/%20163253%2026944_ung-dung-movie-trailer-154543326913621.png",
+        "https://topcode.vn/FilesUpload/CodeUpload/%20163253%2026944_ung-dung-movie-trailer-154844148324524.png"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Source code Ứng dụng Movie Trailer (ĐA thực tập)",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 23,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/ung-dung-mua-sam-truc-tuyen-ios---do-an-tot-nghiep-93819.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/ung-dung-mua-sam-truc-tuyen-ios---do-an-tot-nghiep-93819.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/ung-dung-mua-sam-truc-tuyen-ios---do-an-tot-nghiep-93820.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/ung-dung-mua-sam-truc-tuyen-ios---do-an-tot-nghiep-93821.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Ứng dụng mua sắm trực tuyến iOS - Đồ án tốt nghiệp",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 24,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/[swift]-full-code-game-xep-hinh-co-dien-da-duoc-tich-hop-day-du-quang-cao-admob-mua-hang-trong-ung-dung-tai-ve-la-xai-ngay-co-the-upload-len-appstore-duoc-ngay-18731.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/[swift]-full-code-game-xep-hinh-co-dien-da-duoc-tich-hop-day-du-quang-cao-admob-mua-hang-trong-ung-dung-14411.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/[swift]-full-code-game-xep-hinh-co-dien-da-duoc-tich-hop-day-du-quang-cao-admob-mua-hang-trong-ung-dung-14412.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/[swift]-full-code-game-xep-hinh-co-dien-da-duoc-tich-hop-day-du-quang-cao-admob-mua-hang-trong-ung-dung-14415.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "[Swift] Full code game xếp hình cổ điển, đã được tích hợp đầy đủ quảng cáo admob, mua hàng trong ứng dụng",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 5000000
+    },
+    {
+      "id": 25,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/ung-dung-ghi-chu-tren-iosgiao-dien-dep-de-dung-01650.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/ung-dung-ghi-chu-tren-iosgiao-dien-dep-de-dung-01650.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/ung-dung-ghi-chu-tren-iosgiao-dien-dep-de-dung-01651.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/ung-dung-ghi-chu-tren-iosgiao-dien-dep-de-dung-01652.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Ứng dụng Ghi Chú trên IOS, giao diện đẹp, dễ dùng",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 26,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/code-app-ios-xem-video-giong-99-app-youtube-111121.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/%2011957%20source-code-app-ios-xem-video-giong-99-app-youtube-15430.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/%2011957%20source-code-app-ios-xem-video-giong-99-app-youtube-154257.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/%2011957%20source-code-app-ios-xem-video-giong-99-app-youtube-154258.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Code App ios xem video giống 99% app youtube",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 27,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/source-code-app-ios-tim-dia-diem-an-uong-giong-app-meete-99-165527.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/%20165423%20[code-dang-de-an]source-code-app-ios-tim-dia-diem-an-uong-giong-app-meete-99-9530.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/%20165423%20[code-dang-de-an]source-code-app-ios-tim-dia-diem-an-uong-giong-app-meete-99-9531.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/%20165423%20[code-dang-de-an]source-code-app-ios-tim-dia-diem-an-uong-giong-app-meete-99-95257%201.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Source code app IOS tìm địa điểm ăn uống giống app Meete 99%",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 28,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/source-code-ios-app-xem-video-113443.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/source-code-ios-app-xem-video-113443.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/source-code-ios-app-xem-video-113444.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/source-code-ios-app-xem-video-113445.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Source code iOS App xem video",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 29,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/source-code-game-hay-ios-gan-quang-cao-kiem-.-where-is-my-birds-16912.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/source-code-game-hay-ios-gan-quang-cao-kiem-.-where-is-my-birds-16913.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/source-code-game-hay-ios-gan-quang-cao-kiem-.-where-is-my-birds-16914.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/source-code-game-hay-ios-gan-quang-cao-kiem-.-where-is-my-birds-16915.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Source code Game hay iOS, gắn quảng cáo kiếm $$$. Where is my birds?",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 30,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/snake-vs-block-source-code-game-ios-giao-dien-dep-muot.-105427.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/snake-vs-block-source-code-game-ios-giao-dien-dep-muot.-105428.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/snake-vs-block-source-code-game-ios-giao-dien-dep-muot.-105429.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/snake-vs-block-source-code-game-ios-giao-dien-dep-muot.-105430.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Snake vs Block Source code Game iOS giao diện đẹp, mượt",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
+    },
+    {
+      "id": 31,
+      "img": "https://topcode.vn/FilesUpload/CodeLarge/full-code-admob-ios-ung-dung-nghe-nhac-online-mp3-141910.jpg",
+      "thumbnails": [
+        "https://topcode.vn/FilesUpload/CodeUpload/full-code-admob-ios-ung-dung-nghe-nhac-online-mp3-141911.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/full-code-admob-ios-ung-dung-nghe-nhac-online-mp3-141913.jpg",
+        "https://topcode.vn/FilesUpload/CodeUpload/full-code-admob-ios-ung-dung-nghe-nhac-online-mp3-141915.jpg"
+      ],
+      "type": {
+        "name": "iOS",
+        "icon": "fa fa-apple"
+      },
+      "name": "Full Code + Admob IOS ứng dụng nghe nhạc online MP3",
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
+      "viewed": 1000,
+      "downloaded": 100,
+      "liked": false,
+      "price": 600000
     }
   ],
 
