@@ -5,8 +5,8 @@ import {checkItemExistCart, totalPrice, loadCartFromLocalStorage} from "../javas
 
 const initCartState = {
     /* đây là trạng thái ban đầu của giỏ hàng */
-    cart: loadCartFromLocalStorage(),
-    totalPrice: localStorage.getItem('total-price')
+    cart: loadCartFromLocalStorage() === null ? [] : loadCartFromLocalStorage,
+    totalPrice: localStorage.getItem('total-price') === null ? 0 : loadCartFromLocalStorage
 }
 
 const cartReducer = (state = initCartState, action) => {
