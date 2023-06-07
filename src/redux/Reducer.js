@@ -1,27 +1,33 @@
 import {combineReducers} from "redux";
 import {products} from "../data/Products";
 
-const initState = {
-    /* đây là trạng thái ban đầu của ứng dụng */
-    cart: []
+import {checkItemExistCart, totalPrice, loadCartFromLocalStorage} from "../javascript/utils"
+
+const initCartState = {
+    /* đây là trạng thái ban đầu của giỏ hàng */
+    cart: loadCartFromLocalStorage(),
+    totalPrice: localStorage.getItem('total-price')
 }
 
-const cartReducer = (state = initState, action) => {
+const cartReducer = (state = initCartState, action) => {
 
     /* Đây là Reducer, một hàm xử lý các hành động (actions) để cập nhật trạng thái của ứng dụng */
     switch (action.type) {
 
         case 'cart/add-item': {
+
+            // nếu sản phẩm chưa tồn tại trong giỏ hàng
+            const updatedCart = checkItemExistCart(state.cart, action.payload) === undefined ? [...state.cart, action.payload] : [...state.cart]  /* Cập nhật thuộc tính cart với một mảng mới. Mảng mới này bao gồm toàn bộ phần tử từ state.cart và phần tử mới được thêm vào từ action.payload */
+            localStorage.setItem('cart', JSON.stringify(updatedCart)); // Dữ liệu trong Local Storage không có hạn chế về thời gian sống và sẽ được giữ lại sau khi bạn đóng trình duyệt. Điều này có nghĩa là dữ liệu vẫn sẽ tồn tại ngay cả khi người dùng tắt trình duyệt hoặc khởi động lại máy tính.
+
+            const newTotalPrice = totalPrice(updatedCart);
+            localStorage.setItem('total-price', JSON.stringify(newTotalPrice));
+
+
             return {
                 ...state, // sao chép trạng thái hiện tại
-                cart: [
-                    ...state.cart,
-                    action.payload
-                ]
-                /*
-                  Cập nhật thuộc tính cart với một mảng mới.
-                  Mảng mới này bao gồm toàn bộ phần tử từ state.cart và phần tử mới được thêm vào từ action.payload
-                 */
+                cart: updatedCart, // cập nhật số lượng sản phẩm trong giỏ hàng
+                totalPrice: newTotalPrice // => tổng giá trị mới của giỏ hàng
             }
 
             /**
@@ -34,15 +40,22 @@ const cartReducer = (state = initState, action) => {
 
         case 'cart/remove-item': {
 
-            console.log("Day la Action cart/remove-item");
+            // console.log("Day la Action cart/remove-item");
 
-            const updatedCart = state.cart.filter(item => item.id !== action.payload.id);
+            const updatedCart = state.cart.filter(item => item.id !== action.payload.id); /* loại bỏ các phần tử có id trùng khớp với id của action.payload */
+            // => tạo ra mảng mới
+            localStorage.setItem('cart', JSON.stringify(updatedCart)); // Dữ liệu trong Local Storage không có hạn chế về thời gian sống và sẽ được giữ lại sau khi bạn đóng trình duyệt. Điều này có nghĩa là dữ liệu vẫn sẽ tồn tại ngay cả khi người dùng tắt trình duyệt hoặc khởi động lại máy tính.
 
-            console.log("Object cart",updatedCart);
+            // console.log("Object cart", updatedCart);
+
+            const newTotalPrice = totalPrice(updatedCart);
+            localStorage.setItem('total-price', JSON.stringify(newTotalPrice));
+
 
             return {
-                ...state,
-                cart: updatedCart
+                ...state, // sao chép trạng thái hiện tại
+                cart: updatedCart, // cập nhật số lượng sản phẩm trong giỏ hàng
+                totalPrice: newTotalPrice // => tổng giá trị mới của giỏ hàng
             }
         }
 

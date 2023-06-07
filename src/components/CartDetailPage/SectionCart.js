@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import {useSelector, useDispatch} from "react-redux";
 import {Link, useLocation} from "react-router-dom";
 
+import Swal from 'sweetalert2';
+
 import {formatCurrency} from "../../javascript/utils";
 import {removeItemFromCart} from "../../redux/Action";
 
@@ -81,9 +83,19 @@ function ItemCart(data) {
     const dispatch = useDispatch();
 
     function clickRemoveItemFromCart() {
+
         console.log("Product remove: ", product);
         dispatch(removeItemFromCart(product));
-        alert('Removed product');
+        Swal.fire({
+            title: '',
+            text: 'Sản phẩm đã xóa khỏi giỏ hàng',
+            icon: 'success',
+            confirmButtonText: 'OK',
+            timer: 3000, // Thời gian tự động tắt thông báo sau 3 giây
+            timerProgressBar: true // Hiển thị thanh tiến trình đếm ngược
+        }).then(() => {
+
+        });
     }
 
     return (
@@ -102,14 +114,20 @@ function ItemCart(data) {
     )
 }
 
-function TotalCart(data) {
+function TotalCart() {
+
+    const totalPrice = useSelector(state => state.cartReducer.totalPrice);
+
     return (
         <div className="shoping__checkout">
             <h5>Đơn hàng</h5>
+            {/*<ul>*/}
+            {/*    <li>Tổng <span> 500.000 VND</span></li>*/}
+            {/*    <li>Giảm giá <span> 100.000 VND</span></li>*/}
+            {/*    <li>Còn lại <span> 400.000 VND</span></li>*/}
+            {/*</ul>*/}
             <ul>
-                <li>Tổng <span> 500.000 VND</span></li>
-                <li>Giảm giá <span> 100.000 VND</span></li>
-                <li>Còn lại <span> 400.000 VND</span></li>
+                <li>Tổng <span>{formatCurrency(totalPrice)}</span></li>
             </ul>
             <a href="" className="primary-btn">Tiến hành thanh toán</a>
         </div>
