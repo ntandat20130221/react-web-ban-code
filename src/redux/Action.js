@@ -17,6 +17,13 @@ export const removeItemFromCart = (product) => {
     }
 }
 
+export const updateDiscountPercent = (discount_percent) => {
+    return {
+        type: 'cart/update-discount-percent',
+        payload: discount_percent
+    }
+}
+
 export const switchPage = (page) => {
     return {
         type: 'listProducts/page',
