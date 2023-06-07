@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import {Toast} from 'react-bootstrap';
 import {default as queryString} from 'query-string';
 
-import {addCart} from '../../redux/Action';
+import {addItemToCart} from '../../redux/Action';
 import {formatCurrency} from '../../javascript/utils';
 
 import Pagination from './Pagination'
@@ -98,7 +98,7 @@ function DataProductsFeatured() {
         <>
             <div className="row featured__filter">
                 {products.map(product => (
-                        <ItemProductFeatured key={product.id} name={product.name} img={product.img}
+                        <ItemProductFeatured key={product.id} id={product.id} name={product.name} img={product.img}
                                              price={product.price}></ItemProductFeatured>
                     )
                 )}
@@ -138,8 +138,8 @@ function ItemProductFeatured
      Nó trả về một hàm mà bạn có thể sử dụng để gửi action đi.
      */
 
-    function clickAddCart() {
-        dispatch(addCart(product))
+    function clickAddItemToCart() {
+        dispatch(addItemToCart(product))
         setShowToast(true)
     }
 
@@ -160,8 +160,8 @@ function ItemProductFeatured
                 <div className="featured__item__pic set-bg"
                      style={{backgroundImage: `url(${product.img})`}}>
                     <ul className="featured__item__pic__hover">
-                        <li><a><i className="fa fa-heart"></i></a></li>
-                        <li><a onClick={clickAddCart}><i className="fa fa-shopping-cart"></i></a></li>
+                        <li><a><i className="bi bi-hand-thumbs-up"></i></a></li>
+                        <li><a onClick={clickAddItemToCart}><i className="fa fa-shopping-cart"></i></a></li>
                     </ul>
                 </div>
                 <div className="featured__item__text">
