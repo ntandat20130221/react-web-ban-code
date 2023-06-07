@@ -1,12 +1,12 @@
 import {combineReducers} from "redux";
 import {products} from "../data/Products";
 
-import {checkItemExistCart, totalPrice} from "../javascript/utils"
+import {checkItemExistCart, totalPrice, loadCartFromLocalStorage} from "../javascript/utils"
 
 const initCartState = {
-    /* đây là trạng thái ban đầu của ứng dụng */
-    cart: [],
-    totalPrice: 0
+    /* đây là trạng thái ban đầu của giỏ hàng */
+    cart: loadCartFromLocalStorage(),
+    totalPrice: localStorage.getItem('total-price')
 }
 
 const cartReducer = (state = initCartState, action) => {
@@ -18,8 +18,11 @@ const cartReducer = (state = initCartState, action) => {
 
             // nếu sản phẩm chưa tồn tại trong giỏ hàng
             const updatedCart = checkItemExistCart(state.cart, action.payload) === undefined ? [...state.cart, action.payload] : [...state.cart]  /* Cập nhật thuộc tính cart với một mảng mới. Mảng mới này bao gồm toàn bộ phần tử từ state.cart và phần tử mới được thêm vào từ action.payload */
+            localStorage.setItem('cart', JSON.stringify(updatedCart)); // Dữ liệu trong Local Storage không có hạn chế về thời gian sống và sẽ được giữ lại sau khi bạn đóng trình duyệt. Điều này có nghĩa là dữ liệu vẫn sẽ tồn tại ngay cả khi người dùng tắt trình duyệt hoặc khởi động lại máy tính.
 
             const newTotalPrice = totalPrice(updatedCart);
+            localStorage.setItem('total-price', JSON.stringify(newTotalPrice));
+
 
             return {
                 ...state, // sao chép trạng thái hiện tại
@@ -41,10 +44,13 @@ const cartReducer = (state = initCartState, action) => {
 
             const updatedCart = state.cart.filter(item => item.id !== action.payload.id); /* loại bỏ các phần tử có id trùng khớp với id của action.payload */
             // => tạo ra mảng mới
+            localStorage.setItem('cart', JSON.stringify(updatedCart)); // Dữ liệu trong Local Storage không có hạn chế về thời gian sống và sẽ được giữ lại sau khi bạn đóng trình duyệt. Điều này có nghĩa là dữ liệu vẫn sẽ tồn tại ngay cả khi người dùng tắt trình duyệt hoặc khởi động lại máy tính.
 
             // console.log("Object cart", updatedCart);
 
             const newTotalPrice = totalPrice(updatedCart);
+            localStorage.setItem('total-price', JSON.stringify(newTotalPrice));
+
 
             return {
                 ...state, // sao chép trạng thái hiện tại
