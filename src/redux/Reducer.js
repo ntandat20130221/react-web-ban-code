@@ -1,6 +1,6 @@
 import {combineReducers} from "redux";
 import {products} from "../data/Products";
-import registerReducer from "../components/AuthenticationPage/RegisterSlice"
+import registerReducer from "../components/AuthenticationPage/redux/RegisterSlice"
 
 import {checkItemExistCart, totalPrice, loadCartFromLocalStorage} from "../javascript/utils"
 
