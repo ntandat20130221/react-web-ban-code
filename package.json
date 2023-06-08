@@ -11,6 +11,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
+    "html-react-parser": "^4.0.0",
     "jquery": "^3.7.0",
     "json-server": "^0.17.3",
     "mdbreact": "^4.6.1",
