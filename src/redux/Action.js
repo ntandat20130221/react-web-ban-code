@@ -1,5 +1,3 @@
-
-
 export const setType = (type) => {
     return {
         type: 'listProducts/type',

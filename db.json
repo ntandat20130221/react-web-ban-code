@@ -271,9 +271,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/%20154431%2036143_full-source-code-android-app-ban-quan-ao-thoi-trang-full-chuc-nang-giao-dien-dep-su-dung-android-studio-api-springboot-mysql-tich-hop-thanh-toan-zalopay-173236241847655.png",
         "https://topcode.vn/FilesUpload/CodeUpload/%20154431%2036143_full-source-code-android-app-ban-quan-ao-thoi-trang-full-chuc-nang-giao-dien-dep-su-dung-android-studio-api-springboot-mysql-tich-hop-thanh-toan-zalopay-1732351638198547.png"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Code Android App bán quần áo thời trang full chức năng giao diện đẹp sử dụng Android Studio + API Springboot + MySQL + Tích hợp thanh toán ZaloPay",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 254,
+        "4star": 12,
+        "3star": 43,
+        "2star": 1,
+        "1star": 1
+      },
       "viewed": 157,
       "downloaded": 0,
       "liked": false,
@@ -287,11 +300,24 @@
         "https://topcode.vn/FilesUpload/CodeUpload/android-studio---app-food---ung-dung-ban-do-an-truc-tuyen.-16318.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/android-studio---app-food---ung-dung-ban-do-an-truc-tuyen.-16319.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Android Studio - App Food - Ứng dụng bán đồ ăn trực tuyến",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 231,
-      "downloaded": 0,
+      "downloaded": 124,
       "liked": false,
       "price": 73000
     },
@@ -303,9 +329,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/nhat-ky-hanh-trinh-du-lich---android-appv1-22735.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/nhat-ky-hanh-trinh-du-lich---android-appv1-22736.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Nhật ký hành trình du lịch - Android app(v1)",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 253,
       "downloaded": 8,
       "liked": false,
@@ -319,9 +358,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-ung-dung-dich-vu-mang-xa-hoi-223219.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-ung-dung-dich-vu-mang-xa-hoi-223220.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Source code ứng dụng dịch vụ mạng xã hội",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 369,
       "downloaded": 3,
       "liked": false,
@@ -335,9 +387,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/full-code-ung-dung-di-dong-nghe-nhac-truc-tuyen-153059.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/full-code-ung-dung-di-dong-nghe-nhac-truc-tuyen-15310.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Full code ứng dụng di động nghe nhạc trực tuyến",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 714,
       "downloaded": 8,
       "liked": false,
@@ -351,9 +416,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-app-dem-ngay-yeu-flutter-154349.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-app-dem-ngay-yeu-flutter-154350.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Source code app đếm ngày yêu flutter",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 223,
       "downloaded": 0,
       "liked": false,
@@ -367,9 +445,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/he-thong-quan-ly-sach-tren-nen-tang-android-225438.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/he-thong-quan-ly-sach-tren-nen-tang-android-225440.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Ứng dụng sách trên nền tảng Android",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 987,
       "downloaded": 7,
       "liked": false,
@@ -383,9 +474,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/code-android-java-server-api-mysql---ung-dung-quan-ly-ban-hang-co-file-bao-cao-144451.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/code-android-java-server-api-mysql---ung-dung-quan-ly-ban-hang-co-file-bao-cao-144452.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Code Android Java + Server API MySQL - Ứng Dụng Quản Lý Bán Hàng Có File Báo Cáo",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 178,
       "downloaded": 0,
       "liked": false,
@@ -399,9 +503,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/yt-pdf-maker---ung-dung-tao-file-pdf-tu-nhieu-nguon-noi-dung-da-up-len-chplay-103450.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/yt-pdf-maker---ung-dung-tao-file-pdf-tu-nhieu-nguon-noi-dung-da-up-len-chplay-103453.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "YT-PDF Maker - Ứng dụng tạo file PDF từ nhiều nguồn nội dung (Đã up lên CHPlay)",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 232,
       "downloaded": 0,
       "liked": false,
@@ -415,9 +532,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/android-dat-do-an---quan-ly-nha-hang-05855.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/android-dat-do-an---quan-ly-nha-hang-05857.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Android Đặt Đồ Ăn - Quản Lý Nhà Hàng",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 623,
       "downloaded": 16,
       "liked": false,
@@ -431,9 +561,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/ma-nguon-android-quan-ly-kho-hang-164945.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/ma-nguon-android-quan-ly-kho-hang-164946.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Mã nguồn Android Quản Lý Kho Hàng",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 486,
       "downloaded": 8,
       "liked": false,
@@ -447,9 +590,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/android-ghi-chu---note-ghi-chu---note-android-0499.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/android-ghi-chu---note-ghi-chu---note-android-04910.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Android Ghi Chú - Note Ghi Chú - Note Android",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 2253,
       "downloaded": 46,
       "liked": false,
@@ -463,9 +619,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/do-an-ung-dung-hen-ho-tinder-101248.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/do-an-ung-dung-hen-ho-tinder-101249.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Đồ án Ứng dụng hẹn hò Tinder",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1286,
       "downloaded": 0,
       "liked": false,
@@ -479,9 +648,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/full-sourcecode-ung-dung-busgo---tim-kiem-dia-diem-lich-trinh-xe-bus-ha-noi-14355.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/full-sourcecode-ung-dung-busgo---tim-kiem-dia-diem-lich-trinh-xe-bus-ha-noi-14357.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Full SourceCode Ứng dụng BusGO - Tìm kiếm địa điểm, lịch trình xe bus Hà Nội",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1000,
       "downloaded": 100,
       "liked": false,
@@ -495,9 +677,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-ung-dung-player-for-cloud---nghe-nhac-zingmp3-143245.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/source-code-ung-dung-player-for-cloud---nghe-nhac-zingmp3-143246.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Source code Ứng dụng Player for Cloud - Nghe nhạc ZingMP3",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1000,
       "downloaded": 100,
       "liked": false,
@@ -511,9 +706,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/android-java-mysql-ban-hang-linh-kien-dien-tu-1303.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/android-java-mysql-ban-hang-linh-kien-dien-tu-1304.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Android java + mysql bán hàng linh kiện điện tử",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1000,
       "downloaded": 100,
       "liked": false,
@@ -527,9 +735,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/react-native-source-code-example-xay-dung-app-ban-hang-react-native-assigment-fpoly-22940.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/react-native-source-code-example-xay-dung-app-ban-hang-react-native-assigment-fpoly-22942.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "React Native source code example Xây dựng App bán hàng React Native Assigment Fpoly",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1000,
       "downloaded": 100,
       "liked": false,
@@ -543,9 +764,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/%20111247%2033151_dich-vu-spa-tai-nha---flutter-app-ios-android-cho-khach-hang-nhan-vien-spa-voi-trang-admin-quan-ly-boi-laravel-1149121976753520.png",
         "https://topcode.vn/FilesUpload/CodeUpload/%20111247%2033151_dich-vu-spa-tai-nha---flutter-app-ios-android-cho-khach-hang-nhan-vien-spa-voi-trang-admin-quan-ly-boi-laravel-1149112000447890.png"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Dịch vụ Spa tại nhà - Flutter App (iOS & Android) cho Khách hàng, Nhân viên Spa với trang Admin quản lý bởi Laravel",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1000,
       "downloaded": 100,
       "liked": false,
@@ -559,9 +793,22 @@
         "https://topcode.vn/FilesUpload/CodeUpload/code-ung-dung-social-network-full-soure-kem-bao-cao-11814.jpg",
         "https://topcode.vn/FilesUpload/CodeUpload/code-ung-dung-social-network-full-soure-kem-bao-cao-11815.jpg"
       ],
-      "type": "Android",
+      "type": {
+        "name": "Android",
+        "icon": "bi bi-android2"
+      },
       "name": "Ứng dụng mạng xã hội soure code +kèm báo cáo",
-      "star": 5,
+      "description": "Chia sẻ code + database website tuyển dụng người giúp việc xây dựng trên PHP thuần, đơn giản, dễ hiểu, dành cho sinh viên lập trình tham khảo",
+      "release": "12-06-2023",
+      "fileType": "Full code",
+      "file": "Website.zip [47.2 MB]",
+      "rating": {
+        "5star": 20,
+        "4star": 20,
+        "3star": 20,
+        "2star": 20,
+        "1star": 20
+      },
       "viewed": 1000,
       "downloaded": 100,
       "liked": false,
@@ -916,6 +1163,10 @@
       "price": 600000
     }
   ],
+
+
+
+
 
 
 
