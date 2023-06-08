@@ -1162,5 +1162,34 @@
       "liked": false,
       "price": 600000
     }
+  ],
+
+
+
+
+
+
+
+  "discount-code": [
+    {
+      "code": "k46-it-nlu-1",
+      "discount_percent": 0.5
+    },
+    {
+      "code": "k46-it-nlu-2",
+      "discount_percent": 0.4
+    },
+    {
+      "code": "k46-it-nlu-3",
+      "discount_percent": 0.3
+    },
+    {
+      "code": "k46-it-nlu-4",
+      "discount_percent": 0.2
+    },
+    {
+      "code": "k46-it-nlu-5",
+      "discount_percent": 0.1
+    }
   ]
 }
