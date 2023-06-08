@@ -3,8 +3,8 @@ import {useDispatch} from "react-redux";
 import {Toast} from 'react-bootstrap';
 import {default as queryString} from 'query-string';
 
-import {addItemToCart} from '../../redux/Action';
-import {formatCurrency} from '../../javascript/utils';
+import {addItemToCart} from '../../redux/redux_tuyen/Action_Tuyen';
+import {formatCurrency} from '../../javascript/utils/Utils_Tuyen';
 
 import Pagination from './Pagination'
 
