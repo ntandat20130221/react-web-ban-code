@@ -4,9 +4,12 @@ import {Toast} from 'react-bootstrap';
 import {default as queryString} from 'query-string';
 
 import {addItemToCart} from '../../redux/redux_tuyen/Action_Tuyen';
-import {formatCurrency} from '../../javascript/utils/Utils_Tuyen';
 
 import Pagination from './Pagination'
+
+import {Link} from "react-router-dom";
+import {StarRate} from "../ProductDetailPage/ProductDetails";
+import {formatNumber, formatRating} from "../../javascript/utils";
 
 function DataProductsFeatured() {
 
@@ -15,7 +18,7 @@ function DataProductsFeatured() {
     const [pagination, setPagination] = useState({}); // => trạng thái ban đầu của component Panigation
 
     const [filters, setFilters] = useState({
-        _limit: 10,
+        _limit: 8,
         _page: 1
     })
 
@@ -74,7 +77,7 @@ function DataProductsFeatured() {
          Bạn có thể xem useEffect như một cách để "kích hoạt" các tác vụ sau khi React hoàn thành việc render giao diện người dùng.
          */
 
-        // Cuộn trang lên phần đầu của component SectionProductsFeatured
+            // Cuộn trang lên phần đầu của component SectionProductsFeatured
         const element = document.getElementById("sect-product-featured");
         if (element) {
             element.scrollIntoView({behavior: "smooth"});
@@ -97,9 +100,9 @@ function DataProductsFeatured() {
     return (
         <>
             <div className="row featured__filter">
-                {products.map(product => (
-                        <ItemProductFeatured key={product.id} id={product.id} name={product.name} img={product.img}
-                                             price={product.price}></ItemProductFeatured>
+                {products.map((value, index) => (
+                        <ItemProductFeatured key={index} product={value}
+                        ></ItemProductFeatured>
                     )
                 )}
             </div>
@@ -112,10 +115,8 @@ function DataProductsFeatured() {
 
 }
 
-function ItemProductFeatured
-(data) {
+function ItemProductFeatured({product}) {
 
-    const [product, setProduct] = useState(data)
     const [showToast, setShowToast] = useState(false)
 
     /**
@@ -156,17 +157,31 @@ function ItemProductFeatured
                 </Toast>
             </div>
 
-            <div className="featured__item">
-                <div className="featured__item__pic set-bg"
-                     style={{backgroundImage: `url(${product.img})`}}>
-                    <ul className="featured__item__pic__hover">
-                        <li><a><i className="bi bi-hand-thumbs-up"></i></a></li>
-                        <li><a onClick={clickAddItemToCart}><i className="fa fa-shopping-cart"></i></a></li>
-                    </ul>
+            <div className="product-item">
+                <Link to={`product/${product.id}`} state={product} className="product-item-img">
+                    <img src={product.img} alt=""/>
+                </Link>
+                <div className="product-item-title d-flex justify-content-center align-items-center text-center pt-2">
+                    <div className="title-wrapper">
+                        <Link to={`product/${product.id}`} state={product}>{product.name}</Link>
+                    </div>
                 </div>
-                <div className="featured__item__text">
-                    <h6><a href="">{product.name}</a></h6>
-                    <h5>{formatCurrency(product.price)}</h5>
+                <div className="product-item-stats d-flex justify-content-between">
+                    <div><i className="fa fa-eye"></i> {product.viewed}</div>
+                    <div><i className="fa fa-download"></i> {product.downloaded}</div>
+                </div>
+                <div className="product-item-actions d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-start">
+                        <a className="product-item-action mr-1"><i className="fa fa-thumbs-up"></i></a>
+                        <a className="product-item-action"><i className="fa fa-shopping-cart" onClick={clickAddItemToCart}></i></a>
+                    </div>
+                    <div className="product-item-stars"><StarRate stars={formatRating(product.rating).average}
+                                                                  type={"bi bi-star-fill"}/></div>
+                </div>
+                <div className="product-item-bottom d-flex justify-content-between align-items-center">
+                    <div className="product-item-brand"><i className={product.type.icon}></i> {product.type.name}</div>
+                    <Link to={`product/${product.id}`} state={product}
+                          className="product-item-price">{formatNumber(product.price, '.')}đ</Link>
                 </div>
             </div>
         </div>
