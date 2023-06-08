@@ -92,7 +92,7 @@ function ItemCart(data) {
     function clickRemoveItemFromCart() {
 
         console.log("Product remove: ", product);
-        dispatch(removeItemFromCart(product));
+        dispatch(removeItemFromCart(product)); // xóa sản phẩm khỏi giỏ hàng
         Swal.fire({
             title: '',
             text: 'Sản phẩm đã xóa khỏi giỏ hàng',
@@ -103,6 +103,8 @@ function ItemCart(data) {
         }).then(() => {
 
         });
+        dispatch(updateDiscountCode('')); // reset lại mã giảm giá
+        dispatch(updateDiscountPercent(0)); // reset lại % giảm giá của đơn hàng
     }
 
     return (
