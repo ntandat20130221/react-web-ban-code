@@ -1,13 +1,14 @@
-import React from "react";
+import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-
+import {Modal, ModalBody, ModalHeader} from "reactstrap"
 import Swal from 'sweetalert2';
 
 import {formatCurrency, getPercentDiscount} from "../../javascript/utils/Utils_Tuyen";
 import {getListDiscountCode} from "../../javascript/api/Api_Tuyen"
 
 import {removeItemFromCart, updateDiscountCode, updateDiscountPercent} from "../../redux/redux_tuyen/Action_Tuyen";
+import '../../css/modal.css'
 
 function SectionCart() {
 
@@ -178,12 +179,44 @@ function TotalCart() {
         </ul>);
     }
 
+    const [showModal, setShowModal] = useState(false);
+
+    const wallets = [
+        {name: 'Momo', link_image: 'https://sharecode.vn/assets/images/vi-momo.png'},
+        {name: 'ViettelPay', link_image: 'https://sharecode.vn/assets/images/vi-vietel-pay.png'},
+        {name: 'NganLuong', link_image: 'https://sharecode.vn/assets/images/vi-ngan-luong.png'}
+    ]
     return (
-        <div className="shoping__checkout">
-            <h5>Đơn hàng</h5>
-            {content}
-            <a href="" className="primary-btn">Tiến hành thanh toán</a>
-        </div>
+        <>
+            <Modal size='lg' isOpen={showModal} toggle={() => setShowModal(false)}>
+                <ModalHeader className="header-modal">
+                    <div className="header-content">
+                        <div><span>Chọn đơn vị thanh toán</span></div>
+                        <div>
+                            <button className="custom-close-button" onClick={() => setShowModal(false)}>X</button>
+                        </div>
+                    </div>
+                </ModalHeader>
+                <ModalBody className="body-modal">
+                    <div className="body-content">
+                        {
+                            wallets.map((value, index) => (
+                                <div className="electronic-wallet">
+                                    <img src={value.link_image} alt=""/>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </ModalBody>
+            </Modal>
+
+
+            <div className="shoping__checkout">
+                <h5>Đơn hàng</h5>
+                {content}
+                <a className="primary-btn" onClick={() => setShowModal(true)}>Tiến hành thanh toán</a>
+            </div>
+        </>
     )
 }
 
