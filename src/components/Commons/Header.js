@@ -1,8 +1,11 @@
 import '../../css/header.css'
 import {useEffect, useState} from "react";
 import Cart from './Cart'
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import $ from 'jquery'
+import {getTypes} from "../../javascript/utils"
+import {useDispatch} from "react-redux";
+import {setType} from "../../redux/Action";
 
 const adsList = [
     {
@@ -90,11 +93,12 @@ function HeaderMenu() {
                     <nav className="header-menu">
                         <ul>
                             <li><Link to="/" className={location.pathname === '/' && 'active'}>Trang chủ</Link></li>
-                            <li><Link to="/top-codes" className={location.pathname === '/top-codes' && 'active'}>Top code</Link></li>
-                            <li><Link to="/quality-codes" className={location.pathname === '/quality-codes' && 'active'}>Code chất lượng</Link>
+                            <li><Link to="/top-codes" className={location.pathname.indexOf('top-codes') > 0 && 'active'}>Top code</Link></li>
+                            <li><Link to="/quality-codes" className={location.pathname.indexOf('quality-codes') > 0 && 'active'}>Code chất
+                                lượng</Link>
                                 <img src={require('../../img/ic_hot.gif')} alt=""/>
                             </li>
-                            <li><Link to="/free-codes" className={location.pathname === '/free-codes' && 'active'}>Code miễn phí</Link></li>
+                            <li><Link to="/free-codes" className={location.pathname.indexOf('free-codes') > 0 && 'active'}>Code miễn phí</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -107,8 +111,31 @@ function HeaderMenu() {
 }
 
 function HeaderSearch() {
-    const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
-        'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
+    const [query, setQuery] = useState('')
+    const [types, setTypes] = useState([])
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        fetch(`http://localhost:9810/products`)
+            .then(res => res.json())
+            .then(json => setTypes(getTypes(json)))
+    }, [])
+
+    function handleChange(event) {
+        setQuery(event.target.value)
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        navigate(`/top-codes?search=${query}`)
+    }
+
+    function handleNavigation(typeId) {
+        dispatch(setType(typeId))
+        navigate(`/top-codes/type=${typeId}`)
+    }
+
     return (
         <div className="container mb-4">
             <div className="row">
@@ -123,17 +150,20 @@ function HeaderSearch() {
                             <i className="bi bi-chevron-down"></i>
                         </div>
                         <ul>
-                            {categories.map((value, index) => (<li className="list-group-item" key={index}><a href="/">{value}</a></li>))}
+                            {types.map(type => (
+                                <li onClick={() => handleNavigation(type.id)}
+                                    className="list-group-item" key={type.id}><i className="fa fa-code"></i> {type.name}</li>
+                            ))}
                         </ul>
                     </div>
                 </div>
                 <div className="col-lg-7">
                     <div className="header-search h-100">
-                        <form action="">
+                        <form onSubmit={handleSubmit}>
                             <div className="header-search-categories pl-3">
                                 <span className="position-relative align-middle">TẤT CẢ CODE <i className="fa fa-caret-down"></i></span>
                             </div>
-                            <input type="text" placeholder="Nhập từ khóa"/>
+                            <input type="text" value={query} placeholder="Nhập từ khóa" onChange={handleChange}/>
                             <button type="submit"><i className="fa fa-search"></i></button>
                         </form>
                     </div>

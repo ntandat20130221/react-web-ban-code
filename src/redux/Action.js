@@ -25,3 +25,9 @@ export const setLayout = (layout) => {
         payload: layout
     }
 }
+
+export const reset = () => {
+    return {
+        type: 'reset'
+    }
+}
