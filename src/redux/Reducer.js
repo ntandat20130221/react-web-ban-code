@@ -1,7 +1,7 @@
 import {combineReducers} from "redux";
 import {cartReducer, discountCodeReducer} from "./redux_tuyen/Reducer_Tuyen";
 
-const initialState = {
+export const initialState = {
     layout: 'grid',
     page: 1,
     sort: null,
