@@ -36,5 +36,5 @@ export const reducers = combineReducers({
     cartReducer: cartReducer,
     listProductsReducer: listProductsReducer,
     discountCodeReducer: discountCodeReducer,
-    registerReducer: errorReducer
+    errorReducer: errorReducer
 })
