@@ -1,17 +1,7 @@
 import {combineReducers} from "redux";
 import {cartReducer, discountCodeReducer} from "./redux_tuyen/Reducer_Tuyen";
-
-const initialState = {
-    page: 1,
-    sort: null,
-    layout: 'grid',
-    type: {
-        id: null,
-        name: null
-    }
-}
-
-const listProductsReducer = (state = initialState, action) => {
+import errorReducer from "./redux_tai/ErrorSlice"
+const listProductsReducer = (state = {page: 1, sort: null, layout: 'grid', type: null}, action) => {
     switch (action.type) {
         case 'listProducts/page': {
             return {
@@ -45,5 +35,6 @@ const listProductsReducer = (state = initialState, action) => {
 export const reducers = combineReducers({
     cartReducer: cartReducer,
     listProductsReducer: listProductsReducer,
-    discountCodeReducer: discountCodeReducer
+    discountCodeReducer: discountCodeReducer,
+    errorReducer: errorReducer
 })

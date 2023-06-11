@@ -3883,5 +3883,17 @@
       "code": "k46-it-nlu-5",
       "discount_percent": 0.1
     }
+  ],
+  "accounts": [
+    {
+      "email": "nguyenphutai1234@gmail.com",
+      "hashPass": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "id": 1
+    },
+    {
+      "email": "nguyenphutai840@gmail.com",
+      "hashPass": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "id": 2
+    }
   ]
 }
