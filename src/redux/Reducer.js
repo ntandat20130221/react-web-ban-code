@@ -1,5 +1,6 @@
 import {combineReducers} from "redux";
 import {cartReducer, discountCodeReducer} from "./redux_tuyen/Reducer_Tuyen";
+import errorReducer from "./redux_tai/ErrorSlice"
 
 export const initialState = {
     layout: 'grid',
@@ -70,5 +71,6 @@ export const reducers = combineReducers({
     cartReducer: cartReducer,
     listProductsReducer: listProductsReducer,
     discountCodeReducer: discountCodeReducer,
-    likedCodesReducer: likedCodesReducer
+    likedCodesReducer: likedCodesReducer,
+    errorReducer: errorReducer
 })
