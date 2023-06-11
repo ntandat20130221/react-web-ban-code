@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {Link} from "react-router-dom";
-
+import {Modal, ModalBody, ModalHeader} from "reactstrap"
 import Swal from 'sweetalert2';
 
 import {formatCurrency, getPercentDiscount} from "../../javascript/utils/Utils_Tuyen";
 import {getListDiscountCode} from "../../javascript/api/Api_Tuyen"
 
 import {removeItemFromCart, updateDiscountCode, updateDiscountPercent} from "../../redux/redux_tuyen/Action_Tuyen";
+import '../../css/modal.css'
 
 function SectionCart() {
 
@@ -36,10 +37,8 @@ function SectionCart() {
                             </tr>
                             </thead>
                             <tbody>
-                            {cart.map(cart_item => (
-                                <ItemCart key={cart_item.id} id={cart_item.id} img={cart_item.img}
-                                          name={cart_item.name}
-                                          price={cart_item.price}/>
+                            {cart.map((value, index) => (
+                                <ItemCart key={index} product={value}/>
                             ))}
                             </tbody>
                         </table>
@@ -78,16 +77,14 @@ function SectionCart() {
     )
 } // => đây là component cha
 
-function ItemCart(data) {
-
-    const [product, setProduct] = useState(data);
+function ItemCart({product}) {
 
     const styleImage = {
         width: '60%',
         height: '60%'
     }
 
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); // dùng để gửi Action đến Store
 
     function clickRemoveItemFromCart() {
 
@@ -131,11 +128,11 @@ function FormInputDiscount() {
     const clickApplyDiscountCode = async (e) => {
         e.preventDefault();
         try {
-            const list_discount_code = await getListDiscountCode();
+            const list_discount_code = await getListDiscountCode(); // lấy danh sách mã giảm giá từ api của server
             const percent = getPercentDiscount(discountCode, list_discount_code);
             console.log(percent);
 
-            dispatch(updateDiscountPercent(percent));  // => dispatch(action) - Gửi action đến Redux store (nếu bạn sử dụng Redux)
+            dispatch(updateDiscountPercent(percent));  // => dispatch(action) - Gửi action đến Redux store
         } catch (error) {
             console.error('Error fetching discount codes:', error);
         }
@@ -182,12 +179,44 @@ function TotalCart() {
         </ul>);
     }
 
+    const [showModal, setShowModal] = useState(false);
+
+    const wallets = [
+        {name: 'Momo', link_image: 'https://sharecode.vn/assets/images/vi-momo.png'},
+        {name: 'ViettelPay', link_image: 'https://sharecode.vn/assets/images/vi-vietel-pay.png'},
+        {name: 'NganLuong', link_image: 'https://sharecode.vn/assets/images/vi-ngan-luong.png'}
+    ]
     return (
-        <div className="shoping__checkout">
-            <h5>Đơn hàng</h5>
-            {content}
-            <a href="" className="primary-btn">Tiến hành thanh toán</a>
-        </div>
+        <>
+            <Modal size='lg' isOpen={showModal} toggle={() => setShowModal(false)}>
+                <ModalHeader className="header-modal">
+                    <div className="header-content">
+                        <div><span>Chọn đơn vị thanh toán</span></div>
+                        <div>
+                            <button className="custom-close-button" onClick={() => setShowModal(false)}>X</button>
+                        </div>
+                    </div>
+                </ModalHeader>
+                <ModalBody className="body-modal">
+                    <div className="body-content">
+                        {
+                            wallets.map((value, index) => (
+                                <div className="electronic-wallet">
+                                    <img src={value.link_image} alt=""/>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </ModalBody>
+            </Modal>
+
+
+            <div className="shoping__checkout">
+                <h5>Đơn hàng</h5>
+                {content}
+                <a className="primary-btn" onClick={() => setShowModal(true)}>Tiến hành thanh toán</a>
+            </div>
+        </>
     )
 }
 
