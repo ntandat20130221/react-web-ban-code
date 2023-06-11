@@ -10,3 +10,9 @@ export const loginError = (data) =>{
         payload: data
     }
 }
+export const changePassError = (data) =>{
+    return{
+        type: 'changePass/error',
+        payload: data
+    }
+}
