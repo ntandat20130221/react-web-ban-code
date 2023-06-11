@@ -1,8 +1,11 @@
 import '../../css/header.css'
 import {useEffect, useState} from "react";
 import Cart from './Cart'
-import {Link, useLocation} from "react-router-dom";
+import {Link, useLocation, useNavigate} from "react-router-dom";
 import $ from 'jquery'
+import {getTypes} from "../../javascript/utils"
+import {useDispatch} from "react-redux";
+import {setPage, setSort, setType} from "../../redux/Action";
 
 const adsList = [
     {
@@ -110,11 +113,12 @@ function HeaderMenu() {
                     <nav className="header-menu">
                         <ul>
                             <li><Link to="/" className={location.pathname === '/' && 'active'}>Trang chủ</Link></li>
-                            <li><Link to="/top-codes" className={location.pathname === '/top-codes' && 'active'}>Top code</Link></li>
-                            <li><Link to="/quality-codes" className={location.pathname === '/quality-codes' && 'active'}>Code chất lượng</Link>
+                            <li><Link to="/top-codes" className={location.pathname.indexOf('top-codes') > 0 && 'active'}>Top code</Link></li>
+                            <li><Link to="/quality-codes" className={location.pathname.indexOf('quality-codes') > 0 && 'active'}>Code chất
+                                lượng</Link>
                                 <img src={require('../../img/ic_hot.gif')} alt=""/>
                             </li>
-                            <li><Link to="/free-codes" className={location.pathname === '/free-codes' && 'active'}>Code miễn phí</Link></li>
+                            <li><Link to="/free-codes" className={location.pathname.indexOf('free-codes') > 0 && 'active'}>Code miễn phí</Link></li>
                         </ul>
                     </nav>
                 </div>
@@ -126,34 +130,88 @@ function HeaderMenu() {
     )
 }
 
+function CodeCategories({types}) {
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    function handleNavigation(typeId) {
+        dispatch(setType(typeId))
+        dispatch(setPage(1))
+        dispatch(setSort(null))
+        navigate(`/top-codes/type=${typeId}`)
+    }
+
+    return (
+        <div className="header-categories" onClick={() => {
+            $('.header-categories ul').slideToggle(300)
+            $('.header-categories-all .bi-chevron-down').toggleClass('rotate-down')
+        }}>
+            <div className="header-categories-all">
+                <i className="bi bi-list mr-3"></i>
+                <span>Danh mục code</span>
+                <i className="bi bi-chevron-down"></i>
+            </div>
+            <ul>
+                {types.map(type => (
+                    <li onClick={() => handleNavigation(type.id)}
+                        className="list-group-item" key={type.id}><i className="fa fa-code"></i> {type.name}</li>
+                ))}
+            </ul>
+        </div>
+    )
+}
+
 function HeaderSearch() {
-    const categories = ['Android', 'iOS', 'PHP & MySQL', 'WordPress', 'Visual C#', 'Asp/Asp.NET',
-        'Java/JSP', 'Flutter', 'React JS', 'Python', 'NodeJS', 'Ruby']
+    const [search, setSearch] = useState({})
+    const [types, setTypes] = useState([])
+    const [toggle, setToggle] = useState(false)
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+
+    useEffect(() => {
+        fetch(`http://localhost:9810/products`)
+            .then(res => res.json())
+            .then(json => setTypes(getTypes(json)))
+    }, [])
+
+    function handleChange(event) {
+        setSearch({...search, query: event.target.value})
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault()
+        dispatch(setType(null))
+        dispatch(setPage(1))
+        dispatch(setSort(null))
+        navigate(`/top-codes?search=${search.query}${search.from ? `&from=${search.from}` : ''}`)
+    }
+
     return (
         <div className="container mb-4">
             <div className="row">
                 <div className="col-lg-3">
-                    <div className="header-categories" onClick={() => {
-                        $('.header-categories ul').slideToggle(300)
-                        $('.header-categories-all .bi-chevron-down').toggleClass('rotate-down')
-                    }}>
-                        <div className="header-categories-all">
-                            <i className="bi bi-list mr-3"></i>
-                            <span>Danh mục code</span>
-                            <i className="bi bi-chevron-down"></i>
-                        </div>
-                        <ul>
-                            {categories.map((value, index) => (<li className="list-group-item" key={index}><a href="/">{value}</a></li>))}
-                        </ul>
-                    </div>
+                    <CodeCategories types={types}/>
                 </div>
                 <div className="col-lg-7">
                     <div className="header-search h-100">
-                        <form action="">
-                            <div className="header-search-categories pl-3">
-                                <span className="position-relative align-middle">TẤT CẢ CODE <i className="fa fa-caret-down"></i></span>
+                        <form onSubmit={handleSubmit}>
+                            <div className="header-search-categories pl-3"
+                                 onClick={(e) => {
+                                     e.stopPropagation()
+                                     $('.header-search-categories ul').slideToggle(300)
+                                     setToggle(!toggle)
+                                 }}>
+                                <span className="position-relative align-middle">{search.from || 'TẤT CẢ CODE'} <i
+                                    className={toggle ? "fa fa-caret-up" : "fa fa-caret-down"}></i></span>
+                                <ul>
+                                    {types.map(type => (
+                                        <li onClick={() => setSearch({...search, from: type.id})}
+                                            key={type.id}>{type.name}</li>
+                                    ))}
+                                    <li onClick={() => setSearch({})} key={types.length}>TẤT CẢ CODE</li>
+                                </ul>
                             </div>
-                            <input type="text" placeholder="Nhập từ khóa"/>
+                            <input type="text" value={search.query} placeholder="Nhập từ khóa" onChange={handleChange}/>
                             <button type="submit"><i className="fa fa-search"></i></button>
                         </form>
                     </div>
@@ -165,10 +223,20 @@ function HeaderSearch() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default function Header() {
+    useEffect(() => {
+        const ul = $('.header-search-categories ul')
+        $(document).on('click', (e) => {
+            if (!ul.is(':hidden')) {
+                ul.slideUp('fast')
+            }
+            e.stopPropagation()
+        })
+    }, [])
+
     return (
         <header className="header">
             <HeaderAds/>
