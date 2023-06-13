@@ -46,3 +46,41 @@ export const showModalPayment = (checkShow) => {
     }
 
 }
+
+export const updateStatePayment = (name_payment) => {
+    switch (name_payment) {
+
+        case 'paypal': {
+            return {
+                type: 'payment/paypal',
+                payload: name_payment
+            }
+        }
+
+        case 'momo': {
+            return {
+                type: 'payment/momo',
+                payload: name_payment
+            }
+        }
+        case 'viettelpay': {
+            return {
+                type: 'payment/viettelpay',
+                payload: name_payment
+
+            }
+        }
+        case 'nganluong': {
+            return {
+                type: 'payment/nganluong',
+                payload: name_payment
+            }
+        }
+
+        default:
+            return {
+                type: 'payment/reset',
+                payload: name_payment
+            }
+    }
+}
