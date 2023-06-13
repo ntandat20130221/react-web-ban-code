@@ -925,14 +925,49 @@
         "link": "https://github.com/TeamAmaze/AmazeFileManager/archive/refs/heads/release/4.0.zip"
       },
       "rating": {
-        "5star": 254,
-        "4star": 12,
-        "3star": 43,
-        "2star": 1,
-        "1star": 1
+        "5star": 270,
+        "4star": 19,
+        "3star": 52,
+        "2star": 7,
+        "1star": 4
       },
-      "viewed": 157,
-      "downloaded": 0,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        },
+        {
+          "name": "AT",
+          "phone": "0123456789",
+          "star": 5,
+          "when": 1686640503483,
+          "comment": "Rất xinh đẹp, tuyệt vời!"
+        },
+        {
+          "name": "Rất tốt",
+          "phone": "0123456789",
+          "star": 5,
+          "when": 1686641102696,
+          "comment": "Bảnh Ngô"
+        },
+        {
+          "name": "",
+          "phone": "",
+          "star": 3,
+          "when": 1686641217550,
+          "comment": ""
+        }
+      ],
+      "viewed": 232,
+      "downloaded": 123,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
       "installation": "<div><span>1.</span> Đầu tiên bạn cần phải mua project này trước đã.</div><div><span>2.</span> Tải và mở API bằng <a href='https://www.eclipse.org/downloads/'>Eclipsea</a>, <a href='https://www.jetbrains.com/idea/'>IntelliJ IDEA</a> (nhớ cài các công cụ đi kèm như <a href='https://spring.io/projects/spring-boot'>Spring Boot</a>, <a href='https://projectlombok.org/'>Lombok</a>,...).</div><div><span>3.</span> Thiết lập lại kết nối tài khoản và mật khẩu MySQL trong file <code>application.properties</code> của API.</div><div><span>4.</span> Mở Project bằng Android Studio và cài lại IP và đường dẫn Zalo Pay như video hướng dẫn.</div><div><span>5.</span> Mở MySQL và chạy file <code>script.sql</code> đã đính kèm trong link tải.</div><div><span>6.</span> Chạy project và trải nghiệm đi nào :)))</div><div>Video huớng dẫn cài đặt source code App bán hàng Android với API Spring Boot: <a href='https://www.youtube.com/watch?v=f6bxjdaH_f8'>https://www.youtube.com/watch?v=f6bxjdaH_f8</a></div>",
@@ -968,7 +1003,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 231,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 124,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1005,8 +1054,22 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 253,
-      "downloaded": 8,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
+      "downloaded": 14,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
       "installation": "<div><span>1.</span> Đầu tiên bạn cần phải mua project này trước đã.</div><div><span>2.</span> Tải và mở API bằng <a href='https://www.eclipse.org/downloads/'>Eclipsea</a>, <a href='https://www.jetbrains.com/idea/'>IntelliJ IDEA</a> (nhớ cài các công cụ đi kèm như <a href='https://spring.io/projects/spring-boot'>Spring Boot</a>, <a href='https://projectlombok.org/'>Lombok</a>,...).</div><div><span>3.</span> Thiết lập lại kết nối tài khoản và mật khẩu MySQL trong file <code>application.properties</code> của API.</div><div><span>4.</span> Mở Project bằng Android Studio và cài lại IP và đường dẫn Zalo Pay như video hướng dẫn.</div><div><span>5.</span> Mở MySQL và chạy file <code>script.sql</code> đã đính kèm trong link tải.</div><div><span>6.</span> Chạy project và trải nghiệm đi nào :)))</div><div>Video huớng dẫn cài đặt source code App bán hàng Android với API Spring Boot: <a href='https://www.youtube.com/watch?v=f6bxjdaH_f8'>https://www.youtube.com/watch?v=f6bxjdaH_f8</a></div>",
@@ -1042,7 +1105,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 369,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 3,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1079,8 +1156,22 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 714,
-      "downloaded": 8,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
+      "downloaded": 13,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
       "installation": "<div><span>1.</span> Đầu tiên bạn cần phải mua project này trước đã.</div><div><span>2.</span> Tải và mở API bằng <a href='https://www.eclipse.org/downloads/'>Eclipsea</a>, <a href='https://www.jetbrains.com/idea/'>IntelliJ IDEA</a> (nhớ cài các công cụ đi kèm như <a href='https://spring.io/projects/spring-boot'>Spring Boot</a>, <a href='https://projectlombok.org/'>Lombok</a>,...).</div><div><span>3.</span> Thiết lập lại kết nối tài khoản và mật khẩu MySQL trong file <code>application.properties</code> của API.</div><div><span>4.</span> Mở Project bằng Android Studio và cài lại IP và đường dẫn Zalo Pay như video hướng dẫn.</div><div><span>5.</span> Mở MySQL và chạy file <code>script.sql</code> đã đính kèm trong link tải.</div><div><span>6.</span> Chạy project và trải nghiệm đi nào :)))</div><div>Video huớng dẫn cài đặt source code App bán hàng Android với API Spring Boot: <a href='https://www.youtube.com/watch?v=f6bxjdaH_f8'>https://www.youtube.com/watch?v=f6bxjdaH_f8</a></div>",
@@ -1116,7 +1207,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 223,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 0,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1153,7 +1258,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 987,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 7,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1190,7 +1309,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 178,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 0,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1227,7 +1360,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 232,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 0,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1264,7 +1411,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 623,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 16,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1301,7 +1462,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 486,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 8,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1338,7 +1513,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 2253,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 46,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1375,7 +1564,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1286,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 0,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1412,7 +1615,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1449,7 +1666,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1486,7 +1717,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1523,7 +1768,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1560,7 +1819,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1597,7 +1870,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1634,7 +1921,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1671,7 +1972,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1708,7 +2023,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1745,7 +2074,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1782,7 +2125,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1819,7 +2176,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1856,7 +2227,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1893,7 +2278,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1930,7 +2329,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -1967,7 +2380,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2004,7 +2431,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2041,7 +2482,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2078,7 +2533,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2115,7 +2584,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2152,7 +2635,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2189,7 +2686,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2226,7 +2737,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2263,7 +2788,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2300,7 +2839,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2337,7 +2890,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2374,7 +2941,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2411,7 +2992,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2448,7 +3043,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2485,7 +3094,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2522,7 +3145,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2559,7 +3196,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2596,7 +3247,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2633,7 +3298,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2670,7 +3349,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2707,7 +3400,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2744,7 +3451,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2781,7 +3502,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2818,7 +3553,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2855,7 +3604,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2892,7 +3655,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2929,7 +3706,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -2966,7 +3757,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3003,7 +3808,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3040,7 +3859,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3077,7 +3910,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3114,7 +3961,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3151,7 +4012,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3188,7 +4063,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3225,7 +4114,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3262,7 +4165,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3299,7 +4216,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3336,7 +4267,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3373,7 +4318,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3410,7 +4369,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3447,7 +4420,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3484,7 +4471,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3521,7 +4522,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3558,7 +4573,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3595,7 +4624,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3632,7 +4675,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3669,7 +4726,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3706,7 +4777,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3743,7 +4828,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3780,7 +4879,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3817,7 +4930,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3854,7 +4981,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3891,7 +5032,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3928,7 +5083,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -3965,7 +5134,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4002,7 +5185,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4039,7 +5236,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4076,7 +5287,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4113,7 +5338,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4150,7 +5389,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4187,7 +5440,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4224,7 +5491,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4261,7 +5542,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4298,7 +5593,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4335,7 +5644,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4372,7 +5695,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4409,7 +5746,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4446,7 +5797,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4483,7 +5848,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4520,7 +5899,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4557,7 +5950,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4594,7 +6001,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4631,7 +6052,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4668,7 +6103,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4705,7 +6154,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4742,7 +6205,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4779,7 +6256,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4816,7 +6307,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4853,7 +6358,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4890,7 +6409,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4927,7 +6460,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -4964,7 +6511,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -5001,7 +6562,21 @@
         "2star": 20,
         "1star": 20
       },
-      "viewed": 1000,
+      "rating-comment": [
+        {
+          "name": "Chị Hà",
+          "star": 4,
+          "when": 1686637248685,
+          "comment": "Sản phẩm rất tốt tôi rất hài lòng"
+        },
+        {
+          "name": "Khá Bảnh",
+          "star": 5,
+          "when": 1686637249374,
+          "comment": "Rất hài lòng"
+        }
+      ],
+      "viewed": 100,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -5041,6 +6616,21 @@
       "email": "nguyenphutai840@gmail.com",
       "hashPass": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
       "id": 2
+    }
+  ],
+  "xyz": [
+    {
+      "id": 1,
+      "name": "John"
+    },
+    {
+      "id": 2,
+      "name": "Michel"
+    },
+    {
+      "id": 3,
+      "name": "Michel",
+      "age": 22
     }
   ]
 }
