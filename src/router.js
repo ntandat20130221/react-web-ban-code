@@ -8,6 +8,7 @@ import ForgotPassPage from "./components/AuthenticationPage/ForgotPass";
 import ProfilePage from "./components/ProfilePage/Profile";
 import ChangePassPage from "./components/AuthenticationPage/ChangePass";
 import CartDetailPage from "./components/CartDetailPage/CartDetailPage";
+import {LikedCodes} from "./components/Commons/LikedCodes";
 
 const profile = {path: '/profile', element: <ProfilePage/>}
 const listAuthentication = [
@@ -31,7 +32,7 @@ const listAuthentication = [
 
 const listProducts = [
     {
-        path: '/top-codes',
+        path: '/top-codes/*',
         element: <ListProducts/>
     },
     {
@@ -56,10 +57,16 @@ const listProducts = [
     }
 ]
 
+const likedCodes = [{
+    path: '/liked-codes',
+    element: <LikedCodes/>
+}]
+
 const cart = [{
     path: '/cart-details',
     element: <CartDetailPage/>
 }]
+
 export const router = createBrowserRouter([
     {
         path: '/',
@@ -68,6 +75,6 @@ export const router = createBrowserRouter([
     profile,
     ...listProducts,
     ...listAuthentication,
-    ...listProducts,
-    ...cart
+    ...cart,
+    ...likedCodes
 ])

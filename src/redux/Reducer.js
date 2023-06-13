@@ -1,30 +1,65 @@
 import {combineReducers} from "redux";
 import {cartReducer, discountCodeReducer} from "./redux_tuyen/Reducer_Tuyen";
 import errorReducer from "./redux_tai/ErrorSlice"
-const listProductsReducer = (state = {page: 1, sort: null, layout: 'grid', type: null}, action) => {
+
+export const initialState = {
+    layout: 'grid',
+    page: 1,
+    sort: null,
+    type: null
+}
+
+const listProductsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'listProducts/page': {
+        case 'reset': {
+            return {
+                ...state,
+                ...initialState
+            }
+        }
+        case 'products/page': {
             return {
                 ...state,
                 page: action.payload
             }
         }
-        case 'listProducts/sort': {
+        case 'products/sort': {
             return {
                 ...state,
                 sort: action.payload
             }
         }
-        case 'listProducts/type': {
+        case 'products/type': {
             return {
                 ...state,
                 type: action.payload
             }
         }
-        case 'listProducts/layout': {
+        case 'products/layout': {
             return {
                 ...state,
                 layout: action.payload
+            }
+        }
+        default:
+            return state
+    }
+}
+
+const likedCodesReducer = (state = {liked: JSON.parse(localStorage.getItem('liked'))}, action) => {
+    switch (action.type) {
+        case 'liked/add': {
+            let likedCodes = undefined
+            if (!state.liked.some(c => c.id === action.payload.id)) {
+                likedCodes = [...state.liked, action.payload]
+            } else {
+                const index = state.liked.findIndex(value => value.id === action.payload.id)
+                likedCodes = index > -1 ? [...state.liked.slice(0, index), ...state.liked.slice(index + 1)] : undefined
+            }
+            localStorage.setItem('liked', JSON.stringify(likedCodes))
+            return {
+                ...state,
+                liked: likedCodes !== undefined ? [...likedCodes] : [...state.liked]
             }
         }
         default:
@@ -36,5 +71,6 @@ export const reducers = combineReducers({
     cartReducer: cartReducer,
     listProductsReducer: listProductsReducer,
     discountCodeReducer: discountCodeReducer,
+    likedCodesReducer: likedCodesReducer,
     errorReducer: errorReducer
 })

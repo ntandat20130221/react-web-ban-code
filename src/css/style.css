@@ -2,12 +2,13 @@
 
 :root {
     --color-main: #7fad39;
+	--color-secondary: #ff921d;
 	--color-star: #efC529;
     --color-border: #dadada;
     --color-text: #343434;
 }
 
-* {
+*, :before, :after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
