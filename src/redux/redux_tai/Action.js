@@ -22,3 +22,9 @@ export const forgotPassError = (data) =>{
         payload: data
     }
 }
+export const verifyPassError = (data) =>{
+    return{
+        type: 'verifyPass/error',
+        payload: data
+    }
+}
