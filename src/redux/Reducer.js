@@ -11,36 +11,16 @@ export const initialState = {
 
 const listProductsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'reset': {
-            return {
-                ...state,
-                ...initialState
-            }
-        }
-        case 'products/page': {
-            return {
-                ...state,
-                page: action.payload
-            }
-        }
-        case 'products/sort': {
-            return {
-                ...state,
-                sort: action.payload
-            }
-        }
-        case 'products/type': {
-            return {
-                ...state,
-                type: action.payload
-            }
-        }
-        case 'products/layout': {
-            return {
-                ...state,
-                layout: action.payload
-            }
-        }
+        case 'reset':
+            return {...state, ...initialState}
+        case 'products/page':
+            return {...state, page: action.payload}
+        case 'products/sort':
+            return {...state, sort: action.payload}
+        case 'products/type':
+            return {...state, type: action.payload}
+        case 'products/layout':
+            return {...state, layout: action.payload}
         default:
             return state
     }
