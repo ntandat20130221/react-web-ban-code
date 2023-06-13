@@ -16,3 +16,9 @@ export const changePassError = (data) =>{
         payload: data
     }
 }
+export const forgotPassError = (data) =>{
+    return{
+        type: 'forgotPass/error',
+        payload: data
+    }
+}
