@@ -91,10 +91,10 @@ export function ModalPayment() {
                 confirmButtonText: 'OK',
                 timer: 3000, // Thời gian tự động tắt thông báo sau 3 giây
                 timerProgressBar: true // Hiển thị thanh tiến trình đếm ngược
-            }).then(() => {
+            }).then(() =>
+            {
                 setShowButtonDownload(true);
-                setContentRight(
-                    <Row className="d-flex align-items-center justify-content-center">
+                setContentRight(<Row className="d-flex align-items-center justify-content-center">
                         <Row className="mt-3">
                             <div className="notify-success-content-right">Bạn đã thanh toán thành công</div>
                         </Row>
@@ -105,8 +105,7 @@ export function ModalPayment() {
                                 </Button>
                             </div>
                         </Row>
-                    </Row>
-                )
+                    </Row>)
             });
         }, 1000);
     };
@@ -116,7 +115,7 @@ export function ModalPayment() {
 
         // nếu đơn hàng đã được thanh toán
         if (checkPayment === true) {
-            dispatch(resetCart());
+            dispatch(resetCart()); // reset lại giỏ hàng
             dispatch(updateStatePayment("reset")); // => reset lại trạng thái thanh toán
         }
 
