@@ -46,7 +46,8 @@ const listProductsReducer = (state = initialState, action) => {
     }
 }
 
-const likedCodesReducer = (state = {liked: JSON.parse(localStorage.getItem('liked'))}, action) => {
+
+const likedCodesReducer = (state = {liked: JSON.parse(localStorage.getItem('liked')) === null ? [] : JSON.parse(localStorage.getItem('liked'))}, action) => {
     switch (action.type) {
         case 'liked/add': {
             let likedCodes = undefined

@@ -4,6 +4,7 @@ import Header from '../Commons/Header'
 import SectionBreadcrumb from '../Commons/SectionBreadcrumb'
 import SectionCart from './SectionCart'
 import Footer from '../Commons/Footer'
+import {ModalPayment} from "../Commons/Modal"
 
 function CartDetailPage() {
 
@@ -15,6 +16,7 @@ function CartDetailPage() {
             <SectionBreadcrumb breadcrumbs={breadcrumbs}/>
             <SectionCart/>
             <Footer/>
+            <ModalPayment/>
         </div>
     )
 }
