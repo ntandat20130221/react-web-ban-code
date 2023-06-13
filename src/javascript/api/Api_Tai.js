@@ -82,6 +82,12 @@ export async function changePassword(email, newPassword) {
         console.error('Error:', error);
     }
 }
+export async function getProvinces() {
+    const url = "http://localhost:9810/api/provinces";
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+}
 
 
 

@@ -3,10 +3,12 @@ import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
 import Footer from '../Commons/Footer';
 import {Link, useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
+import {getProvinces} from "../../javascript/api/Api_Tai";
 
 const breadcrumbs = [{name: "Trang chủ", link: "/"}, {name: "Hồ sơ cá nhân", link: "/profile"}]
 function SectionProfile() {
     const [email, setEmail] = useState('');
+    const [provinces, setProvinces] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
         const storedEmail = localStorage.getItem('account');
@@ -16,12 +18,22 @@ function SectionProfile() {
             navigate('/login');
         }
     }, []);
-
+    useEffect(()=>{
+        try {
+            getProvinces().then(data =>{
+                setProvinces(data)
+            })
+        }catch (error) {
+            console.error('Lỗi khi gọi API:', error)
+        }
+    },[])
     const handleLogout = () => {
         localStorage.removeItem('account');
         setEmail('');
         navigate('/');
     };
+    console.log(provinces)
+
     return (
         <section className="contact-us profile">
             <div className="container">
@@ -100,10 +112,11 @@ function SectionProfile() {
                                         <div className="form-group">
                                             <label htmlFor="company">Tỉnh / Thành phố<span>*</span></label>
                                             <select className="region" name="city" id="company">
-                                                <option value="volvo">Volvo</option>
-                                                <option value="saab">Saab</option>
-                                                <option value="mercedes">Mercedes</option>
-                                                <option value="audi">Audi</option>
+                                                {provinces.map(province =>(
+                                                    <option key={province.code} value={province.code}>
+                                                        {province.name}
+                                                    </option>)
+                                                )}
                                             </select>
                                         </div>
                                     </div>
