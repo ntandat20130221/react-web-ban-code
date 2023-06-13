@@ -9,6 +9,7 @@ import ProfilePage from "./components/ProfilePage/Profile";
 import ChangePassPage from "./components/AuthenticationPage/ChangePass";
 import CartDetailPage from "./components/CartDetailPage/CartDetailPage";
 import {LikedCodes} from "./components/Commons/LikedCodes";
+import VerifyPassPage from "./components/AuthenticationPage/VerifyPass";
 
 const profile = {path: '/profile', element: <ProfilePage/>}
 const listAuthentication = [
@@ -27,6 +28,10 @@ const listAuthentication = [
     {
         path: '/change-password',
         element: <ChangePassPage/>
+    },
+    {
+        path: "/verify-password",
+        element: <VerifyPassPage/>
     }
 ]
 
