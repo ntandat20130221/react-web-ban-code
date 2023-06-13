@@ -1,5 +1,5 @@
 import {combineReducers} from "redux";
-import {cartReducer, discountCodeReducer} from "./redux_tuyen/Reducer_Tuyen";
+import {cartReducer, discountCodeReducer, modalReducer, paymentReducer} from "./redux_tuyen/Reducer_Tuyen";
 import errorReducer from "./redux_tai/ErrorSlice"
 
 export const initialState = {
@@ -138,12 +138,13 @@ const productReducer = (state = {product: null}, action) => {
             return state
     }
 }
-
 export const reducers = combineReducers({
     cartReducer: cartReducer,
     listProductsReducer: listProductsReducer,
     discountCodeReducer: discountCodeReducer,
     likedCodesReducer: likedCodesReducer,
     errorReducer: errorReducer,
+    modalReducer: modalReducer,
+    paymentReducer: paymentReducer,
     productReducer
 })

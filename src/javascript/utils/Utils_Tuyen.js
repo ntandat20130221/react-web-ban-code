@@ -51,3 +51,40 @@ export function getPercentDiscount(discount_code, list_discount_code) {
        lấy ra giá trị (% giảm giá) của mã giảm giá có trong danh sách mã giảm giá lấy từ server
      */
 }
+
+export function payWithPaypal() {
+    alert('Thanh toán với PayPal');
+}
+
+export function payWithMomo(cart) {
+    alert('Thanh toán với Momo');
+
+}
+
+export function payWithViettelPay() {
+    alert('Thanh toán với ViettelPay');
+}
+
+export function payWithNganLuong() {
+    alert('Thanh toán với NganLuong');
+}
+
+export function downloadFile(fileUrl) {
+    // Tạo một thẻ <a> ẩn
+    const link = document.createElement('a');
+    link.href = fileUrl;
+    link.style.display = 'none';
+
+    // Đặt tên file dựa trên tên file trong URL
+    const fileName = fileUrl.substring(fileUrl.lastIndexOf('/') + 1);
+    link.setAttribute('download', fileName);
+
+    // Thêm thẻ <a> vào DOM
+    document.body.appendChild(link);
+
+    // Kích hoạt sự kiện click để tải xuống file
+    link.click();
+
+    // Xóa thẻ <a> khỏi DOM
+    document.body.removeChild(link);
+}

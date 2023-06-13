@@ -17,6 +17,12 @@ export const removeItemFromCart = (product) => {
     }
 }
 
+export const resetCart = () => {
+    return {
+        type: 'cart/reset'
+    }
+}
+
 export const updateDiscountPercent = (discount_percent) => {
     return {
         type: 'cart/update-discount-percent',
@@ -28,5 +34,59 @@ export const updateDiscountCode = (code) => {
     return {
         type: 'discountCode/update-code',
         payload: code
+    }
+}
+
+export const showModalPayment = (checkShow) => {
+
+    if (checkShow === true) {
+        return {
+            type: 'modal/show-modal-payment',
+            payload: checkShow
+        }
+    }
+
+    return {
+        type: 'modal/close-model-payment',
+        payload: checkShow
+    }
+
+}
+
+export const updateStatePayment = (name_payment) => {
+    switch (name_payment) {
+
+        case 'paypal': {
+            return {
+                type: 'payment/paypal',
+                payload: name_payment
+            }
+        }
+
+        case 'momo': {
+            return {
+                type: 'payment/momo',
+                payload: name_payment
+            }
+        }
+        case 'viettelpay': {
+            return {
+                type: 'payment/viettelpay',
+                payload: name_payment
+
+            }
+        }
+        case 'nganluong': {
+            return {
+                type: 'payment/nganluong',
+                payload: name_payment
+            }
+        }
+
+        default:
+            return {
+                type: 'payment/reset',
+                payload: name_payment
+            }
     }
 }
