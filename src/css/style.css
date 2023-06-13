@@ -3454,7 +3454,7 @@ li {
 	font-weight: 400;
 }
 
-.contact-us .form .form-group input {
+.contact-us .form .form-group input, .contact-us .form .form-group select{
 	height: 48px;
 	outline: unset;
 	line-height: 48px;
