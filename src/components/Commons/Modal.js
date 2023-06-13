@@ -45,7 +45,8 @@ export function ModalPayment() {
     ]
 
     let content;
-    const [contentRight, setContentRight] = useState(<div>Bạn cần thanh toán để tải code qua chức năng này!</div>);
+    const [contentRight, setContentRight] = useState(<div className="mt-4 notify-warning-content-right">Bạn cần thanh toán để tải
+        code qua chức năng này!</div>);
 
     if (cart.length > 0) {
         content = (
@@ -95,7 +96,7 @@ export function ModalPayment() {
                 setContentRight(
                     <Row className="d-flex align-items-center justify-content-center">
                         <Row className="mt-3">
-                            <div>Bạn đã thanh toán thành công</div>
+                            <div className="notify-success-content-right">Bạn đã thanh toán thành công</div>
                         </Row>
                         <Row className="mt-3">
                             <div>
