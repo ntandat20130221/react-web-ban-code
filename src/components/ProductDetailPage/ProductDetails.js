@@ -1,13 +1,13 @@
 import Header from "../Commons/Header";
 import Footer from "../Commons/Footer";
 import '../../css/product-detail.css'
-import {useMemo, useRef, useState} from "react";
+import {useEffect, useMemo, useRef, useState} from "react";
 import {PopularCode} from "../TopCodePage/ListProducts";
 import {Link, useLocation, useNavigate} from "react-router-dom";
-import {formatNumber, formatRating} from "../../javascript/utils";
+import {formatNumber, formatRating, getPassedTimeInText} from "../../javascript/utils";
 import Parser from 'html-react-parser'
 import {useDispatch, useSelector} from "react-redux";
-import {increaseDownloaded, increaseViewed, putProduct} from "../../redux/Action";
+import {addLiked, increaseDownloaded, increaseRating, increaseViewed, putProduct, putRatingComment} from "../../redux/Action";
 
 function DetailLeft() {
     const p = useSelector(state => state.productReducer.product)
@@ -89,10 +89,13 @@ function DetailCenter() {
 }
 
 function DetailRight() {
+    const likedCodes = useSelector(state => state.likedCodesReducer.liked)
     const product = useSelector(state => state.productReducer.product)
     const dispatch = useDispatch()
     const location = useLocation()
     const navigate = useNavigate()
+
+    const inLiked = likedCodes.some(c => c.id === product.id)
 
     function handledDownload() {
         dispatch(increaseDownloaded())
@@ -106,7 +109,9 @@ function DetailRight() {
                 <span className="offer-price">{formatNumber((product.price), '.')}<sup>đ</sup></span>
                 <button className="offer-download" onClick={handledDownload}><img src="https://topcode.vn/assets/images/ic-down.png" alt=""/> TẢI NGAY
                 </button>
-                <button className="offer-favorite"><i className="fa fa-thumbs-up"></i> Lưu vào yêu thích</button>
+                <button className={`offer-favorite ${inLiked && 'offer-active'}`}
+                        onClick={() => dispatch(addLiked(product))}><i className="fa fa-thumbs-up"></i> {inLiked ? 'Xóa khỏi' : 'Lưu vào'} yêu thích
+                </button>
                 <span><span>CHIA SẺ NHANH</span> (CODE {product.id})</span>
                 <div>
                     <img src="https://topcode.vn/assets/images/share-email.png" alt=""/>
@@ -125,7 +130,8 @@ function DetailDivider({title, refData}) {
     return (<div className="detail-divider mt-5" ref={refData}><span>{title}</span></div>)
 }
 
-function DetailDescription({p, goTo}) {
+function DetailDescription({goTo}) {
+    const p = useSelector(state => state.productReducer.product)
     return (
         <>
             <DetailDivider title={'MÔ TẢ CHI TIẾT'}/>
@@ -138,17 +144,18 @@ function DetailDescription({p, goTo}) {
     )
 }
 
-function DemoImage({p}) {
+function DemoImage() {
+    const p = useSelector(state => state.productReducer.product)
     return (
         <>
             <DetailDivider title={'HÌNH ẢNH DEMO'}/>
             <div className="text-center">
                 {p.thumbnails.map((value, index) => {
                     return (
-                        <>
+                        <div key={index}>
                             <img style={{display: 'inline-block', marginBottom: '15px'}} key={index} src={value} alt=""/>
                             <p className="text-center mt-0 mb-5 font-italic text-dark">Hình {index + 1}</p>
-                        </>
+                        </div>
                     )
                 })}
             </div>
@@ -156,7 +163,8 @@ function DemoImage({p}) {
     )
 }
 
-function Installation({p, refData}) {
+function Installation({refData}) {
+    const p = useSelector(state => state.productReducer.product)
     return (
         <>
             <DetailDivider title={'HƯỚNG DẪN CÀI ĐẶT'} refData={refData}/>
@@ -169,9 +177,68 @@ function Installation({p, refData}) {
 
 function RatingModal({closeModal}) {
     const ratingCriteria = ['Rất tệ', 'Tệ', 'Bình thường', 'Tốt', 'Rất tốt']
+    const [starIndex, setStarIndex] = useState(-1)
+    const [feel, setFeel] = useState('')
+    const [name, setName] = useState('')
+    const [phone, setPhone] = useState('')
+    const starRef = useRef(-1)
+    const dispatch = useDispatch()
+    const navigate = useNavigate()
+    const location = useLocation()
+
+    useEffect(() => {
+        document.querySelectorAll('.rating-modal-stars > div').forEach(function (value) {
+            value.addEventListener('mouseover', function () {
+                setStarIndex(Number(this.getAttribute('aria-valuenow')))
+            })
+            value.addEventListener('mouseleave', function () {
+                if (starRef.current !== Number(this.getAttribute('aria-valuenow'))) {
+                    setStarIndex(-1)
+                }
+                if (starRef.current !== -1) {
+                    setStarIndex(starRef.current)
+                }
+            })
+        })
+    }, [starIndex])
+
+    function onStarClicked(index) {
+        setStarIndex(index)
+        starRef.current = index
+    }
+
+    function sendRating() {
+        if (starRef.current !== -1) {
+            const star = `${5 - starRef.current}star`
+            const rc = {
+                name: name,
+                phone: phone,
+                star: 5 - starRef.current,
+                when: Date.now(),
+                comment: feel
+            }
+            dispatch(increaseRating(star))
+            dispatch(putRatingComment(rc))
+            navigate(".", {
+                state: {
+                    ...location.state,
+                    rating: {
+                        ...location.state.rating,
+                        [star]: location.state.rating[star] + 1
+                    },
+                    'rating-comment': [
+                        ...location.state['rating-comment'],
+                        rc
+                    ]
+                }
+            })
+        }
+        closeModal()
+    }
+
     return (
-        <div className="rating-modal">
-            <div className="rating-modal-content">
+        <div className="rating-modal" onClick={closeModal}>
+            <div className="rating-modal-content" onClick={(e) => e.stopPropagation()}>
                 <div>
                     <span>Đánh giá</span>
                     <span onClick={closeModal}><i className="fa fa-x"></i></span>
@@ -183,23 +250,24 @@ function RatingModal({closeModal}) {
                     </div>
                     <div className="rating-modal-stars my-4">
                         {ratingCriteria.map((value, index) => (
-                            <div key={index}>
-                                <i className="fa fa-star-o"></i>
-                                <div>{value}</div>
+                            <div aria-valuenow={index} className={starIndex === index && 'bg-active'} key={index}
+                                 onClick={() => onStarClicked(index)}>
+                                <div className={`s${index}`}></div>
+                                <div>{ratingCriteria[4 - index]}</div>
                             </div>
                         ))}
                     </div>
                     <div>
-                        <textarea placeholder="Mời bạn chia sẻ một số cảm nhận về sản phẩm..."/>
+                        <textarea value={feel} onChange={e => setFeel(e.target.value)} placeholder="Mời bạn chia sẻ một số cảm nhận về sản phẩm..."/>
                     </div>
                     <div className="d-flex justify-content-between mt-2">
-                        <input type="text" placeholder="Họ và tên (bắt buộc)"/>
-                        <input type="text" placeholder="Số điện thoại"/>
+                        <input value={name} onChange={e => setName(e.target.value)} type="text" placeholder="Họ và tên (bắt buộc)"/>
+                        <input value={phone} onChange={e => setPhone(e.target.value)} type="text" placeholder="Số điện thoại"/>
                     </div>
                     <div className="my-3 rating-guarantee"><i className="fa fa-check-square-o"></i> Chúng tôi cam kết bảo mật số điện thoại của bạn
                     </div>
                     <div className="text-center mt-3 mb-1">
-                        <button>Gửi đánh giá ngay</button>
+                        <button onClick={sendRating}>Gửi đánh giá ngay</button>
                     </div>
                 </div>
             </div>
@@ -207,8 +275,12 @@ function RatingModal({closeModal}) {
     )
 }
 
-function Rating({p}) {
+function Rating() {
+    const p = useSelector(state => state.productReducer.product)
     const [showModal, setShowModal] = useState(false)
+
+    const rc = [...p['rating-comment']].sort((a, b) => a.when - b.when > 0 ? -1 : 1)
+
     return (
         <>
             <DetailDivider title={'ĐÁNH GIÁ'}/>
@@ -239,20 +311,16 @@ function Rating({p}) {
                     </div>
                 </div>
                 <div className="detail-rating-comment">
-                    <div>
-                        <div>Anh Hưng <span><i className="fa fa-check-circle"></i> Đã mua hàng</span> <span>3 tuần trước</span></div>
-                        <div className="product-item-stars">
-                            <StarRate stars={5} type={"bi bi-star-fill"}/>
+                    {rc.map((rating, index) => (
+                        <div key={index}>
+                            <div>{rating.name} <span><i className="fa fa-check-circle"></i> Đã mua hàng</span>
+                                <span>{getPassedTimeInText(rating.when)}</span></div>
+                            <div className="product-item-stars">
+                                <StarRate stars={rating.star} type={"bi bi-star-fill"}/>
+                            </div>
+                            <div>{rating.comment}</div>
                         </div>
-                        <div>Sảm phẩm rất tốt tôi rất hài lòng</div>
-                    </div>
-                    <div>
-                        <div>Chị Hà <span><i className="fa fa-check-circle"></i> Đã mua hàng</span> <span>1 tuần trước</span></div>
-                        <div className="product-item-stars">
-                            <StarRate stars={5} type={"bi bi-star-fill"}/>
-                        </div>
-                        <div>Rất hài lòng</div>
-                    </div>
+                    ))}
                 </div>
             </div>
             {showModal && <RatingModal closeModal={() => setShowModal(false)}/>}
@@ -329,15 +397,14 @@ function Comment() {
 }
 
 function DetailContent() {
-    const p = useSelector(state => state.productReducer.product)
     const ref = useRef(null)
     const goToInstallation = () => ref.current.scrollIntoView({behavior: "auto"})
     return (
         <>
-            <DetailDescription p={p} goTo={goToInstallation}/>
-            <DemoImage p={p}/>
-            <Installation p={p} refData={ref}/>
-            <Rating p={p}/>
+            <DetailDescription goTo={goToInstallation}/>
+            <DemoImage/>
+            <Installation refData={ref}/>
+            <Rating/>
             <Comment/>
         </>
     )
