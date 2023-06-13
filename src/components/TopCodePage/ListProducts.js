@@ -8,7 +8,6 @@ import {addLiked, setLayout, setPage, setSort, setType} from "../../redux/Action
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {StarRate} from "../ProductDetailPage/ProductDetails";
 import {formatNumber, formatRating, getTypes, makeURL} from "../../javascript/utils";
-import {store} from "../../redux/Store";
 
 export function PopularCode() {
     const [data, setData] = useState([])
@@ -152,7 +151,7 @@ export function ProductContainer({query, total, data, forLiked}) {
     const dispatch = useDispatch()
 
     function navigate(type) {
-        dispatch(setType(type))
+        dispatch(setType(type.id))
         dispatch(setPage(1))
     }
 
