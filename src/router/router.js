@@ -1,15 +1,16 @@
 import {createBrowserRouter} from "react-router-dom";
-import App from "./App";
-import ListProducts from "./components/TopCodePage/ListProducts";
-import ProductDetails from "./components/ProductDetailPage/ProductDetails";
-import LoginPage from "./components/AuthenticationPage/Login";
-import RegisterPage from "./components/AuthenticationPage/Register";
-import ForgotPassPage from "./components/AuthenticationPage/ForgotPass";
-import ProfilePage from "./components/ProfilePage/Profile";
-import ChangePassPage from "./components/AuthenticationPage/ChangePass";
-import CartDetailPage from "./components/CartDetailPage/CartDetailPage";
-import {LikedCodes} from "./components/Commons/LikedCodes";
-import VerifyPassPage from "./components/AuthenticationPage/VerifyPass";
+import App from "../App";
+import ListProducts from "../components/TopCodePage/ListProducts";
+import ProductDetails from "../components/ProductDetailPage/ProductDetails";
+import LoginPage from "../components/AuthenticationPage/Login";
+import RegisterPage from "../components/AuthenticationPage/Register";
+import ForgotPassPage from "../components/AuthenticationPage/ForgotPass";
+import ProfilePage from "../components/ProfilePage/Profile";
+import ChangePassPage from "../components/AuthenticationPage/ChangePass";
+import CartDetailPage from "../components/CartDetailPage/CartDetailPage";
+import {LikedCodes} from "../components/Commons/LikedCodes";
+import ErrorPage from "./ErrorPage";
+import VerifyPassPage from "../components/AuthenticationPage/VerifyPass";
 
 const profile = {path: '/profile', element: <ProfilePage/>}
 const listAuthentication = [
@@ -75,7 +76,8 @@ const cart = [{
 export const router = createBrowserRouter([
     {
         path: '/',
-        element: <App/>
+        element: <App/>,
+        errorElement: <ErrorPage/>
     },
     profile,
     ...listProducts,
