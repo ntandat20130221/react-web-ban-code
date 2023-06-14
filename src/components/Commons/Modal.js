@@ -11,7 +11,9 @@ import Swal from 'sweetalert2';
 
 import {downloadFile} from "../../javascript/utils/Utils_Tuyen";
 
-import {showModalPayment, updateStatePayment, resetCart} from "../../redux/redux_tuyen/Action_Tuyen";
+import {resetCart, showModalPayment, showModalPayPal, updateStatePayment} from "../../redux/redux_tuyen/Action_Tuyen";
+import {ButtonPayPal} from "../Commons/Buttons";
+import {PayPalScriptProvider} from "@paypal/react-paypal-js";
 
 import '../../css/modal.css';
 
@@ -27,10 +29,6 @@ export function ModalPayment() {
 
     const wallets = [
         {
-            name: 'Paypal',
-            link_image: 'https://sharecode.vn/assets/images/btn-paypal.png',
-        },
-        {
             name: 'Momo',
             link_image: 'https://sharecode.vn/assets/images/vi-momo.png',
         },
@@ -45,7 +43,8 @@ export function ModalPayment() {
     ]
 
     let content;
-    const [contentRight, setContentRight] = useState(<div className="mt-4 notify-warning-content-right">Bạn cần thanh toán để tải
+    const [contentRight, setContentRight] = useState(<div className="mt-4 notify-warning-content-right">Bạn cần thanh
+        toán để tải
         code qua chức năng này!</div>);
 
     if (cart.length > 0) {
@@ -91,21 +90,20 @@ export function ModalPayment() {
                 confirmButtonText: 'OK',
                 timer: 3000, // Thời gian tự động tắt thông báo sau 3 giây
                 timerProgressBar: true // Hiển thị thanh tiến trình đếm ngược
-            }).then(() =>
-            {
+            }).then(() => {
                 setShowButtonDownload(true);
                 setContentRight(<Row className="d-flex align-items-center justify-content-center">
-                        <Row className="mt-3">
-                            <div className="notify-success-content-right">Bạn đã thanh toán thành công</div>
-                        </Row>
-                        <Row className="mt-3">
-                            <div>
-                                <Button onClick={() => clickDownloadAll()} variant="success">
-                                    <i className="fa fa-download"/> TẢI TẤT CẢ
-                                </Button>
-                            </div>
-                        </Row>
-                    </Row>)
+                    <Row className="mt-3">
+                        <div className="notify-success-content-right">Bạn đã thanh toán thành công</div>
+                    </Row>
+                    <Row className="mt-3">
+                        <div>
+                            <Button onClick={() => clickDownloadAll()} variant="success">
+                                <i className="fa fa-download"/> TẢI TẤT CẢ
+                            </Button>
+                        </div>
+                    </Row>
+                </Row>)
             });
         }, 1000);
     };
@@ -138,33 +136,92 @@ export function ModalPayment() {
         })
     }
 
+    const clickPaymentWithPaypal = () => {
+        dispatch(showModalPayPal(true));
+    }
+
     return (
-        <div>
-            <Modal size="lg" show={showModal}>
-                <Modal.Header className="header-modal">
-                    <div className="header-content">
-                        <div><span>Chọn đơn vị thanh toán</span></div>
-                        <div>
-                            <button className="custom-close-button"
-                                    onClick={() => clickCloseModal()}>X
-                            </button>
+        <>
+            <ModalPaypal/>
+            <div>
+                <Modal size="lg" show={showModal}>
+                    <Modal.Header className="header-modal">
+                        <div className="header-content">
+                            <div style={{color: '#8C6635', fontWeight: 'bold'}}><span>Chọn đơn vị thanh toán</span>
+                            </div>
+                            <div>
+                                <button className="custom-close-button"
+                                        onClick={() => clickCloseModal()}>X
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </Modal.Header>
+                    <Modal.Body>
+                        <div className="body-content">
+                            <div className="electronic-wallet" onClick={() => clickPaymentWithPaypal()}>
+                                <img src="https://sharecode.vn/assets/images/btn-paypal.png" alt=""/>
+                            </div>
+                            {
+                                wallets.map((value, index) => (
+                                    <div className="electronic-wallet" key={index}
+                                         onClick={() => clickPayment(value.name.toLowerCase())}>
+                                        <img src={value.link_image} alt=""/>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                        {content}
+                    </Modal.Body>
+                </Modal>
+            </div>
+        </>
+    )
+}
+
+export function ModalPaypal() {
+
+    const showModal = useSelector(state => state.modalReducer.modal_paypal);
+    const dispatch = useDispatch();
+    const clickCloseModal = () => {
+        dispatch(showModalPayPal(false)); // đóng cửa sổ thanh toán PayPal
+        dispatch(showModalPayment(true)); // hiển thị cửa sổ thanh toán và download code
+    }
+
+    if (showModal === true) {
+        dispatch(showModalPayment(false)); // đóng cửa sổ thanh toán và download code
+    }
+
+    return (
+        <PayPalScriptProvider options={{
+            "clientId": "test",
+            components: "buttons",
+            currency: "USD"
+        }}>
+            <Modal size="lg" show={showModal} aria-labelledby="contained-modal-title-vcenter"
+                   centered>
+                <Modal.Header>
+                    <Modal.Title style={{color: '#84c52c', fontWeight: 'bold'}}>Thanh toán với PayPal</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <div className="body-content">
-                        {
-                            wallets.map((value, index) => (
-                                <div className="electronic-wallet" key={index}
-                                     onClick={() => clickPayment(value.name.toLowerCase())}>
-                                    <img src={value.link_image} alt=""/>
+                    <Row>
+                        <Col xs={12} md={8}>
+                            <ButtonPayPal currency={"USD"}
+                                          showSpinner={false}/>
+                        </Col>
+                        <Col xs={6} md={4} className="d-flex justify-content-center">
+                            <Row>
+                                <div>
+                                    <img src="https://sharecode.vn/assets/images/secure.png" alt=""/>
                                 </div>
-                            ))
-                        }
-                    </div>
-                    {content}
+                                <div style={{color: '#84c52c', fontWeight: 'bold'}}>Chứng nhận giao dịch an toàn!</div>
+                            </Row>
+                        </Col>
+                    </Row>
                 </Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={() => clickCloseModal()}>Close</Button>
+                </Modal.Footer>
             </Modal>
-        </div>
+        </PayPalScriptProvider>
     )
 }

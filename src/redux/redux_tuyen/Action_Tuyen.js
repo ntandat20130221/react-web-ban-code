@@ -47,7 +47,7 @@ export const showModalPayment = (checkShow) => {
     }
 
     return {
-        type: 'modal/close-model-payment',
+        type: 'modal/close-modal-payment',
         payload: checkShow
     }
 
@@ -89,4 +89,20 @@ export const updateStatePayment = (name_payment) => {
                 payload: name_payment
             }
     }
+}
+
+export const showModalPayPal = (checkShow) => {
+
+    if (checkShow === true) {
+        return {
+            type: 'modal/show-modal-paypal',
+            payload: checkShow
+        }
+    }
+
+    return {
+        type: 'modal/close-modal-paypal',
+        payload: checkShow
+    }
+
 }
