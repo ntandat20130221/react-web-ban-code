@@ -5769,7 +5769,7 @@
           "content": "dsfd"
         }
       ],
-      "viewed": 82,
+      "viewed": 76,
       "downloaded": 123,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -10137,7 +10137,7 @@
         }
       ],
       "comments": [],
-      "viewed": 63,
+      "viewed": 62,
       "downloaded": 100,
       "liked": 13,
       "detail": "<div>Chức năng xác thực cơ bản: đăng nhập, đăng ký, đăng xuất, xác thực email. Kiểm tra role của tài khoản trước khi đăng nhập vào ứng dụng. Hiển thị giao diện tùy theo role của tài khoản. Hiển thị thông tin cá nhân. Không ai có thể đăng nhập nếu tài khoản chưa được xác thực.<br/>Phục hồi mật khẩu khi quên mật khẩu bằng email (quên demo :v).<br/>Sử dụng ViewPager2 để lưu trữ Fragment và giữ trạng thái cho các Fragment.<br/>Sử dụng ViewPager2 để chèn nhiều Fragment vào một Activity hoặc một Fragment khác.</div><div className='d-feature'>Các chức năng chính:</div><ul><li>100% Kotlin</li><li>Native Android</li><li>Jetpack Compose</li><li>Hỗ trờ ngôn ngữ đánh dấu Markdown</li><li>Lưu lịch sử chat</li><li>Truy cập toàn bộ mã nguồn</li><li>Mua trong ứng dụng để mở khóa phiên bản PRO</li><li>Tích hợp Admob Ads</li><li>Xem quảng cáo có tặng thưởng để kiếm thêm chức năng tin nhắn</li></ul>",
@@ -11522,13 +11522,13 @@
   "accounts": [
     {
       "email": "nguyenphutai840@gmail.com",
-      "hashPass": "5994471abb01112afcc18159f6cc74b4f511b99806da59b3caf5a9c173cacfc5",
-      "fullname": "nguyễn phú tài",
+      "hashPass": "a665a45920422f9d417e4867efdc4fb8a04a1f3fff1fa07e998e86f7f7a27ae3",
+      "fullname": "Nguyễn Phú Tài",
       "gender": "Nam",
       "phone": "0353677271",
       "personal_email": "nguyenphutai840@gmail.com",
-      "address": "Di Linh",
-      "province": "Tỉnh Lâm Đồng",
+      "address": "123",
+      "province": "Tỉnh Yên Bái",
       "id": 1
     }
   ],
