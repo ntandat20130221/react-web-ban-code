@@ -6,10 +6,10 @@ import Header from '../Commons/Header';
 import Footer from '../Commons/Footer';
 import {Link, useNavigate} from "react-router-dom";
 import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {hashText, isEmail, isEmpty} from "../../javascript/utils/Utils_Tai";
 import {loginError} from "../../redux/redux_tai/Action";
-import {checkEmailExists, checkLogin} from "../../javascript/api/Api_Tai";
+import {checkEmailExists, checkLogin, getProvinces} from "../../javascript/api/Api_Tai";
 import {useDispatch, useSelector} from "react-redux";
 import {errorLoginSelector, errorRegisterSelector} from "../../redux/redux_tai/Selectors";
 
@@ -23,6 +23,12 @@ function SectionLogin(){
     const dispatch = useDispatch();
     const errorString = useSelector(errorLoginSelector);
 
+    useEffect(()=>{
+        const storedEmail = localStorage.getItem("account");
+        if(storedEmail){
+            navigate('/');
+        }
+    },[]);
     const handleSubmit = (e) => {
         e.preventDefault();
         if(isEmpty(email) || isEmpty(password)){
@@ -80,7 +86,7 @@ function SectionLogin(){
                                 <input value={email} onChange={handleInputEmail} id="email" className="w-100 mb-3" placeholder="Email" name="email"/>
                                 <input value={password} onChange={handleInputPassword} id="password" className="w-100 mb-4" type="password" placeholder="Mật khẩu"
                                        name="password"/>
-                                <button type="submit" className="btn next w-100">Đăng nhập</button>
+                                <button type="submit" className="mb-4 btn next w-100">Đăng nhập</button>
                                 <a id="google-login-button"
                                    className="google d-flex justify-content-center w-100 mb-3">
                                     <img src={logoGoogle} width="25px" className="mr-2"/>Google</a>
