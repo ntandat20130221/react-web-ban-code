@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from "react";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {Toast} from 'react-bootstrap';
 import {default as queryString} from 'query-string';
 
@@ -10,6 +10,7 @@ import Pagination from './Pagination'
 import {Link} from "react-router-dom";
 import {StarRate} from "../ProductDetailPage/ProductDetails";
 import {formatNumber, formatRating} from "../../javascript/utils";
+import {addLiked} from "../../redux/Action";
 
 function DataProductsFeatured() {
 
@@ -117,6 +118,7 @@ function DataProductsFeatured() {
 
 function ItemProductFeatured({product}) {
 
+    const likedCodes = useSelector(state => state.likedCodesReducer.liked)
     const [showToast, setShowToast] = useState(false)
 
     /**
@@ -142,6 +144,10 @@ function ItemProductFeatured({product}) {
     function clickAddItemToCart() {
         dispatch(addItemToCart(product))
         setShowToast(true)
+    }
+
+    function clickAddLiked(){
+        dispatch(addLiked(product))
     }
 
     return (
@@ -172,7 +178,7 @@ function ItemProductFeatured({product}) {
                 </div>
                 <div className="product-item-actions d-flex justify-content-between align-items-center">
                     <div className="d-flex justify-content-start">
-                        <a className="product-item-action mr-1"><i className="fa fa-thumbs-up"></i></a>
+                        <a className={`mr-1 action-like ${likedCodes.some(c => c.id === product.id) && 'is-active'}`}><i className="fa fa-thumbs-up" onClick={clickAddLiked} ></i></a>
                         <a className="product-item-action"><i className="fa fa-shopping-cart" onClick={clickAddItemToCart}></i></a>
                     </div>
                     <div className="product-item-stars"><StarRate stars={formatRating(product.rating).average}
