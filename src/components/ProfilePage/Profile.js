@@ -3,10 +3,12 @@ import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
 import Footer from '../Commons/Footer';
 import {Link, useNavigate} from "react-router-dom";
 import {useEffect, useState} from "react";
+import {getProvinces} from "../../javascript/api/Api_Tai";
 
 const breadcrumbs = [{name: "Trang chủ", link: "/"}, {name: "Hồ sơ cá nhân", link: "/profile"}]
 function SectionProfile() {
     const [email, setEmail] = useState('');
+    const [provinces, setProvinces] = useState([]);
     const navigate = useNavigate();
     useEffect(() => {
         const storedEmail = localStorage.getItem('account');
@@ -16,12 +18,22 @@ function SectionProfile() {
             navigate('/login');
         }
     }, []);
-
+    useEffect(()=>{
+        try {
+            getProvinces().then(data =>{
+                setProvinces(data)
+            })
+        }catch (error) {
+            console.error('Lỗi khi gọi API:', error)
+        }
+    },[])
     const handleLogout = () => {
         localStorage.removeItem('account');
         setEmail('');
         navigate('/');
     };
+    console.log(provinces)
+
     return (
         <section className="contact-us profile">
             <div className="container">
@@ -72,9 +84,9 @@ function SectionProfile() {
                                             </div>
                                             <div className="form-check form-check-inline mr-4 d-inline-flex  align-items-center">
                                                 <input className="form-check-input" type="radio"
-                                                       name="sex" id="male" value="Nam"/>
+                                                       name="sex" id="female" value="Nữ"/>
                                                 <label className="form-check-label d-inline-block ml-2"
-                                                       htmlFor="male">Nam</label>
+                                                       htmlFor="male">Nữ</label>
                                             </div>
                                         </div>
                                     </div>
@@ -99,7 +111,13 @@ function SectionProfile() {
                                     <div className="col-lg-4 col-12">
                                         <div className="form-group">
                                             <label htmlFor="company">Tỉnh / Thành phố<span>*</span></label>
-                                            <select name="city" id="company"></select>
+                                            <select className="region" name="city" id="company">
+                                                {provinces.map(province =>(
+                                                    <option key={province.code} value={province.code}>
+                                                        {province.name}
+                                                    </option>)
+                                                )}
+                                            </select>
                                         </div>
                                     </div>
                                     <div className="col-lg-4 col-12">
