@@ -2,12 +2,14 @@ import Header from '../Commons/Header';
 import Footer from '../Commons/Footer';
 
 import '../../css/products.css'
-import {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {addLiked, setLayout, setPage, setSort, setType} from "../../redux/Action";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {StarRate} from "../ProductDetailPage/ProductDetails";
 import {formatNumber, formatRating, getTypes, makeURL} from "../../javascript/utils";
+import {addItemToCart} from "../../redux/redux_tuyen/Action_Tuyen";
+import {Toast} from "react-bootstrap";
 
 export function PopularCode() {
     const [data, setData] = useState([])
@@ -73,7 +75,7 @@ function SideBar() {
     )
 }
 
-function ProductItemRow({p, navigate, addToLiked}) {
+function ProductItemRow({p, navigate, addToLiked, addToCart}) {
     const likedCodes = useSelector(state => state.likedCodesReducer.liked)
 
     return (
@@ -101,7 +103,7 @@ function ProductItemRow({p, navigate, addToLiked}) {
                         <div className="d-flex justify-content-end">
                             <div className={`mr-1 action-like ${likedCodes.some(c => c.id === p.id) && 'is-active'}`} onClick={() => addToLiked(p)}><i
                                 className="fa fa-thumbs-up"></i></div>
-                            <a className="product-item-action"><i className="fa fa-shopping-cart"></i></a>
+                            <div className="product-item-action" onClick={() => addToCart(p)}><i className="fa fa-shopping-cart"></i></div>
                         </div>
                     </div>
                 </div>
@@ -110,39 +112,55 @@ function ProductItemRow({p, navigate, addToLiked}) {
     )
 }
 
-function ProductItem({p, navigate, addToLiked}) {
+function ProductItem({p, navigate, addToLiked, addToCart}) {
     const likedCodes = useSelector(state => state.likedCodesReducer.liked)
+    const [showToast, setShowToast] = useState(false)
+
+    function onAddToCartClicked(p) {
+        setShowToast(true)
+        addToCart(p)
+    }
 
     return (
-        <div className="product-item">
-            <Link to={`product/${p.id}`} state={p} className="product-item-img">
-                <img src={p.img} alt=""/>
-            </Link>
-            <div className="product-item-title d-flex justify-content-center align-items-center text-center pt-2">
-                <div className="title-wrapper">
-                    <Link to={`product/${p.id}`} state={p}>{p.name}</Link>
+        <>
+            <div>
+                <Toast show={showToast} onClose={() => setShowToast(false)} delay={3000} autohide>
+                    <Toast.Body className="text-white" style={{backgroundColor: '#7fad39'}}>
+                        Mã nguồn đã được thêm vào giỏ hàng
+                    </Toast.Body>
+                </Toast>
+            </div>
+            <div className="product-item">
+                <Link to={`product/${p.id}`} state={p} className="product-item-img">
+                    <img src={p.img} alt=""/>
+                </Link>
+                <div className="product-item-title d-flex justify-content-center align-items-center text-center pt-2">
+                    <div className="title-wrapper">
+                        <Link to={`product/${p.id}`} state={p}>{p.name}</Link>
+                    </div>
+                </div>
+                <div className="product-item-stats d-flex justify-content-between">
+                    <div><i className="fa fa-eye"></i> {p.viewed}</div>
+                    <div><i className="fa fa-download"></i> {p.downloaded}</div>
+                </div>
+                <div className="product-item-actions d-flex justify-content-between align-items-center">
+                    <div className="d-flex justify-content-start">
+                        <div className={`mr-1 action-like ${likedCodes.some(c => c.id === p.id) && 'is-active'}`}
+                             onClick={() => addToLiked(p)}><i
+                            className="fa fa-thumbs-up"></i></div>
+                        <div className="product-item-action" onClick={() => onAddToCartClicked(p)}><i className="fa fa-shopping-cart"></i></div>
+                    </div>
+                    <div className="product-item-stars"><StarRate stars={formatRating(p.rating).average} type={"bi bi-star-fill"}/></div>
+                </div>
+                <div className="product-item-bottom d-flex justify-content-between align-items-center">
+                    <div className="product-item-brand" onClick={() => navigate({id: p.type.id, name: p.type.name})}>
+                        <img src={p.type.img} alt=""></img> {p.type.name}
+                    </div>
+                    <Link to={`product/${p.id}`} state={p} className="product-item-price">{formatNumber(p.price, '.')}đ</Link>
                 </div>
             </div>
-            <div className="product-item-stats d-flex justify-content-between">
-                <div><i className="fa fa-eye"></i> {p.viewed}</div>
-                <div><i className="fa fa-download"></i> {p.downloaded}</div>
-            </div>
-            <div className="product-item-actions d-flex justify-content-between align-items-center">
-                <div className="d-flex justify-content-start">
-                    <div className={`mr-1 action-like ${likedCodes.some(c => c.id === p.id) && 'is-active'}`}
-                         onClick={() => addToLiked(p)}><i
-                        className="fa fa-thumbs-up"></i></div>
-                    <a className="product-item-action"><i className="fa fa-shopping-cart"></i></a>
-                </div>
-                <div className="product-item-stars"><StarRate stars={formatRating(p.rating).average} type={"bi bi-star-fill"}/></div>
-            </div>
-            <div className="product-item-bottom d-flex justify-content-between align-items-center">
-                <div className="product-item-brand" onClick={() => navigate({id: p.type.id, name: p.type.name})}>
-                    <img src={p.type.img} alt=""></img> {p.type.name}
-                </div>
-                <Link to={`product/${p.id}`} state={p} className="product-item-price">{formatNumber(p.price, '.')}đ</Link>
-            </div>
-        </div>
+        </>
+
     )
 }
 
@@ -159,6 +177,10 @@ export function ProductContainer({query, total, data, forLiked}) {
         dispatch(addLiked(code))
     }
 
+    function addToCart(code) {
+        dispatch(addItemToCart(code))
+    }
+
     return (
         <>
             {total ? (
@@ -166,10 +188,10 @@ export function ProductContainer({query, total, data, forLiked}) {
                     {data.map((value, index) => {
                         return layout === 'grid' ?
                             (<div className={`product-item-container col-lg-${forLiked ? '3' : '4'}`} key={index}>
-                                <ProductItem p={value} navigate={navigate} addToLiked={addToLiked}/>
+                                <ProductItem p={value} navigate={navigate} addToLiked={addToLiked} addToCart={addToCart}/>
                             </div>) :
                             (<div className="product-item-container col-lg-12" key={index}>
-                                <ProductItemRow p={value} navigate={navigate} addToLiked={addToLiked}/>
+                                <ProductItemRow p={value} navigate={navigate} addToLiked={addToLiked} addToCart={addToCart}/>
                             </div>)
                     })}
                 </div>
