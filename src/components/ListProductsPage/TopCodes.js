@@ -1,12 +1,12 @@
 import {useSelector} from "react-redux";
-import React, {useEffect, useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import {useLocation} from "react-router-dom";
 import {makeURL} from "../../javascript/utils";
-import {Filter, Pagination, ProductContainer, SideBar} from "./ListProducts";
+import {Filter, Pagination, ProductContainer, SideBar} from "./Codes";
 import Header from "../Commons/Header";
 import Footer from "../Commons/Footer";
 
-function FreeProducts() {
+function TopProducts() {
     const page = useSelector(state => state.listProductsReducer.page)
     const type = useSelector(state => state.listProductsReducer.type)
     const sort = useSelector(state => state.listProductsReducer.sort)
@@ -17,7 +17,7 @@ function FreeProducts() {
     const from = new URLSearchParams(location.search).get('from')
 
     useEffect(() => {
-        const url = makeURL(query, from, type, page, sort, 0)
+        const url = makeURL(query, from, type, page, sort)
         fetch(url)
             .then(res => res.json())
             .then(json => {
@@ -44,11 +44,11 @@ function FreeProducts() {
     )
 }
 
-export default function FreeCodes() {
+export default function TopCodes() {
     return (
         <>
             <Header/>
-            <FreeProducts/>
+            <TopProducts/>
             <Footer/>
         </>
     )

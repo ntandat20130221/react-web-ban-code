@@ -2,9 +2,9 @@ import {useSelector} from "react-redux";
 import React, {useEffect, useRef, useState} from "react";
 import {useLocation} from "react-router-dom";
 import {makeURL} from "../../javascript/utils";
-import {Filter, Pagination, ProductContainer, SideBar} from "./ListProducts";
 import Header from "../Commons/Header";
 import Footer from "../Commons/Footer";
+import {Filter, Pagination, ProductContainer, SideBar} from "./Codes";
 
 function HighQualityProducts() {
     const page = useSelector(state => state.listProductsReducer.page)
@@ -17,7 +17,7 @@ function HighQualityProducts() {
     const from = new URLSearchParams(location.search).get('from')
 
     useEffect(() => {
-        const url = makeURL(query, from, type, page, sort)
+        const url = makeURL(query, from, type, page, sort) + '&viewed_gte=5000&downloaded_gte=500&price_gte=500000'
         fetch(url)
             .then(res => res.json())
             .then(json => {

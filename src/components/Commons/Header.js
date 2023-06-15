@@ -18,7 +18,6 @@ function HeaderAds() {
     }, [])
 
     useEffect(() => {
-        console.log(`INDEX: ${adsIndex}`)
         const id = setTimeout(() => setAdsIndex((adsIndex + 1) % adsList.length), 5000)
         return () => clearTimeout(id)
     }, [adsIndex, adsList.length])
