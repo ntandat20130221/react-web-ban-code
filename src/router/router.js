@@ -11,6 +11,8 @@ import CartDetailPage from "../components/CartDetailPage/CartDetailPage";
 import {LikedCodes} from "../components/Commons/LikedCodes";
 import ErrorPage from "./ErrorPage";
 import VerifyPassPage from "../components/AuthenticationPage/VerifyPass";
+import FreeCodes from "../components/TopCodePage/FreeCodes";
+import HighQualityCodes from "../components/TopCodePage/HigtQualityCodes";
 
 const profile = {path: '/profile', element: <ProfilePage/>}
 const listAuthentication = [
@@ -47,7 +49,7 @@ const listProducts = [
     },
     {
         path: '/quality-codes',
-        element: <ListProducts/>
+        element: <HighQualityCodes/>
     },
     {
         path: '/quality-codes/product/:productId',
@@ -55,7 +57,7 @@ const listProducts = [
     },
     {
         path: '/free-codes',
-        element: <ListProducts/>
+        element: <FreeCodes/>
     },
     {
         path: '/free-codes/product/:productId',
