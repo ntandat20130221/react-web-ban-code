@@ -1,6 +1,6 @@
 import {createBrowserRouter} from "react-router-dom";
 import App from "../App";
-import ListProducts from "../components/TopCodePage/ListProducts";
+import TopCodes from "../components/ListProductsPage/TopCodes";
 import ProductDetails from "../components/ProductDetailPage/ProductDetails";
 import LoginPage from "../components/AuthenticationPage/Login";
 import RegisterPage from "../components/AuthenticationPage/Register";
@@ -11,8 +11,8 @@ import CartDetailPage from "../components/CartDetailPage/CartDetailPage";
 import {LikedCodes} from "../components/Commons/LikedCodes";
 import {ErrorPage404} from "../components/ErrorPage/ErrorPage404";
 import VerifyPassPage from "../components/AuthenticationPage/VerifyPass";
-import FreeCodes from "../components/TopCodePage/FreeCodes";
-import HighQualityCodes from "../components/TopCodePage/HigtQualityCodes";
+import FreeCodes from "../components/ListProductsPage/FreeCodes";
+import HighQualityCodes from "../components/ListProductsPage/HighQualityCodes";
 
 const profile = {path: '/profile', element: <ProfilePage/>}
 const listAuthentication = [
@@ -41,7 +41,7 @@ const listAuthentication = [
 const listProducts = [
     {
         path: '/top-codes/*',
-        element: <ListProducts/>
+        element: <TopCodes/>
     },
     {
         path: '/top-codes/product/:productId',
@@ -61,10 +61,6 @@ const listProducts = [
     },
     {
         path: '/free-codes/product/:productId',
-        element: <ProductDetails/>
-    },
-    {
-        path: '/product/:productId',
         element: <ProductDetails/>
     }
 ]

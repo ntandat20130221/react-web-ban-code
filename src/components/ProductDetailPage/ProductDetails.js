@@ -2,13 +2,13 @@ import Header from "../Commons/Header";
 import Footer from "../Commons/Footer";
 import '../../css/product-detail.css'
 import {useEffect, useMemo, useRef, useState} from "react";
-import {PopularCode} from "../TopCodePage/ListProducts";
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import {formatNumber, formatRating, getFirstLetter, getPassedTimeInText} from "../../javascript/utils";
 import Parser from 'html-react-parser'
 import {useDispatch, useSelector} from "react-redux";
 import {addLiked, increaseRating, increaseViewed, postComment, putProduct, putRatingComment} from "../../redux/Action";
 import {addItemToCart} from "../../redux/redux_tuyen/Action_Tuyen";
+import {PopularCode} from "../ListProductsPage/Codes";
 
 function DetailLeft() {
     const p = useSelector(state => state.productReducer.product)

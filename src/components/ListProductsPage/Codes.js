@@ -1,13 +1,10 @@
-import Header from '../Commons/Header';
-import Footer from '../Commons/Footer';
-
 import '../../css/products.css'
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {addLiked, setLayout, setPage, setSort, setType} from "../../redux/Action";
-import {Link, useLocation, useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {StarRate} from "../ProductDetailPage/ProductDetails";
-import {formatNumber, formatRating, getTypes, makeURL} from "../../javascript/utils";
+import {formatNumber, formatRating, getTypes} from "../../javascript/utils";
 import {addItemToCart} from "../../redux/redux_tuyen/Action_Tuyen";
 import {Toast} from "react-bootstrap";
 
@@ -263,54 +260,6 @@ export function Pagination({total}) {
                     <li onClick={() => onSwitchPage(currentPage + 1)}><i className="fa fa-chevron-right"></i></li>
                 </ul>
             ) : null}
-        </>
-    )
-}
-
-function Products() {
-    const page = useSelector(state => state.listProductsReducer.page)
-    const type = useSelector(state => state.listProductsReducer.type)
-    const sort = useSelector(state => state.listProductsReducer.sort)
-    const [products, setProducts] = useState([])
-    const refTotal = useRef(0)
-    const location = useLocation()
-    const query = new URLSearchParams(location.search).get('search')
-    const from = new URLSearchParams(location.search).get('from')
-
-    useEffect(() => {
-        const url = makeURL(query, from, type, page, sort)
-        fetch(url)
-            .then(res => res.json())
-            .then(json => {
-                setProducts(json.data)
-                refTotal.current = json.total
-            })
-    }, [page, type, sort, query, from])
-
-    return (
-        <section className="product">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-3 col-md-5">
-                        <SideBar/>
-                    </div>
-                    <div className="col-lg-9 col-md-7 pl-4">
-                        <Filter total={refTotal.current}/>
-                        <ProductContainer query={query} total={refTotal.current} data={products}/>
-                        <Pagination total={refTotal.current}/>
-                    </div>
-                </div>
-            </div>
-        </section>
-    )
-}
-
-export default function ListProducts() {
-    return (
-        <>
-            <Header/>
-            <Products/>
-            <Footer/>
         </>
     )
 }
