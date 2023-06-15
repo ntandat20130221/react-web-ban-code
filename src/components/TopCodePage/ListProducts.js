@@ -34,7 +34,7 @@ export function PopularCode() {
     )
 }
 
-function SideBar() {
+export function SideBar() {
     const type = useSelector(state => state.listProductsReducer.type)
     const [types, setTypes] = useState([])
     const dispatch = useDispatch()
@@ -75,7 +75,7 @@ function SideBar() {
     )
 }
 
-function ProductItemRow({p, navigate, addToLiked, addToCart}) {
+export function ProductItemRow({p, navigate, addToLiked, addToCart}) {
     const likedCodes = useSelector(state => state.likedCodesReducer.liked)
 
     return (
@@ -98,7 +98,8 @@ function ProductItemRow({p, navigate, addToLiked, addToCart}) {
                 <div className="col-lg-2 d-flex flex-column justify-content-end align-items-end">
                     <div className="pr-3 pb-3">
                         <div className="product-item-row-price text-center">
-                            <Link to={`product/${p.id}`} state={p} className="d-inline text-center">{formatNumber(p.price, '.')}đ</Link>
+                            <Link to={`product/${p.id}`} state={p}
+                                  className="d-inline text-center">{p.price === 0 ? 'FREE' : formatNumber(p.price, '.') + 'đ'}</Link>
                         </div>
                         <div className="d-flex justify-content-end">
                             <div className={`mr-1 action-like ${likedCodes.some(c => c.id === p.id) && 'is-active'}`} onClick={() => addToLiked(p)}><i
@@ -112,7 +113,7 @@ function ProductItemRow({p, navigate, addToLiked, addToCart}) {
     )
 }
 
-function ProductItem({p, navigate, addToLiked, addToCart}) {
+export function ProductItem({p, navigate, addToLiked, addToCart}) {
     const likedCodes = useSelector(state => state.likedCodesReducer.liked)
     const [showToast, setShowToast] = useState(false)
 
@@ -156,7 +157,8 @@ function ProductItem({p, navigate, addToLiked, addToCart}) {
                     <div className="product-item-brand" onClick={() => navigate({id: p.type.id, name: p.type.name})}>
                         <img src={p.type.img} alt=""></img> {p.type.name}
                     </div>
-                    <Link to={`product/${p.id}`} state={p} className="product-item-price">{formatNumber(p.price, '.')}đ</Link>
+                    <Link to={`product/${p.id}`} state={p}
+                          className="product-item-price">{p.price === 0 ? 'FREE' : formatNumber(p.price, '.') + 'đ'}</Link>
                 </div>
             </div>
         </>
@@ -206,7 +208,7 @@ export function ProductContainer({query, total, data, forLiked}) {
     )
 }
 
-function Filter({total}) {
+export function Filter({total}) {
     const sort = useSelector(state => state.listProductsReducer.sort)
     const layout = useSelector(state => state.listProductsReducer.layout)
     const dispatch = useDispatch()
@@ -238,7 +240,7 @@ function Filter({total}) {
     )
 }
 
-function Pagination({total}) {
+export function Pagination({total}) {
     const currentPage = useSelector(state => state.listProductsReducer.page)
     const dispatch = useDispatch()
 
