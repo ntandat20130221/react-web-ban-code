@@ -13,6 +13,7 @@ import {ErrorPage404} from "../components/ErrorPage/ErrorPage404";
 import VerifyPassPage from "../components/AuthenticationPage/VerifyPass";
 import FreeCodes from "../components/ListProductsPage/FreeCodes";
 import HighQualityCodes from "../components/ListProductsPage/HighQualityCodes";
+import Products, {ProductsContent} from "../components/ListProductsPage/Products";
 
 const profile = {path: '/profile', element: <ProfilePage/>}
 const listAuthentication = [
@@ -40,28 +41,30 @@ const listAuthentication = [
 
 const listProducts = [
     {
-        path: '/top-codes/*',
-        element: <TopCodes/>
+        path: '/products',
+        element: <Products/>,
+        children: [
+            {
+                index: true,
+                element: <ProductsContent/>
+            },
+            {
+                path: "product/:id",
+                element: <ProductDetails/>
+            }
+        ]
     },
     {
-        path: '/top-codes/product/:productId',
-        element: <ProductDetails/>
+        path: '/top-codes',
+        element: <TopCodes/>
     },
     {
         path: '/quality-codes',
         element: <HighQualityCodes/>
     },
     {
-        path: '/quality-codes/product/:productId',
-        element: <ProductDetails/>
-    },
-    {
         path: '/free-codes',
         element: <FreeCodes/>
-    },
-    {
-        path: '/free-codes/product/:productId',
-        element: <ProductDetails/>
     }
 ]
 
