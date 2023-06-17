@@ -4,18 +4,19 @@ import {useDispatch, useSelector} from "react-redux";
 import {addLiked, setLayout, setPage, setSort} from "../../redux/Action";
 import {Link, Outlet, useLocation, useNavigate} from "react-router-dom";
 import {StarRate} from "../ProductDetailPage/ProductDetails";
-import {formatNumber, formatRating, getTypes, makeURL} from "../../javascript/utils";
+import {formatNumber, formatRating, getTypeName, getTypes, makeURL} from "../../javascript/utils";
 import {addItemToCart} from "../../redux/redux_tuyen/Action_Tuyen";
 import {Toast} from "react-bootstrap";
 import Header from "../Commons/Header";
 import Footer from "../Commons/Footer";
+import SectionBreadcrumb from "../Commons/SectionBreadcrumb";
+import {fetchCodes, fetchPopularCodes, fetchProducts} from "../../javascript/api/Api_Dat";
 
 export function PopularCode() {
     const [data, setData] = useState([])
+
     useEffect(() => {
-        fetch('http://localhost:9810/products?_sort=downloaded,viewed&_order=desc&_limit=10')
-            .then(res => res.json())
-            .then(json => setData(json.data))
+        fetchPopularCodes().then(json => setData(json.data))
     }, [])
 
     return (
@@ -39,9 +40,7 @@ export function SideBar({type}) {
     const navigate = useNavigate()
 
     useEffect(() => {
-        fetch(`http://localhost:9810/products`)
-            .then(res => res.json())
-            .then(json => setTypes(getTypes(json)))
+        fetchProducts().then(data => setTypes(getTypes(data)))
     }, [])
 
     function handleClick(type) {
@@ -59,10 +58,10 @@ export function SideBar({type}) {
                         <div className={`list-group-item ${value.id === type && 'item-active'}`} key={value.id}
                              onClick={() => handleClick(value.id)}>
                             <div className="list-group-item-left">
-                                <span><img src={value.img} alt=""/></span>
+                                <span><img src={value.id === type ? value.img.replace('-alt', '') : value.img} alt=""/></span>
                                 <span>{value.name}</span>
                             </div>
-                            <span className="badge badge-light">{value.quantity}</span>
+                            <span className="badge badge-light" style={{backgroundColor: `${value.id === type && 'white'}`}}>{value.quantity}</span>
                         </div>
                     ))}
                 </div>
@@ -84,7 +83,7 @@ export function ProductItemRow({p, navigate, addToLiked, addToCart}) {
                 <div className="product-item-row-content col-lg-6">
                     <Link to={`product/${p.id}`} state={p} className="product-item-row-title">{p.name}</Link>
                     <div className="product-item-brand" onClick={() => navigate(p.type.id)}>
-                        <img src={p.type.img} alt=""/> {p.type.name}
+                        <img src={p.type.img.replace('-alt', '')} alt=""/> {p.type.name}
                     </div>
                     <div className="product-item-stars"><StarRate stars={formatRating(p.rating).average} type={"bi bi-star-fill"}/></div>
                     <div className="product-item-stats d-flex justify-content-start">
@@ -152,7 +151,7 @@ export function ProductItem({p, navigate, addToLiked, addToCart}) {
                 </div>
                 <div className="product-item-bottom d-flex justify-content-between align-items-center">
                     <div className="product-item-brand" onClick={() => navigate(p.type.id)}>
-                        <img src={p.type.img} alt=""></img> {p.type.name}
+                        <img src={p.type.img.replace('-alt', '')} alt=""></img> {p.type.name}
                     </div>
                     <Link to={`/products/product/${p.id}`} state={p}
                           className="product-item-price">{p.price === 0 ? 'FREE' : formatNumber(p.price, '.') + 'đ'}</Link>
@@ -230,7 +229,6 @@ export function ProductContainer({query, total, data, forLiked}) {
     function navigate(type) {
         dispatch(setPage(1))
         dispatch(setSort(null))
-        dispatch(setLayout('grid'))
         nav(`/products?type=${type}`)
     }
 
@@ -281,30 +279,40 @@ export function ProductsContent({group}) {
         const url = makeURL(query, from, type, page, sort) +
             (group === 'quality' ? '&viewed_gte=5000&downloaded_gte=500&price_gte=500000' : '') +
             (group === 'free' ? '&price=0' : '')
-        console.log(url)
-        fetch(url)
-            .then(res => res.json())
-            .then(json => {
-                setProducts(json.data)
-                refTotal.current = json.total
-            })
+        fetchCodes(url).then(json => {
+            setProducts(json.data)
+            refTotal.current = json.total
+        })
     }, [page, sort, type, query, from])
 
+    function breadcrumbs() {
+        const home = {name: 'Trang chủ', link: '/'}
+        const ds = location.pathname.includes('products') ? {name: 'Danh sách codes', link: '/products'} : undefined
+        const t = type && {name: getTypeName(type), link: `/products?type=${type}`}
+        const tc = location.pathname.includes('top-codes') ? {name: 'Top codes', link: '/top-codes'} : undefined
+        const qc = location.pathname.includes('quality-codes') ? {name: 'Code chất lượng', link: '/quality-codes'} : undefined
+        const fc = location.pathname.includes('free-codes') ? {name: 'Code miễn phí', link: '/free-codes'} : undefined
+        return [home, ds, t, tc, qc, fc].filter(i => i)
+    }
+
     return (
-        <section className="product">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-3 col-md-5">
-                        <SideBar type={type}/>
-                    </div>
-                    <div className="col-lg-9 col-md-7 pl-4">
-                        <Filter total={refTotal.current}/>
-                        <ProductContainer query={query} total={refTotal.current} data={products}/>
-                        <Pagination total={refTotal.current}/>
+        <>
+            <SectionBreadcrumb breadcrumbs={breadcrumbs()}/>
+            <section className="product">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-5">
+                            <SideBar type={type}/>
+                        </div>
+                        <div className="col-lg-9 col-md-7 pl-4">
+                            <Filter total={refTotal.current}/>
+                            <ProductContainer query={query} total={refTotal.current} data={products}/>
+                            <Pagination total={refTotal.current}/>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </>
     )
 }
 
